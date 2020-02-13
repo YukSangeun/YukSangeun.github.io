@@ -309,8 +309,44 @@
 
 
 
+<!-- If not equal to previous then it must be unique as sorted -->
+
+
+<!-- Push to group_names -->
+
+
+
+
+
+
+<!-- If not equal to previous then it must be unique as sorted -->
+
+
+<!-- Push to group_names -->
+
+
+
+
+
+
 
 <!-- group_items -->
+
+
+<!-- Collect if contains -->
+
+
+
+<!-- Push to group_items -->
+
+
+
+<!-- Collect if contains -->
+
+
+
+<!-- Push to group_items -->
+
 
 
 <!-- Collect if contains -->
@@ -323,8 +359,20 @@
 <ul>
   
     <span>
-      <a href="#Algorithm">
-        Algorithm
+      <a href="#BFS">
+        BFS
+      </a> &nbsp;&nbsp;&nbsp;
+    </span>
+  
+    <span>
+      <a href="#DFS">
+        DFS
+      </a> &nbsp;&nbsp;&nbsp;
+    </span>
+  
+    <span>
+      <a href="#graph">
+        graph
       </a> &nbsp;&nbsp;&nbsp;
     </span>
   
@@ -333,7 +381,7 @@
 <br/>
 
   
-  <h2 id="algorithm" class="archive__subtitle">Algorithm</h2>
+  <h2 id="bfs" class="archive__subtitle">BFS</h2>
   
     
 
@@ -344,7 +392,7 @@
     
     <h2 class="archive__item-title" itemprop="headline">
       
-        <a href="/algorithm/dfs-algorithm/" rel="permalink">DFS(깊이 우선 탐색) Algorithm
+        <a href="/algorithm/graph/" rel="permalink">Graph
 </a>
       
     </h2>
@@ -364,7 +412,85 @@
     
       <p class="page_meta"><i class="far fa-fw fa-calendar-alt" aria-hidden="true"></i> February 13 2020</p>
     
-    <p class="archive__item-excerpt" itemprop="description">깊이우선 탐색 알고리즘
+    <p class="archive__item-excerpt" itemprop="description">DFS, BFS에서 사용되는 그래프 자료구조에 대한 설명
+</p>
+  </article>
+</div>
+
+  
+
+  
+  <h2 id="dfs" class="archive__subtitle">DFS</h2>
+  
+    
+
+
+
+<div class="list__item">
+  <article class="archive__item" itemscope itemtype="https://schema.org/CreativeWork">
+    
+    <h2 class="archive__item-title" itemprop="headline">
+      
+        <a href="/algorithm/graph/" rel="permalink">Graph
+</a>
+      
+    </h2>
+<!-- 아키이브 싱클 페이지에 각 포스트 제목 밑에 updated 시간 표기
+       기존에는 read_time이 표기. read_time -> date 변경
+    
+      <p class="page__meta"><i class="far fa-clock" aria-hidden="true"></i> 
+
+
+
+
+  최대 1 분 소요
+
+</p>
+    
+-->
+    
+      <p class="page_meta"><i class="far fa-fw fa-calendar-alt" aria-hidden="true"></i> February 13 2020</p>
+    
+    <p class="archive__item-excerpt" itemprop="description">DFS, BFS에서 사용되는 그래프 자료구조에 대한 설명
+</p>
+  </article>
+</div>
+
+  
+
+  
+  <h2 id="graph" class="archive__subtitle">graph</h2>
+  
+    
+
+
+
+<div class="list__item">
+  <article class="archive__item" itemscope itemtype="https://schema.org/CreativeWork">
+    
+    <h2 class="archive__item-title" itemprop="headline">
+      
+        <a href="/algorithm/graph/" rel="permalink">Graph
+</a>
+      
+    </h2>
+<!-- 아키이브 싱클 페이지에 각 포스트 제목 밑에 updated 시간 표기
+       기존에는 read_time이 표기. read_time -> date 변경
+    
+      <p class="page__meta"><i class="far fa-clock" aria-hidden="true"></i> 
+
+
+
+
+  최대 1 분 소요
+
+</p>
+    
+-->
+    
+      <p class="page_meta"><i class="far fa-fw fa-calendar-alt" aria-hidden="true"></i> February 13 2020</p>
+    
+    <p class="archive__item-excerpt" itemprop="description">DFS, BFS에서 사용되는 그래프 자료구조에 대한 설명
 </p>
   </article>
 </div>

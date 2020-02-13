@@ -1,9 +1,50 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.8.6">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2020-02-13T23:56:13+09:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">Portfolio</title><subtitle>공부, 프로젝트 등을 기록하기 위한 저장 공간.</subtitle><author><name>육상은</name></author><entry><title type="html">DFS(깊이 우선 탐색) Algorithm</title><link href="http://localhost:4000/algorithm/dfs-algorithm/" rel="alternate" type="text/html" title="DFS(깊이 우선 탐색) Algorithm" /><published>2020-02-13T00:00:00+09:00</published><updated>2020-02-14T08:08:00+09:00</updated><id>http://localhost:4000/algorithm/dfs-algorithm</id><content type="html" xml:base="http://localhost:4000/algorithm/dfs-algorithm/">&lt;p&gt;DFS(깊이 우선 탐색) Algorithm에 대해 설명을 시작해 보겠다.&lt;/p&gt;
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.8.6">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2020-02-14T01:15:51+09:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">Portfolio</title><subtitle>공부, 프로젝트 등을 기록하기 위한 저장 공간.</subtitle><author><name>육상은</name></author><entry><title type="html">Graph</title><link href="http://localhost:4000/algorithm/graph/" rel="alternate" type="text/html" title="Graph" /><published>2020-02-13T00:00:00+09:00</published><updated>2020-02-14T11:14:00+09:00</updated><id>http://localhost:4000/algorithm/graph</id><content type="html" xml:base="http://localhost:4000/algorithm/graph/">&lt;h2 id=&quot;1-그래프-설명&quot;&gt;&lt;strong&gt;1. 그래프 설명&lt;/strong&gt;&lt;/h2&gt;
+&lt;ul&gt;
+  &lt;li&gt;현실세계에서는 도로망, 지인관계, 링크관계 등의 연결고리들을 표현할 수 있다.&lt;/li&gt;
+  &lt;li&gt;정의: 정점(vertex)과 간선(edge)의 집합  G(V,E)&lt;/li&gt;
+  &lt;li&gt;정점: 노드(node)라고도 부른다.&lt;/li&gt;
+  &lt;li&gt;간선: 유형에 따라 나뉜다.
+    &lt;ol&gt;
+      &lt;li&gt;두 정점을 이어주는 간선&lt;/li&gt;
+      &lt;li&gt;자기자신을 이어주는 간선&lt;/li&gt;
+      &lt;li&gt;방향이 있는 간선/ 없는 간선 - 방향이 있는 간선의 경우 사이클 발생 가능&lt;/li&gt;
+      &lt;li&gt;가중치가 있는/ 없는 간선&lt;/li&gt;
+      &lt;li&gt;DAG: 여러 유형의 간선을 혼합한 것들 중 방향그래프이면서 사이클이 존재하는 그래프를 지칭&lt;br /&gt;
+&lt;img src=&quot;https://yuksangeun.github.io/assets/images/graph_case.png&quot; alt=&quot;간선 유형에 따른 그림&quot; /&gt;&lt;/li&gt;
+    &lt;/ol&gt;
+  &lt;/li&gt;
+  &lt;li&gt;차수(degree): 한 정점에 이어진(인접한) 간선의 개수
+    &lt;ul&gt;
+      &lt;li&gt;인접하다(adjacent): 두 정점이 간선으로 이어져 있을 때를 의미&lt;/li&gt;
+      &lt;li&gt;방향 그래프에서는 indegree(들어오는 간선 개수)/ outdegree(나가는 간선 개수)가 존재&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;경로(path): 끝과 끝이 서로 연결된 간선들을 순서대로 나열할 것
+    &lt;ul&gt;
+      &lt;li&gt;단순 경로: 경로 중 한 점을 최대 한번만 지나도록 한 경로 / 특정 언급을 안할 경우 대부분 경로 찾기시 이것을 의미한다.&lt;/li&gt;
+      &lt;li&gt;Cycle: 방향 그래프에서 많이 사용되는 개념/ 간선을 따라가다 시작한 정점으로 돌아오는 경로를 의미 (1-&amp;gt;2-&amp;gt;3-&amp;gt;1)&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;그래프 표현 방법
+    &lt;ul&gt;
+      &lt;li&gt;간선의 정보 저장 방식에 따라 나뉨&lt;/li&gt;
+      &lt;li&gt;
+        &lt;p&gt;인접리스트 표현: vector&amp;lt;vector&lt;int&gt;&amp;gt; list;&lt;/int&gt;&lt;/p&gt;
 
-&lt;p&gt;GitHub Blog 서비스인 github.io 블로그를 시작하기로 했다.
-GitHub Blog 서비스의 이름은 Pages이다.&lt;/p&gt;
+        &lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;공간복잡도 O(V+E)    
+간선의 수 적은 그래프에서 유리하다.  
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;        &lt;/div&gt;
+      &lt;/li&gt;
+      &lt;li&gt;
+        &lt;p&gt;인접행렬 표현: vector&amp;lt;vector&lt;bool&gt;&amp;gt; matrix; 또는 int matrix[][];&lt;/bool&gt;&lt;/p&gt;
 
-&lt;p&gt;Pages가 다른 블로그 플랫폼 보다 편한 것 같아서 마음에 든다.
-다른 사람들도 같이 많이 사용했으면 좋겠다는 생각이 든다.&lt;/p&gt;
+        &lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;공간복잡도 O(V*V)  
+두 정점간 연결 유무를 바로 알수 있다.  
+간선의 수가 많은 그래프에서 유리하다.  
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;        &lt;/div&gt;
+      &lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;
 
-&lt;p&gt;마지막 수정 시간 2020-02-13 23:08:00 +0000&lt;/p&gt;</content><author><name>육상은</name></author><category term="Algorithm" /><summary type="html">깊이우선 탐색 알고리즘</summary></entry></feed>
+&lt;p&gt;&lt;img src=&quot;https://yuksangeun.github.io/assets/images/graph_declare.png&quot; alt=&quot;정보 저장 방식&quot; /&gt;&lt;/p&gt;</content><author><name>육상은</name></author><category term="BFS" /><category term="DFS" /><category term="graph" /><summary type="html">DFS, BFS에서 사용되는 그래프 자료구조에 대한 설명</summary></entry></feed>
