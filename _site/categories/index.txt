@@ -9,7 +9,7 @@
   <head>
     <meta charset="utf-8">
 
-<!-- begin _includes/seo.html --><title>Portfolio</title>
+<!-- begin _includes/seo.html --><title>Posts by Category | Portfolio</title>
 <meta name="description" content="공부, 프로젝트 등을 기록하기 위한 저장 공간. ">
 
 
@@ -19,8 +19,8 @@
 <meta property="og:type" content="website">
 <meta property="og:locale" content="ko_KR">
 <meta property="og:site_name" content="Portfolio">
-<meta property="og:title" content="Portfolio">
-<meta property="og:url" content="http://localhost:4000/">
+<meta property="og:title" content="Posts by Category">
+<meta property="og:url" content="http://localhost:4000/categories/">
 
 
   <meta property="og:description" content="공부, 프로젝트 등을 기록하기 위한 저장 공간. ">
@@ -40,7 +40,7 @@
   
 
 
-<link rel="canonical" href="http://localhost:4000/">
+<link rel="canonical" href="http://localhost:4000/categories/">
 
 
 
@@ -101,7 +101,7 @@
 
   </head>
 
-  <body class="layout--home">
+  <body class="layout--archive">
     <nav class="skip-links">
   <h2 class="screen-reader-text">Skip links</h2>
   <ul>
@@ -267,16 +267,56 @@
 
   <div class="archive">
     
-      <h1 id="page-title" class="page__title"></h1>
+      <h1 id="page-title" class="page__title">Posts by Category</h1>
     
-    
+    <!--
+# Jekyll Group-By-Array 0.1.0
+# https://github.com/mushishi78/jekyll-group-by-array
+# © 2015 Max White <mushishi78@gmail.com>
+# MIT License
+-->
 
-<h3 class="archive__subtitle">최근 포스트</h3>
+<!-- Initialize -->
 
+
+
+
+<!-- Map -->
+
+
+<!-- Flatten -->
+
+
+<!-- Uniq -->
+
+
+
+<!-- If not equal to previous then it must be unique as sorted -->
+
+
+<!-- Push to group_names -->
+
+
+
+
+
+
+
+<!-- group_items -->
+
+
+<!-- Collect if contains -->
+
+
+
+<!-- Push to group_items -->
 
 
 
   
+  <h2 id="blog" class="archive__subtitle">Blog</h2>
+  
+    
 
 
 
@@ -304,10 +344,7 @@
   </article>
 </div>
 
-
-
-
-
+  
 
   </div>
 </div>
