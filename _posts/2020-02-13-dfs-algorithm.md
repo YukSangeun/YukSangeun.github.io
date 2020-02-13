@@ -4,9 +4,9 @@ excerpt: "깊이우선 탐색 알고리즘"
 
 
 categories:
-  - Blog
+  - Algorithm
 tags:
-  - Blog
+  - Algorithm
 last_modified_at: 2020-02-13T23:08:00
 ---
 {{page.title}}에 대해 설명을 시작해 보겠다.

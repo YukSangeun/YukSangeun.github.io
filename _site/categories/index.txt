@@ -162,6 +162,14 @@
 <div itemscope itemtype="https://schema.org/Person">
 
   
+    <div class="author__avatar">
+      
+
+      
+        <img src="/assets/images/bio-photo.jpg" alt="육상은" itemprop="image">
+      
+    </div>
+  
 
   <div class="author__content">
     
@@ -314,7 +322,7 @@
 
 
   
-  <h2 id="blog" class="archive__subtitle">Blog</h2>
+  <h2 id="algorithm" class="archive__subtitle">Algorithm</h2>
   
     
 
@@ -325,7 +333,7 @@
     
     <h2 class="archive__item-title" itemprop="headline">
       
-        <a href="/blog/dfs-algorithm/" rel="permalink">DFS(깊이 우선 탐색) Algorithm
+        <a href="/algorithm/dfs-algorithm/" rel="permalink">DFS(깊이 우선 탐색) Algorithm
 </a>
       
     </h2>
