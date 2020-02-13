@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.8.6">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2020-02-14T01:15:51+09:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">Portfolio</title><subtitle>공부, 프로젝트 등을 기록하기 위한 저장 공간.</subtitle><author><name>육상은</name></author><entry><title type="html">Graph</title><link href="http://localhost:4000/algorithm/graph/" rel="alternate" type="text/html" title="Graph" /><published>2020-02-13T00:00:00+09:00</published><updated>2020-02-14T11:14:00+09:00</updated><id>http://localhost:4000/algorithm/graph</id><content type="html" xml:base="http://localhost:4000/algorithm/graph/">&lt;h2 id=&quot;1-그래프-설명&quot;&gt;&lt;strong&gt;1. 그래프 설명&lt;/strong&gt;&lt;/h2&gt;
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.8.6">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2020-02-14T01:31:16+09:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">Portfolio</title><subtitle>공부, 프로젝트 등을 기록하기 위한 저장 공간.</subtitle><author><name>육상은</name></author><entry><title type="html">Graph</title><link href="http://localhost:4000/algorithm/graph/" rel="alternate" type="text/html" title="Graph" /><published>2020-02-13T00:00:00+09:00</published><updated>2020-02-14T11:14:00+09:00</updated><id>http://localhost:4000/algorithm/graph</id><content type="html" xml:base="http://localhost:4000/algorithm/graph/">&lt;h2 id=&quot;1-그래프-설명&quot;&gt;&lt;strong&gt;1. 그래프 설명&lt;/strong&gt;&lt;/h2&gt;
 &lt;ul&gt;
   &lt;li&gt;현실세계에서는 도로망, 지인관계, 링크관계 등의 연결고리들을 표현할 수 있다.&lt;/li&gt;
   &lt;li&gt;정의: 정점(vertex)과 간선(edge)의 집합  G(V,E)&lt;/li&gt;
@@ -9,10 +9,13 @@
       &lt;li&gt;자기자신을 이어주는 간선&lt;/li&gt;
       &lt;li&gt;방향이 있는 간선/ 없는 간선 - 방향이 있는 간선의 경우 사이클 발생 가능&lt;/li&gt;
       &lt;li&gt;가중치가 있는/ 없는 간선&lt;/li&gt;
-      &lt;li&gt;DAG: 여러 유형의 간선을 혼합한 것들 중 방향그래프이면서 사이클이 존재하는 그래프를 지칭&lt;br /&gt;
-&lt;img src=&quot;https://yuksangeun.github.io/assets/images/graph_case.png&quot; alt=&quot;간선 유형에 따른 그림&quot; /&gt;&lt;/li&gt;
+      &lt;li&gt;DAG: 여러 유형의 간선을 혼합한 것들 중 방향그래프이면서 사이클이 존재하는 그래프를 지칭&lt;/li&gt;
     &lt;/ol&gt;
   &lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;&lt;img src=&quot;https://yuksangeun.github.io/assets/images/graph_case.png&quot; alt=&quot;간선 유형에 따른 그림&quot; title=&quot;간선 유형에 따른 그림&quot; class=&quot;align-center&quot; /&gt;&lt;/p&gt;
+&lt;ul&gt;
   &lt;li&gt;차수(degree): 한 정점에 이어진(인접한) 간선의 개수
     &lt;ul&gt;
       &lt;li&gt;인접하다(adjacent): 두 정점이 간선으로 이어져 있을 때를 의미&lt;/li&gt;
@@ -47,4 +50,4 @@
   &lt;/li&gt;
 &lt;/ul&gt;
 
-&lt;p&gt;&lt;img src=&quot;https://yuksangeun.github.io/assets/images/graph_declare.png&quot; alt=&quot;정보 저장 방식&quot; /&gt;&lt;/p&gt;</content><author><name>육상은</name></author><category term="BFS" /><category term="DFS" /><category term="graph" /><summary type="html">DFS, BFS에서 사용되는 그래프 자료구조에 대한 설명</summary></entry></feed>
+&lt;p&gt;&lt;img src=&quot;https://yuksangeun.github.io/assets/images/graph_declare.png&quot; alt=&quot;정보 저장 방식&quot; class=&quot;align-center&quot; /&gt;&lt;/p&gt;</content><author><name>육상은</name></author><category term="BFS" /><category term="DFS" /><category term="graph" /><summary type="html">DFS, BFS에서 사용되는 그래프 자료구조에 대한 설명</summary></entry></feed>
