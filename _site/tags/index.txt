@@ -101,7 +101,7 @@
 
   </head>
 
-  <body class="layout--archive">
+  <body class="layout--tags">
     <nav class="skip-links">
   <h2 class="screen-reader-text">Skip links</h2>
   <ul>
@@ -127,7 +127,11 @@
           
         </a>
         <ul class="visible-links"><li class="masthead__menu-item">
+              <a href="/about/" >About</a>
+            </li><li class="masthead__menu-item">
               <a href="/categories/" >Category</a>
+            </li><li class="masthead__menu-item">
+              <a href="/algorithm/" >Algorithm</a>
             </li></ul>
         
         <button class="search__toggle" type="button">
@@ -277,113 +281,49 @@
     
       <h1 id="page-title" class="page__title">Posts by Tag</h1>
     
-    <!--
-# Jekyll Group-By-Array 0.1.0
-# https://github.com/mushishi78/jekyll-group-by-array
-# © 2015 Max White <mushishi78@gmail.com>
-# MIT License
--->
-
-<!-- Initialize -->
+    
 
 
 
 
-<!-- Map -->
-
-
-<!-- Flatten -->
-
-
-<!-- Uniq -->
-
-
-
-<!-- If not equal to previous then it must be unique as sorted -->
-
-
-<!-- Push to group_names -->
-
-
-
-
-
-
-<!-- If not equal to previous then it must be unique as sorted -->
-
-
-<!-- Push to group_names -->
-
-
-
-
-
-
-<!-- If not equal to previous then it must be unique as sorted -->
-
-
-<!-- Push to group_names -->
-
-
-
-
-
-
-
-<!-- group_items -->
-
-
-<!-- Collect if contains -->
-
-
-
-<!-- Push to group_items -->
-
-
-
-<!-- Collect if contains -->
-
-
-
-<!-- Push to group_items -->
-
-
-
-<!-- Collect if contains -->
-
-
-
-<!-- Push to group_items -->
-
-
-<ul>
+<ul class="taxonomy__index">
   
-    <span>
-      <a href="#BFS">
-        BFS
-      </a> &nbsp;&nbsp;&nbsp;
-    </span>
-  
-    <span>
-      <a href="#DFS">
-        DFS
-      </a> &nbsp;&nbsp;&nbsp;
-    </span>
-  
-    <span>
-      <a href="#graph">
-        graph
-      </a> &nbsp;&nbsp;&nbsp;
-    </span>
+    
+      
+        <li>
+          <a href="#bfs">
+            <strong>BFS</strong> <span class="taxonomy__count">1</span>
+          </a>
+        </li>
+      
+    
+      
+        <li>
+          <a href="#dfs">
+            <strong>DFS</strong> <span class="taxonomy__count">1</span>
+          </a>
+        </li>
+      
+    
+      
+        <li>
+          <a href="#graph">
+            <strong>graph</strong> <span class="taxonomy__count">1</span>
+          </a>
+        </li>
+      
+    
   
 </ul>
-<br/>
-<br/>
+
 
   
-  <h2 id="bfs" class="archive__subtitle">BFS</h2>
-  
     
+      <section id="bfs" class="taxonomy__section">
+        <h2 class="archive__subtitle">BFS</h2>
+        <div class="entries-list">
+          
+            
 
 
 
@@ -417,12 +357,18 @@
   </article>
 </div>
 
-  
-
-  
-  <h2 id="dfs" class="archive__subtitle">DFS</h2>
+          
+        </div>
+        <a href="#page-title" class="back-to-top">맨 위로 이동 &uarr;</a>
+      </section>
+    
   
     
+      <section id="dfs" class="taxonomy__section">
+        <h2 class="archive__subtitle">DFS</h2>
+        <div class="entries-list">
+          
+            
 
 
 
@@ -456,12 +402,18 @@
   </article>
 </div>
 
-  
-
-  
-  <h2 id="graph" class="archive__subtitle">graph</h2>
+          
+        </div>
+        <a href="#page-title" class="back-to-top">맨 위로 이동 &uarr;</a>
+      </section>
+    
   
     
+      <section id="graph" class="taxonomy__section">
+        <h2 class="archive__subtitle">graph</h2>
+        <div class="entries-list">
+          
+            
 
 
 
@@ -495,7 +447,13 @@
   </article>
 </div>
 
+          
+        </div>
+        <a href="#page-title" class="back-to-top">맨 위로 이동 &uarr;</a>
+      </section>
+    
   
+
 
   </div>
 </div>

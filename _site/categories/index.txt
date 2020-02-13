@@ -101,7 +101,7 @@
 
   </head>
 
-  <body class="layout--archive">
+  <body class="layout--categories">
     <nav class="skip-links">
   <h2 class="screen-reader-text">Skip links</h2>
   <ul>
@@ -127,7 +127,11 @@
           
         </a>
         <ul class="visible-links"><li class="masthead__menu-item">
+              <a href="/about/" >About</a>
+            </li><li class="masthead__menu-item">
               <a href="/categories/" >Category</a>
+            </li><li class="masthead__menu-item">
+              <a href="/algorithm/" >Algorithm</a>
             </li></ul>
         
         <button class="search__toggle" type="button">
@@ -277,54 +281,33 @@
     
       <h1 id="page-title" class="page__title">Posts by Category</h1>
     
-    <!--
-# Jekyll Group-By-Array 0.1.0
-# https://github.com/mushishi78/jekyll-group-by-array
-# © 2015 Max White <mushishi78@gmail.com>
-# MIT License
--->
-
-<!-- Initialize -->
+    
 
 
 
 
-<!-- Map -->
-
-
-<!-- Flatten -->
-
-
-<!-- Uniq -->
-
-
-
-<!-- If not equal to previous then it must be unique as sorted -->
-
-
-<!-- Push to group_names -->
-
-
-
-
-
-
-
-<!-- group_items -->
-
-
-<!-- Collect if contains -->
-
-
-
-<!-- Push to group_items -->
-
-
-
-  
-  <h2 id="algorithm" class="archive__subtitle">Algorithm</h2>
+<ul class="taxonomy__index">
   
     
+      
+        <li>
+          <a href="#algorithm">
+            <strong>Algorithm</strong> <span class="taxonomy__count">1</span>
+          </a>
+        </li>
+      
+    
+  
+</ul>
+
+
+  
+    
+      <section id="algorithm" class="taxonomy__section">
+        <h2 class="archive__subtitle">Algorithm</h2>
+        <div class="entries-list">
+          
+            
 
 
 
@@ -358,7 +341,13 @@
   </article>
 </div>
 
+          
+        </div>
+        <a href="#page-title" class="back-to-top">맨 위로 이동 &uarr;</a>
+      </section>
+    
   
+
 
   </div>
 </div>

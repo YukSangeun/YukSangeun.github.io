@@ -1,11 +1,13 @@
 # main links
 main:
+  - title: "About"
+    url: /about/
   - title: "Category"
     url: /categories/  #_pages 폴더안에 있는 페이지의 permalink와 연결된다. 
-  # - title: "Quick-Start Guide"
-  #  url: https://mmistakes.github.io/minimal-mistakes/docs/quick-start-guide/
-  # - title: "About"
-  #   url: https://mmistakes.github.io/minimal-mistakes/about/
+  - title: "Algorithm"
+    url: /algorithm/  
+# - title: "Quick-Start Guide"
+  #   url: https://mmistakes.github.io/minimal-mistakes/docs/quick-start-guide/
   # - title: "Sample Posts"
   #   url: /year-archive/
   # - title: "Sample Collections"
