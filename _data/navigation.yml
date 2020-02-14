@@ -6,11 +6,7 @@ main:
     url: /categories/  #_pages 폴더안에 있는 페이지의 permalink와 연결된다. 
   - title: "Algorithm"
     url: /categories/algorithm/  
+  - title: "Project"
+    url: /categories/project/
 # - title: "Quick-Start Guide"
   #   url: https://mmistakes.github.io/minimal-mistakes/docs/quick-start-guide/
-  # - title: "Sample Posts"
-  #   url: /year-archive/
-  # - title: "Sample Collections"
-  #   url: /collection-archive/
-  # - title: "Sitemap"
-  #   url: /sitemap/
