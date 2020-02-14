@@ -1,4 +1,136 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.8.6">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2020-02-14T16:16:46+09:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">Portfolio</title><subtitle>공부, 프로젝트 등을 기록하기 위한 저장 공간.</subtitle><author><name>육상은</name></author><entry><title type="html">Bfs</title><link href="http://localhost:4000/bfs/" rel="alternate" type="text/html" title="Bfs" /><published>2020-02-14T00:00:00+09:00</published><updated>2020-02-14T00:00:00+09:00</updated><id>http://localhost:4000/bfs</id><content type="html" xml:base="http://localhost:4000/bfs/"></content><author><name>육상은</name></author><summary type="html"></summary></entry><entry><title type="html">DFS Algorithm</title><link href="http://localhost:4000/algorithm/dfs/" rel="alternate" type="text/html" title="DFS Algorithm" /><published>2020-02-14T00:00:00+09:00</published><updated>2020-02-15T00:15:00+09:00</updated><id>http://localhost:4000/algorithm/dfs</id><content type="html" xml:base="http://localhost:4000/algorithm/dfs/">&lt;h2 id=&quot;dfsdepth-first-search---깊이-우선-탐색&quot;&gt;&lt;strong&gt;DFS(Depth First Search) - 깊이 우선 탐색&lt;/strong&gt;&lt;/h2&gt;
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.8.6">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2020-02-14T17:08:06+09:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">Portfolio</title><subtitle>공부, 프로젝트 등을 기록하기 위한 저장 공간.</subtitle><author><name>육상은</name></author><entry><title type="html">BFS Algorithm</title><link href="http://localhost:4000/algorithm/bfs/" rel="alternate" type="text/html" title="BFS Algorithm" /><published>2020-02-14T00:00:00+09:00</published><updated>2020-02-14T00:00:00+09:00</updated><id>http://localhost:4000/algorithm/bfs</id><content type="html" xml:base="http://localhost:4000/algorithm/bfs/">&lt;h2 id=&quot;bfsbreadth-first-search---너비-우선-탐색&quot;&gt;&lt;strong&gt;BFS(Breadth First Search) - 너비 우선 탐색&lt;/strong&gt;&lt;/h2&gt;
+&lt;ol&gt;
+  &lt;li&gt;탐색
+    &lt;ul&gt;
+      &lt;li&gt;모든 정점들을 특정 순서에 따라 방문하는 알고리즘&lt;/li&gt;
+      &lt;li&gt;그래프의 구조를 알 수 있다. (bfs, dfs 알고리즘을 이용)&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;BFS
+    &lt;ul&gt;
+      &lt;li&gt;시작점에 가까운 정점부터 순서대로 방문(모든 곳을 공평하게 조금씩 본다.)&lt;/li&gt;
+      &lt;li&gt;즉 시작점을 0단계, 그 다음부터 1, 2, ..k..단계라고 할 때, &lt;strong&gt;k단계에 방문하는 정점들을 시작점으로부터 최단거리가 k라고 한다.&lt;/strong&gt;(A에서 B로 이동하는 데 필요한 최소 개수의 간선)&lt;/li&gt;
+      &lt;li&gt;&lt;strong&gt;최단경로 문제를 풀 때 유용하다.&lt;/strong&gt;  (깊이를 알 수 있으므로)&lt;/li&gt;
+      &lt;li&gt;&lt;strong&gt;각 정점들을 방문할 때마다 모든 인접 정점들을 검사&lt;/strong&gt;&lt;/li&gt;
+      &lt;li&gt;
+        &lt;p&gt;방법: queue를 이용하여 방문할 list를 저장한다.&lt;/p&gt;
+
+        &lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;** 순서    
+ex) 1 - 2 - 3 - 5 - 6 - 9  
+        ㄴ  4   ㄴ  7 - 8  
+경로: 1-&amp;gt;2-&amp;gt;3-&amp;gt;4-&amp;gt;5-&amp;gt;6-&amp;gt;7-&amp;gt;9-&amp;gt;8
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;        &lt;/div&gt;
+      &lt;/li&gt;
+      &lt;li&gt;시간복잡도
+        &lt;ul&gt;
+          &lt;li&gt;인접리스트: O(V+E)&lt;/li&gt;
+          &lt;li&gt;인접행렬: O(V*V)&lt;/li&gt;
+        &lt;/ul&gt;
+      &lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;코드 (백준 16881461번)&lt;/p&gt;
+
+    &lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;   #include&amp;lt;stdio.h&amp;gt;
+   #include&amp;lt;vector&amp;gt;
+   #include&amp;lt;queue&amp;gt;
+   #include&amp;lt;algorithm&amp;gt;
+   using namespace std;
+	
+   int n, m;	//정점, 간선의 개수  
+   vector&amp;lt;bool&amp;gt; visited;	//정점 방문유무 확인
+   vector&amp;lt;vector&amp;lt;int&amp;gt;&amp;gt; vt;	//그래프 정보(인접리스트)
+	  
+   void bfs(int start) {
+        queue&amp;lt;int&amp;gt; qu;	//방문할 노드 대기 list
+        visited[start] = true;	//방문되는 노드들 표시
+        qu.push(start);
+        while ( !qu.empty()) {
+             int here = qu.front();
+             printf(&quot;%d &quot;, here);	//방문 순서대로 출력
+             qu.pop();
+             //간선으로 연결된 다른 정점들 탐색
+             for (int next : vt[start]) {
+                  if (!visited[next]) {	//방문되지 않은 노드 경우 탐색
+                       visited[next] = true;
+                       qu.push(next);
+                  }
+             }
+        }
+   }
+ 
+   int main() {
+        int v;		//탐색 시작 정점 번호
+        scanf(&quot;%d %d %d&quot;, &amp;amp;n, &amp;amp;m, &amp;amp;v);
+	  
+        visited.resize(n+1);	//노드 개수에 맞게 크기 조정
+        vt.resize(n+1);
+        for ( int i = 0; i &amp;lt; m; i++) {
+             int a, b;
+             scanf(&quot;%d %d&quot;, &amp;amp;a, &amp;amp;b);
+             vt[a].push_back(b);	//무방향 그래프 경우 서로 이동 가능하므로 양쪽에 넣어준다.
+             vt[b].push_back(a);
+        }
+        //정점 번호 작은 것부터 방문해야 하므로 정렬
+        for(int i = 1; i &amp;lt;= n; i++) sort(vt[i].begin(), vt[i].end());
+        //bfs
+        fill(visited.begin(), visited.end(), false);	//모든 노드 방문 안된 상태로 초기화
+        bfs(v);
+   }
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;    &lt;/div&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;코드 (백준 17652404번 - 촌수계산(최단거리 이용문제))&lt;/p&gt;
+
+    &lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;   #include&amp;lt;stdio.h&amp;gt;
+   #include&amp;lt;vector&amp;gt;
+   #include&amp;lt;queue&amp;gt;
+   using namespace std;
+	
+   int n, p1, p2;	//정점의 개수, 구하고자 하는 두 사람  
+   vector&amp;lt;bool&amp;gt; visited;	//정점 방문유무 확인
+   vector&amp;lt;vector&amp;lt;int&amp;gt;&amp;gt; vt;	//그래프 정보(인접리스트)
+	  
+   void bfs() {
+        queue&amp;lt;int&amp;gt; qu;	//방문할 노드 대기 list
+        visited[p1-1] = true;	//방문되는 노드들 표시
+        qu.push(p1-1);
+        int level = 1;	//p1으로부터의 거리 체크
+        while ( !qu.empty()) {	//이 부분에서는 항상 q에 있는 정점들은 같은 레벨
+             int size = qu.size();	//같은 레벨에 속한 정점의 개수를 반환
+             while(size--) {	//같은 레벨 정점들에 대해서 연결된 다른 노드들 검사
+                  int here = qu.front();
+                  qu.pop();
+                  //간선으로 연결된 다른 정점들 탐색
+                  for (int i = 0; i &amp;lt; vt[here].size(); i++) {
+                       if (visited[vt[here][i]]) continue;
+                       if (vt[here][i] == p2 - 1) return level;
+                       visited[vt[here][i]] = true;
+                       qu.push(vt[here][i]);
+                  }
+             }
+             level++;
+        }
+        return -1;
+   }
+ 
+   int main() {
+        scanf(&quot;%d %d %d&quot;, &amp;amp;n, &amp;amp;p1, &amp;amp;p2);
+        visited.resize(n);	//노드 개수에 맞게 크기 조정
+        vt.resize(n);
+        scanf(&quot;%d&quot;, &amp;amp;n);
+        while (n--) {
+             int a, b;
+             scanf(&quot;%d %d&quot;, &amp;amp;a, &amp;amp;b);
+             vt[a-1].push_back(b-1);	//무방향 그래프 경우 서로 이동 가능하므로 양쪽에 넣어준다.
+             vt[b-1].push_back(a-1);
+        }
+        printf(&quot;%d&quot;, bfs() );
+   }
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;    &lt;/div&gt;
+  &lt;/li&gt;
+&lt;/ol&gt;</content><author><name>육상은</name></author><category term="BFS" /><category term="graph" /><summary type="html">그래프 자료구조를 이용한 너비 우선 탐색 알고리즘</summary></entry><entry><title type="html">DFS Algorithm</title><link href="http://localhost:4000/algorithm/dfs/" rel="alternate" type="text/html" title="DFS Algorithm" /><published>2020-02-14T00:00:00+09:00</published><updated>2020-02-15T00:15:00+09:00</updated><id>http://localhost:4000/algorithm/dfs</id><content type="html" xml:base="http://localhost:4000/algorithm/dfs/">&lt;h2 id=&quot;dfsdepth-first-search---깊이-우선-탐색&quot;&gt;&lt;strong&gt;DFS(Depth First Search) - 깊이 우선 탐색&lt;/strong&gt;&lt;/h2&gt;
 &lt;ol&gt;
   &lt;li&gt;탐색
     &lt;ul&gt;
