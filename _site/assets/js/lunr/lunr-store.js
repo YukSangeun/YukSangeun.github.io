@@ -13,4 +13,14 @@ var store = [{
         "excerpt":"DFS(Depth First Search) - 깊이 우선 탐색 탐색 모든 정점들을 특정 순서에 따라 방문하는 알고리즘 그래프의 구조를 알 수 있다. (bfs, dfs 알고리즘을 이용) DFS는 그래프의 모든 정점을 발견하는 가장 단순하고 고전적인 방법 DFS 현재 정점에서 더 이상 다른 정점으로 이동할 수 없는 상태에 도달할 때까지 탐색 후 이전 정점으로...","categories": ["Algorithm"],
         "tags": ["DFS","graph"],
         "url": "http://localhost:4000/algorithm/dfs/",
+        "teaser":null},{
+        "title": "Bfs Problem1",
+        "excerpt":" ","categories": [],
+        "tags": [],
+        "url": "http://localhost:4000/bfs-problem1/",
+        "teaser":null},{
+        "title": " DP(Dynamic Programming)",
+        "excerpt":"DP(Dynamic Programming) - 동적 계획법 큰 문제를 작은 문제로 나눠서 푸는 기법을 의미하며, 참고로 알고리즘 이름과 의미는 별개이다. 특징 작은 문제들에 대해 계산한 값을 여러 번 사용할 수 있기 때문에 메모이제이션이 필요 점화식을 잘 세우는 것이 중요(식과 초기 값) 종류: 1차 배열 dp, 2차 배열 dp … (분할 정복과 차이:...","categories": ["Algorithm"],
+        "tags": ["DP"],
+        "url": "http://localhost:4000/algorithm/dp/",
         "teaser":null}]
