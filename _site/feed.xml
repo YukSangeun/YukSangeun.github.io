@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.8.6">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2020-02-17T02:40:12+09:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">Portfolio</title><subtitle>공부, 프로젝트 등을 기록하기 위한 저장 공간.</subtitle><author><name>육상은</name></author><entry><title type="html">백준 1039번 교환</title><link href="http://localhost:4000/problem/bfs-problem1/" rel="alternate" type="text/html" title="백준 1039번 교환" /><published>2020-02-16T00:00:00+09:00</published><updated>2020-02-16T00:00:00+09:00</updated><id>http://localhost:4000/problem/bfs-problem1</id><content type="html" xml:base="http://localhost:4000/problem/bfs-problem1/">&lt;h2 id=&quot;문제&quot;&gt;&lt;strong&gt;문제&lt;/strong&gt;&lt;/h2&gt;
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.8.6">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2020-02-17T02:46:07+09:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">Portfolio</title><subtitle>공부, 프로젝트 등을 기록하기 위한 저장 공간.</subtitle><author><name>육상은</name></author><entry><title type="html">백준 1039번 교환</title><link href="http://localhost:4000/problem/bfs-problem1/" rel="alternate" type="text/html" title="백준 1039번 교환" /><published>2020-02-16T00:00:00+09:00</published><updated>2020-02-16T00:00:00+09:00</updated><id>http://localhost:4000/problem/bfs-problem1</id><content type="html" xml:base="http://localhost:4000/problem/bfs-problem1/">&lt;h2 id=&quot;문제&quot;&gt;&lt;strong&gt;문제&lt;/strong&gt;&lt;/h2&gt;
 &lt;p&gt;0으로 시작하지 않는 정수 N이 주어진다. 이때, M을 정수 N의 자릿수라고 했을 때, 다음과 같은 연산을 K번 수행한다.&lt;/p&gt;
 &lt;blockquote&gt;
   &lt;p&gt;1&amp;lt;= i &amp;lt; j &amp;lt;= M인 i와 j를 고른다. 그 다음, i번 위치의 숫자와 j번 위치의 숫자를 바꾼다. 
@@ -131,16 +131,15 @@ bino(2,1) = bino(1,0) + bino(1,1)
   &lt;/li&gt;
   &lt;li&gt;DP 방식
     &lt;ul&gt;
-      &lt;li&gt;Top-Down&lt;/li&gt;
-    &lt;/ul&gt;
-    &lt;ul&gt;
-      &lt;li&gt;일반 재귀와 같은 방식으로 위에서 아래로 내려오는 방식이며, memoization을 사용하기 위해 배열에 계산된 값들을 저장한다.&lt;/li&gt;
-      &lt;li&gt;
-        &lt;p&gt;백준 16916750번 피보나치 수&lt;/p&gt;
+      &lt;li&gt;Top-Down
+        &lt;ul&gt;
+          &lt;li&gt;일반 재귀와 같은 방식으로 위에서 아래로 내려오는 방식이며, memoization을 사용하기 위해 배열에 계산된 값들을 저장한다.&lt;/li&gt;
+          &lt;li&gt;
+            &lt;p&gt;백준 16916750번 피보나치 수&lt;/p&gt;
 
-        &lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;#include&amp;lt;stdio.h&amp;gt;
+            &lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;#include&amp;lt;stdio.h&amp;gt;
 using namespace std;
-	  
+		  
 int dp[45];	//-1로 초기화 (아직 값이 저장안됨을 의미)
 int fbo(int n) {
      if ( dp[n] != -1 ) return dp[n];	//계산된 값 존재하는 경우
@@ -153,27 +152,24 @@ int main() {
      dp[0] = 0;	//초기값 설정 fbo(0), fbo(1)
      dp[1] = 1;
      for(int i=2; i&amp;lt;=n; i++) dp[i] = -1;
-	  
+		  
      printf(&quot;%d&quot;, fbo(n));
-}
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;        &lt;/div&gt;
+}	
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;            &lt;/div&gt;
+          &lt;/li&gt;
+        &lt;/ul&gt;
       &lt;/li&gt;
-    &lt;/ul&gt;
-  &lt;/li&gt;
-&lt;/ol&gt;
+      &lt;li&gt;Bottom-Up
+        &lt;ul&gt;
+          &lt;li&gt;for문을 이용해서 처음 값부터 다음 값을 계산해 나가는 방식&lt;/li&gt;
+          &lt;li&gt;
+            &lt;p&gt;백준 16916750번 피보나치 수&lt;/p&gt;
 
-&lt;ul&gt;
-  &lt;li&gt;Bottom-Up
-    &lt;ul&gt;
-      &lt;li&gt;for문을 이용해서 처음 값부터 다음 값을 계산해 나가는 방식&lt;/li&gt;
-      &lt;li&gt;
-        &lt;p&gt;백준 16916750번 피보나치 수&lt;/p&gt;
-
-        &lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;#include&amp;lt;stdio.h&amp;gt;
+            &lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;#include&amp;lt;stdio.h&amp;gt;
 using namespace std;
-	  
+		  
 int dp[45];  
-	  
+		  
 int main() {
      int n;
      scanf( &quot;%d&quot;, &amp;amp;n );
@@ -181,23 +177,25 @@ int main() {
      dp[1] = 1;
      for(int i=2; i&amp;lt;=n; i++) 
           dp[i] = dp[i-1] + dp[i-2];
-	  
+		  
      printf( &quot;%d&quot;, dp[n] );
-}
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;        &lt;/div&gt;
+}	
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;            &lt;/div&gt;
+          &lt;/li&gt;
+        &lt;/ul&gt;
+      &lt;/li&gt;
+      &lt;li&gt;차이
+        &lt;ul&gt;
+          &lt;li&gt;Top-down 방식에 메모이제이션을 했다는 가정하에 시간 복잡도는 같다.&lt;/li&gt;
+          &lt;li&gt;하지만 재귀적으로 함수를 호출하는 과정 때문에 실제 걸리는 시간은 top-down DP가 더 길다고 알려져 있다.&lt;/li&gt;
+          &lt;li&gt;Top-down DP의 장점: 점화식 그대로 호출이 되기 때문에 형식/순서에 얽매이지 않고 가독성이 좋다.&lt;/li&gt;
+          &lt;li&gt;Bottum-Up DP의 장점: 함수를 호출하지 않으므로 시간/메모리 소량 절약&lt;/li&gt;
+          &lt;li&gt;문제에 따라 둘 중 편한 방법을 사용하면 된다.&lt;/li&gt;
+        &lt;/ul&gt;
       &lt;/li&gt;
     &lt;/ul&gt;
   &lt;/li&gt;
-  &lt;li&gt;차이
-    &lt;ul&gt;
-      &lt;li&gt;Top-down 방식에 메모이제이션을 했다는 가정하에 시간 복잡도는 같다.&lt;/li&gt;
-      &lt;li&gt;하지만 재귀적으로 함수를 호출하는 과정 때문에 실제 걸리는 시간은 top-down DP가 더 길다고 알려져 있다.&lt;/li&gt;
-      &lt;li&gt;Top-down DP의 장점: 점화식 그대로 호출이 되기 때문에 형식/순서에 얽매이지 않고 가독성이 좋다.&lt;/li&gt;
-      &lt;li&gt;Bottum-Up DP의 장점: 함수를 호출하지 않으므로 시간/메모리 소량 절약&lt;/li&gt;
-      &lt;li&gt;문제에 따라 둘 중 편한 방법을 사용하면 된다.&lt;/li&gt;
-    &lt;/ul&gt;
-  &lt;/li&gt;
-&lt;/ul&gt;</content><author><name>육상은</name></author><category term="DP" /><summary type="html">큰 문제를 작은 문제들로 나눠서 푸는 기법</summary></entry><entry><title type="html">BFS Algorithm</title><link href="http://localhost:4000/algorithm/bfs/" rel="alternate" type="text/html" title="BFS Algorithm" /><published>2020-02-14T00:00:00+09:00</published><updated>2020-02-14T00:00:00+09:00</updated><id>http://localhost:4000/algorithm/bfs</id><content type="html" xml:base="http://localhost:4000/algorithm/bfs/">&lt;h2 id=&quot;bfsbreadth-first-search---너비-우선-탐색&quot;&gt;&lt;strong&gt;BFS(Breadth First Search) - 너비 우선 탐색&lt;/strong&gt;&lt;/h2&gt;
+&lt;/ol&gt;</content><author><name>육상은</name></author><category term="DP" /><summary type="html">큰 문제를 작은 문제들로 나눠서 푸는 기법</summary></entry><entry><title type="html">BFS Algorithm</title><link href="http://localhost:4000/algorithm/bfs/" rel="alternate" type="text/html" title="BFS Algorithm" /><published>2020-02-14T00:00:00+09:00</published><updated>2020-02-14T00:00:00+09:00</updated><id>http://localhost:4000/algorithm/bfs</id><content type="html" xml:base="http://localhost:4000/algorithm/bfs/">&lt;h2 id=&quot;bfsbreadth-first-search---너비-우선-탐색&quot;&gt;&lt;strong&gt;BFS(Breadth First Search) - 너비 우선 탐색&lt;/strong&gt;&lt;/h2&gt;
 &lt;ol&gt;
   &lt;li&gt;탐색
     &lt;ul&gt;
