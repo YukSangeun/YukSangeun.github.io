@@ -14,10 +14,10 @@ var store = [{
         "tags": ["DFS","graph"],
         "url": "http://localhost:4000/algorithm/dfs/",
         "teaser":null},{
-        "title": "Bfs Problem1",
-        "excerpt":" ","categories": [],
-        "tags": [],
-        "url": "http://localhost:4000/bfs-problem1/",
+        "title": "백준 1039번 교환",
+        "excerpt":"문제 0으로 시작하지 않는 정수 N이 주어진다. 이때, M을 정수 N의 자릿수라고 했을 때, 다음과 같은 연산을 K번 수행한다. 1&lt;= i &lt; j &lt;= M인 i와 j를 고른다. 그 다음, i번 위치의 숫자와 j번 위치의 숫자를 바꾼다. 이때, 바꾼 수가 0으로 시작하면 안된다. 위의 연산을 K번 했을 때, 나올 수...","categories": ["Problem"],
+        "tags": ["BFS","graph"],
+        "url": "http://localhost:4000/problem/bfs-problem1/",
         "teaser":null},{
         "title": " DP(Dynamic Programming)",
         "excerpt":"DP(Dynamic Programming) - 동적 계획법 큰 문제를 작은 문제로 나눠서 푸는 기법을 의미하며, 참고로 알고리즘 이름과 의미는 별개이다. 특징 작은 문제들에 대해 계산한 값을 여러 번 사용할 수 있기 때문에 메모이제이션이 필요 점화식을 잘 세우는 것이 중요(식과 초기 값) 종류: 1차 배열 dp, 2차 배열 dp … (분할 정복과 차이:...","categories": ["Algorithm"],
