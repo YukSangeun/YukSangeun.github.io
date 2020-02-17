@@ -22,7 +22,7 @@ arr[9] = {1, 2, 3, 7, 9, 12, 21, 23, 37} 에서 4를 찾는 경우
 * 이분 탐색 경우: 초기 범위의 start=arr[0], end=arr[8]로 지정 후 범위의 중간인 arr[4]를 찾는 값과 비교하여 범위를 재지정한다.
 
   
-![이분 탐색 진행 순서](https://yuksangeun.github.io/assets/images/binarySearch.PNG ){: .align-center}  
+![이분 탐색 진행 순서](https://yuksangeun.github.io/assets/images/binarySearch.PNG){: .align-center}  
 
 코드
 ----------------
