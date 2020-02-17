@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.8.6">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2020-02-18T00:49:30+09:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">Portfolio</title><subtitle>공부, 프로젝트 등을 기록하기 위한 저장 공간.</subtitle><author><name>육상은</name></author><entry><title type="html">Binary Search(이진탐색/ 이분탐색)</title><link href="http://localhost:4000/algorithm/binary-serach/" rel="alternate" type="text/html" title="Binary Search(이진탐색/ 이분탐색)" /><published>2020-02-17T00:00:00+09:00</published><updated>2020-02-18T08:43:00+09:00</updated><id>http://localhost:4000/algorithm/binary-serach</id><content type="html" xml:base="http://localhost:4000/algorithm/binary-serach/">&lt;p&gt;탐색에는 기본적으로 순차 탐색이 있으며, 이 방법은 순차적으로 모든 데이터를 체크하여 값을 찾아가며 시간복잡도가 O(N)이다.&lt;br /&gt;
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.8.6">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2020-02-18T00:55:06+09:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">Portfolio</title><subtitle>공부, 프로젝트 등을 기록하기 위한 저장 공간.</subtitle><author><name>육상은</name></author><entry><title type="html">Binary Search(이진탐색/ 이분탐색)</title><link href="http://localhost:4000/algorithm/binary-serach/" rel="alternate" type="text/html" title="Binary Search(이진탐색/ 이분탐색)" /><published>2020-02-17T00:00:00+09:00</published><updated>2020-02-18T08:43:00+09:00</updated><id>http://localhost:4000/algorithm/binary-serach</id><content type="html" xml:base="http://localhost:4000/algorithm/binary-serach/">&lt;p&gt;탐색에는 기본적으로 순차 탐색이 있으며, 이 방법은 순차적으로 모든 데이터를 체크하여 값을 찾아가며 시간복잡도가 O(N)이다.&lt;br /&gt;
 반면, 이진 탐색은 탐색 범위를 절반씩 줄여가며 찾아가는 탐색 방법으로 시간복잡도가 O(logN)이다.&lt;br /&gt;
 &lt;strong&gt;point&lt;/strong&gt;&lt;/p&gt;
 &lt;ul&gt;
@@ -241,7 +241,7 @@ bino(2,1) = bino(1,0) + bino(1,1)
         &lt;ul&gt;
           &lt;li&gt;일반 재귀와 같은 방식으로 위에서 아래로 내려오는 방식이며, memoization을 사용하기 위해 배열에 계산된 값들을 저장한다.&lt;/li&gt;
           &lt;li&gt;
-            &lt;p&gt;백준 16916750번 피보나치 수&lt;/p&gt;
+            &lt;p&gt;백준 2747번 피보나치 수&lt;/p&gt;
 
             &lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;#include&amp;lt;stdio.h&amp;gt;
 using namespace std;
@@ -269,7 +269,7 @@ int main() {
         &lt;ul&gt;
           &lt;li&gt;for문을 이용해서 처음 값부터 다음 값을 계산해 나가는 방식&lt;/li&gt;
           &lt;li&gt;
-            &lt;p&gt;백준 16916750번 피보나치 수&lt;/p&gt;
+            &lt;p&gt;백준 2747번 피보나치 수&lt;/p&gt;
 
             &lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;#include&amp;lt;stdio.h&amp;gt;
 using namespace std;
@@ -333,7 +333,7 @@ ex) 1 - 2 - 3 - 5 - 6 - 9
     &lt;/ul&gt;
   &lt;/li&gt;
   &lt;li&gt;
-    &lt;p&gt;코드 (백준 16881461번)&lt;/p&gt;
+    &lt;p&gt;코드 (백준 1260번 DFS와 BFS)&lt;/p&gt;
 
     &lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;   #include&amp;lt;stdio.h&amp;gt;
    #include&amp;lt;vector&amp;gt;
@@ -384,7 +384,7 @@ ex) 1 - 2 - 3 - 5 - 6 - 9
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;    &lt;/div&gt;
   &lt;/li&gt;
   &lt;li&gt;
-    &lt;p&gt;코드 (백준 17652404번 - 촌수계산(최단거리 이용문제))&lt;/p&gt;
+    &lt;p&gt;코드 (백준 2644번 - 촌수계산(최단거리 이용문제))&lt;/p&gt;
 
     &lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;   #include&amp;lt;stdio.h&amp;gt;
    #include&amp;lt;vector&amp;gt;
@@ -473,7 +473,7 @@ ex) 1 - 2 - 3 - 5 - 6
     &lt;/ul&gt;
   &lt;/li&gt;
   &lt;li&gt;
-    &lt;p&gt;코드 (백준 16881461번)&lt;/p&gt;
+    &lt;p&gt;코드 (백준 1260번 DFS와 BFS)&lt;/p&gt;
 
     &lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;   #include&amp;lt;stdio.h&amp;gt;
    #include&amp;lt;vector&amp;gt;
