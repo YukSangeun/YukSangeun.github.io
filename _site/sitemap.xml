@@ -21,6 +21,10 @@
 <lastmod>2020-02-17T00:15:00+09:00</lastmod>
 </url>
 <url>
+<loc>http://localhost:4000/algorithm/binary-serach/</loc>
+<lastmod>2020-02-18T08:43:00+09:00</lastmod>
+</url>
+<url>
 <loc>http://localhost:4000/about/</loc>
 </url>
 <url>
@@ -37,5 +41,8 @@
 </url>
 <url>
 <loc>http://localhost:4000/tags/</loc>
+</url>
+<url>
+<loc>http://localhost:4000/page2/</loc>
 </url>
 </urlset>

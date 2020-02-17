@@ -1,4 +1,110 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.8.6">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2020-02-17T02:46:07+09:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">Portfolio</title><subtitle>공부, 프로젝트 등을 기록하기 위한 저장 공간.</subtitle><author><name>육상은</name></author><entry><title type="html">백준 1039번 교환</title><link href="http://localhost:4000/problem/bfs-problem1/" rel="alternate" type="text/html" title="백준 1039번 교환" /><published>2020-02-16T00:00:00+09:00</published><updated>2020-02-16T00:00:00+09:00</updated><id>http://localhost:4000/problem/bfs-problem1</id><content type="html" xml:base="http://localhost:4000/problem/bfs-problem1/">&lt;h2 id=&quot;문제&quot;&gt;&lt;strong&gt;문제&lt;/strong&gt;&lt;/h2&gt;
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.8.6">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2020-02-18T00:49:30+09:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">Portfolio</title><subtitle>공부, 프로젝트 등을 기록하기 위한 저장 공간.</subtitle><author><name>육상은</name></author><entry><title type="html">Binary Search(이진탐색/ 이분탐색)</title><link href="http://localhost:4000/algorithm/binary-serach/" rel="alternate" type="text/html" title="Binary Search(이진탐색/ 이분탐색)" /><published>2020-02-17T00:00:00+09:00</published><updated>2020-02-18T08:43:00+09:00</updated><id>http://localhost:4000/algorithm/binary-serach</id><content type="html" xml:base="http://localhost:4000/algorithm/binary-serach/">&lt;p&gt;탐색에는 기본적으로 순차 탐색이 있으며, 이 방법은 순차적으로 모든 데이터를 체크하여 값을 찾아가며 시간복잡도가 O(N)이다.&lt;br /&gt;
+반면, 이진 탐색은 탐색 범위를 절반씩 줄여가며 찾아가는 탐색 방법으로 시간복잡도가 O(logN)이다.&lt;br /&gt;
+&lt;strong&gt;point&lt;/strong&gt;&lt;/p&gt;
+&lt;ul&gt;
+  &lt;li&gt;이진탐색의 경우 탐색하고자 하는 배열이 정렬되어 있어야 한다.&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;algorithm&lt;/strong&gt; 헤더에 존재하는 &lt;strong&gt;sort함수&lt;/strong&gt;를 사용하여 정렬을 수행하고 시간복잡도는 O(NlogN)이다.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&quot;진행-순서&quot;&gt;진행 순서&lt;/h2&gt;
+&lt;p&gt;arr[9] = {1, 2, 3, 7, 9, 12, 21, 23, 37} 에서 4를 찾는 경우&lt;/p&gt;
+&lt;ul&gt;
+  &lt;li&gt;순차 탐색 경우: arr[0]부터 arr[8]까지 4와 일치여부를 모두 검사한다.&lt;/li&gt;
+  &lt;li&gt;이분 탐색 경우: 초기 범위의 start=arr[0], end=arr[8]로 지정 후 범위의 중간인 arr[4]를 찾는 값과 비교하여 범위를 재지정한다.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;&lt;img src=&quot;https://yuksangeun.github.io/assets/images/binarySearch.png&quot; alt=&quot;이분 탐색 진행 순서&quot; class=&quot;align-center&quot; /&gt;&lt;/p&gt;
+
+&lt;h2 id=&quot;코드&quot;&gt;코드&lt;/h2&gt;
+&lt;p&gt;이분 탐색은 일반 반복문 또는 재귀함수를 사용하여 나타낼 수 있다.&lt;/p&gt;
+&lt;ol&gt;
+  &lt;li&gt;
+    &lt;p&gt;일반 반복문&lt;/p&gt;
+
+    &lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;   int BinarySerach(int arr[], int target) {
+        int start = 0;
+        int end = arr.length - 1;
+        int mid = (end + start) / 2;
+        while(end &amp;gt;= start) {	//start가 end보다 값이 작거나 같은 경우 반복
+             if( arr[mid] == target ) return mid;	//경우1: 배열에서 target 찾은 경우 위치 반환
+             else if( arr[mid] &amp;lt; target ) start = mid + 1;	//경우2: target이 배열 중간보다 오른쪽인 경우
+             else end = mid - 1;	//경우3: target이 배열 중간보다 왼쪽인 경우
+             mid = (end + start) / 2;	//탐색 범위 재조정했으므로 mid값 다시 찾기
+        }
+        return -1;	//경우4: 배열속에서 target 못 찾은 경우
+   }
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;    &lt;/div&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;재귀함수&lt;/p&gt;
+
+    &lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;   int arr[];	//전역변수로 지정
+   int BinarySerach(int start, int end, int target) {
+        int mid = (end + start) / 2;
+        if(start &amp;gt; end) return -1;	//경우4: 배열속에서 target 못 찾은 경우
+        if( arr[mid] == target ) return mid;	//경우1: 배열에서 target 찾은 경우 위치 반환
+        else if( arr[mid] &amp;lt; target ) start = mid + 1;	//경우2: target이 배열 중간보다 오른쪽인 경우
+        else end = mid - 1;	//경우3: target이 배열 중간보다 왼쪽인 경우
+	       
+        BinarySearch(arr, start, end, target);	//범위 재조정 후 재귀 호출
+   }
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;    &lt;/div&gt;
+  &lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;h2 id=&quot;참고&quot;&gt;참고&lt;/h2&gt;
+&lt;p&gt;binarySearch 알고리즘은 실제로 &lt;strong&gt;algorithm&lt;/strong&gt;헤더에 존재한다.&lt;br /&gt;
+사용이 많이 되므로 동작이 수행되는 방법을 알고 있는 것이 좋으며, 헤더에 존재하는 함수를 사용할 때와 직접 코드를 작성하여 사용하는 경우 둘 다 걸리는 시간이 똑같다.&lt;/p&gt;
+
+&lt;p&gt;binarySearch 알고리즘의 일부를 살짝 수정하면 &lt;strong&gt;하한선/상한선&lt;/strong&gt;을 찾아주는 알고리즘을 만들 수 있다.&lt;br /&gt;
+ex) 10 20 20 30 40 순으로 값이 배열되어 있을 때, target = 20이라 하자.&lt;br /&gt;
+하한선의 경우: 20이상을 처음 찾는 위치를 반환하며 이 경우 위치 1에 해당한다.&lt;br /&gt;
+상한선의 경우: 20을 초과하는 처음 위치를 반환하며 이 경우 위치 3에 해당한다.&lt;/p&gt;
+&lt;ol&gt;
+  &lt;li&gt;
+    &lt;p&gt;하한선 코드 (lower_bound)&lt;/p&gt;
+
+    &lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;   int lower_bound(int arr[], int target) {
+        int start = 0;
+        int end = arr.length - 1;
+        while(start &amp;lt;= end) {
+             int mid = (start + end) / 2;
+             if(arr[mid] &amp;lt; target) start = mid + 1;
+             else end = mid - 1;
+        }
+        return end+1;
+   }
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;    &lt;/div&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;상한선 코드 (upper_bound)&lt;/p&gt;
+
+    &lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;   int upper_bound(int arr[], int target) {
+        int start = 0;
+        int end = arr.length - 1;
+        while(start &amp;lt;= end) {
+             int mid = (start + end) / 2;
+             if(arr[mid] &amp;lt;= target) start = mid + 1;
+             else end = mid - 1;
+        }
+        return end+1;
+   }
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;    &lt;/div&gt;
+  &lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;p&gt;upper_bound/ lower_bound 역시 &lt;strong&gt;algorithm&lt;/strong&gt;헤더에 존재한다.&lt;/p&gt;
+
+&lt;p&gt;binary_search(arr, arr+n, key);	반환형은 true/false&lt;br /&gt;
+upper_bound(arr, arr+n, key);  반환형은 iterator&lt;br /&gt;
+lower_bound(arr.begin(), arr.end(), key);  반환형은 iterator&lt;br /&gt;
+벡터인 경우 lower_bound와 같은 형식으로 작성하면 되고, 일반 배열인 경우 나머지와 같은 형식으로 작성하면 된다.&lt;/p&gt;
+
+&lt;p&gt;반환형이 iterator인 경우 현재 위치가 배열에서 몇 번째 위치인지를 확인하기 위해서는 벡터인 경우 iterator-v.begin(), 배열인 경우 iterator-arr을 하면 된다.&lt;br /&gt;
+해당 위치에 있는 값을 출력하고 싶을 때는 printf(“%d”, *iterator); 와 같이 작성한다.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;주의&lt;/strong&gt;&lt;br /&gt;
+항상 위 세가지 함수 모두 정렬을 한다음에 수행해야한다.&lt;/p&gt;</content><author><name>육상은</name></author><category term="Binary Search" /><summary type="html">탐색 범위를 절반씩 줄여가며 탐색하는 알고리즘</summary></entry><entry><title type="html">백준 1039번 교환</title><link href="http://localhost:4000/problem/bfs-problem1/" rel="alternate" type="text/html" title="백준 1039번 교환" /><published>2020-02-16T00:00:00+09:00</published><updated>2020-02-16T00:00:00+09:00</updated><id>http://localhost:4000/problem/bfs-problem1</id><content type="html" xml:base="http://localhost:4000/problem/bfs-problem1/">&lt;h2 id=&quot;문제&quot;&gt;&lt;strong&gt;문제&lt;/strong&gt;&lt;/h2&gt;
 &lt;p&gt;0으로 시작하지 않는 정수 N이 주어진다. 이때, M을 정수 N의 자릿수라고 했을 때, 다음과 같은 연산을 K번 수행한다.&lt;/p&gt;
 &lt;blockquote&gt;
   &lt;p&gt;1&amp;lt;= i &amp;lt; j &amp;lt;= M인 i와 j를 고른다. 그 다음, i번 위치의 숫자와 j번 위치의 숫자를 바꾼다. 

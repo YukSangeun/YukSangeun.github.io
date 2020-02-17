@@ -23,4 +23,9 @@ var store = [{
         "excerpt":"DP(Dynamic Programming) - 동적 계획법 큰 문제를 작은 문제로 나눠서 푸는 기법을 의미하며, 참고로 알고리즘 이름과 의미는 별개이다. 특징 작은 문제들에 대해 계산한 값을 여러 번 사용할 수 있기 때문에 메모이제이션이 필요 점화식을 잘 세우는 것이 중요(식과 초기 값) 종류: 1차 배열 dp, 2차 배열 dp … (분할 정복과 차이:...","categories": ["Algorithm"],
         "tags": ["DP"],
         "url": "http://localhost:4000/algorithm/dp/",
+        "teaser":null},{
+        "title": "Binary Search(이진탐색/ 이분탐색)",
+        "excerpt":"탐색에는 기본적으로 순차 탐색이 있으며, 이 방법은 순차적으로 모든 데이터를 체크하여 값을 찾아가며 시간복잡도가 O(N)이다. 반면, 이진 탐색은 탐색 범위를 절반씩 줄여가며 찾아가는 탐색 방법으로 시간복잡도가 O(logN)이다. point 이진탐색의 경우 탐색하고자 하는 배열이 정렬되어 있어야 한다. algorithm 헤더에 존재하는 sort함수를 사용하여 정렬을 수행하고 시간복잡도는 O(NlogN)이다. 진행 순서 arr[9] = {1,...","categories": ["Algorithm"],
+        "tags": ["Binary Search"],
+        "url": "http://localhost:4000/algorithm/binary-serach/",
         "teaser":null}]
