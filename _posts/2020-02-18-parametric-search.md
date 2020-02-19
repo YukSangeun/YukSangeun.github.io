@@ -70,5 +70,6 @@ Parametric search의 경우는 일반적인 구현이 없고 문제에 따라 �
 		       printf("%d", func(tree, 0, maxT, m));
 		  }
 
+> 참고  
 > https://palyoung.tistory.com/40  
 > https://m.blog.naver.com/PostView.nhn?blogId=kks227&logNo=220777333252&referrerCode=0&searchKeyword=binary%20search
