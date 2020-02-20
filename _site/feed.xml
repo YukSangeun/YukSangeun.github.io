@@ -1,4 +1,70 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.8.6">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2020-02-19T18:59:30+09:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">Portfolio</title><subtitle>공부, 프로젝트 등을 기록하기 위한 저장 공간.</subtitle><author><name>육상은</name></author><entry><title type="html">Dijkstra(다익스트라)</title><link href="http://localhost:4000/algorithm/dijkstra/" rel="alternate" type="text/html" title="Dijkstra(다익스트라)" /><published>2020-02-19T00:00:00+09:00</published><updated>2020-02-20T03:19:00+09:00</updated><id>http://localhost:4000/algorithm/dijkstra</id><content type="html" xml:base="http://localhost:4000/algorithm/dijkstra/">&lt;p&gt;다익스트라 알고리즘은 최단 경로 알고리즘(다익스트라, 벨만-포드, 플로이드) 중 하나이다.&lt;br /&gt;
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.8.6">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2020-02-21T03:13:14+09:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">Portfolio</title><subtitle>공부, 프로젝트 등을 기록하기 위한 저장 공간.</subtitle><author><name>육상은</name></author><entry><title type="html">Floyd(플로이드)</title><link href="http://localhost:4000/algorithm/floyd/" rel="alternate" type="text/html" title="Floyd(플로이드)" /><published>2020-02-20T00:00:00+09:00</published><updated>2020-02-21T03:19:00+09:00</updated><id>http://localhost:4000/algorithm/floyd</id><content type="html" xml:base="http://localhost:4000/algorithm/floyd/">&lt;p&gt;최단 경로를 구하는 알고리즘 중 하나로 &lt;strong&gt;모든 쌍 최단 거리 알고리즘&lt;/strong&gt;에 속한다.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;모든 쌍 최단 거리 알고리즘&lt;/strong&gt;은 말 그대로 모든 정점 쌍에 대한 최단 거리를 계산하는 것이다.&lt;br /&gt;
+가장 간단한 방법으로는 &lt;strong&gt;다익스트라&lt;/strong&gt;를 이용하는 방법이 있다. 즉 각 정점을 시작점으로 하여 다익스트라 알고리즘을 수행하는데 이때 다익스트라를 모든 정점에 대해서 수행한다.&lt;br /&gt;
+시간 복잡도는 O(V(E+VlogV))이다.&lt;/p&gt;
+
+&lt;p&gt;다익스트라를 이용하는 것보다 더 간단한 방법이 있는데, 바로 &lt;strong&gt;플로이드&lt;/strong&gt;이다.&lt;br /&gt;
+다익스트라를 이용하는 방법은 모든 정점에 대해 다익스트라를 시행해야 하는 반면, &lt;strong&gt;플로이드&lt;/strong&gt;는 단 한번의 시행으로 모든 쌍의 최단 거리를 구할 수 있다.&lt;br /&gt;
+3중 for문을 사용하며 시간복잡도는 O(V * V * V)이다.&lt;/p&gt;
+
+&lt;h2 id=&quot;플로이드&quot;&gt;플로이드&lt;/h2&gt;
+&lt;p&gt;Dist[u][v]: 정점u에서 정점v로 가는 최단 거리 (정점 0,1,…,k)&lt;br /&gt;
+C(k,u,v): 0번 정점부터 k번 정점까지만을 경유점으로 썼을 때, u에서 v까지 가는 최단 경로의 길이&lt;br /&gt;
+	u -&amp;gt; v / u -&amp;gt; (0,1,….,k) -&amp;gt; v&lt;br /&gt;
+시간복잡도 O(V * V * V)&lt;br /&gt;
+공간복잡도 (V*V)&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;점화식&lt;/strong&gt;
+C(k,u,v) = min(C(k-1,u,k) + C(k-1,k,v) , C(k-1,u,v))&lt;br /&gt;
+위 점화식과 같이 u에서 v로 가는 최단 경로에는&lt;/p&gt;
+
+&lt;ol&gt;
+  &lt;li&gt;k를 거쳐가는 최단 경로&lt;/li&gt;
+  &lt;li&gt;k를 거치지 않고 가는 최단 경로&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;p&gt;두가지가 존재한다.&lt;br /&gt;
+위 점화식을 토대로 코드를 보자.&lt;/p&gt;
+
+&lt;h2 id=&quot;코드백준-11404번-플로이드&quot;&gt;코드(백준 11404번 플로이드)&lt;/h2&gt;
+
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;	  //dist[100][100] 모든 dist[i][j] 값에 무한대 값을 넣는다.(초기 거리가 무한대로 설정)
+	  //단, 자기 자신과의 거리는 0으로 지정  
+	  //이후 입력값에 따라 인접한 곳들은 dist[i][j]에 값을 넣는다.
+	  //플로이드 알고리즘
+	  for (int k = 0; k &amp;lt; n; k++) {
+	       for (int i = 0; i &amp;lt; n; i++) {
+	            for (int j = 0; j &amp;lt; n; j++)
+	                 dist[i][j] = min(dist[i][j], dist[i][k] + dist[k][j]);
+	       }
+	  }
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;h2 id=&quot;응용&quot;&gt;응용&lt;/h2&gt;
+&lt;p&gt;추가로 최단경로 찾기 이외에도 모든 쌍에 대해 i-&amp;gt;j로 도달 가능한지 유무 확인 문제에서도 사용할 수 있다.&lt;/p&gt;
+
+&lt;table&gt;
+  &lt;thead&gt;
+    &lt;tr&gt;
+      &lt;th&gt;모든쌍 최단 거리 사용 알고리즘&lt;/th&gt;
+      &lt;th&gt;음수 가중치 존재&lt;/th&gt;
+      &lt;th&gt;유용&lt;/th&gt;
+    &lt;/tr&gt;
+  &lt;/thead&gt;
+  &lt;tbody&gt;
+    &lt;tr&gt;
+      &lt;td&gt;다익스트라&lt;/td&gt;
+      &lt;td&gt;사용불가&lt;/td&gt;
+      &lt;td&gt;간선이 적으면 유용&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;플로이드&lt;/td&gt;
+      &lt;td&gt;사용가능&lt;/td&gt;
+      &lt;td&gt;간선이 많으면 E=V*V 유용&lt;/td&gt;
+    &lt;/tr&gt;
+  &lt;/tbody&gt;
+&lt;/table&gt;</content><author><name>육상은</name></author><category term="Graph" /><summary type="html">최단 경로 알고리즘</summary></entry><entry><title type="html">Dijkstra(다익스트라)</title><link href="http://localhost:4000/algorithm/dijkstra/" rel="alternate" type="text/html" title="Dijkstra(다익스트라)" /><published>2020-02-19T00:00:00+09:00</published><updated>2020-02-20T03:19:00+09:00</updated><id>http://localhost:4000/algorithm/dijkstra</id><content type="html" xml:base="http://localhost:4000/algorithm/dijkstra/">&lt;p&gt;다익스트라 알고리즘은 최단 경로 알고리즘(다익스트라, 벨만-포드, 플로이드) 중 하나이다.&lt;br /&gt;
 이후 플로이드 알고리즘에 대한 글을 작성할 예정이며, 벨만-포드는 잘 사용되지 않으므로 넘어간다.&lt;/p&gt;
 
 &lt;h2 id=&quot;최단-경로-문제&quot;&gt;최단 경로 문제&lt;/h2&gt;
