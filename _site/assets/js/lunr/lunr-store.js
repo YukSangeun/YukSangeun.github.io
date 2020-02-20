@@ -43,4 +43,14 @@ var store = [{
         "excerpt":"최단 경로를 구하는 알고리즘 중 하나로 모든 쌍 최단 거리 알고리즘에 속한다. 모든 쌍 최단 거리 알고리즘은 말 그대로 모든 정점 쌍에 대한 최단 거리를 계산하는 것이다. 가장 간단한 방법으로는 다익스트라를 이용하는 방법이 있다. 즉 각 정점을 시작점으로 하여 다익스트라 알고리즘을 수행하는데 이때 다익스트라를 모든 정점에 대해서 수행한다. 시간 복잡도는...","categories": ["Algorithm"],
         "tags": ["Graph"],
         "url": "http://localhost:4000/algorithm/floyd/",
+        "teaser":null},{
+        "title": "Lcs",
+        "excerpt":" ","categories": [],
+        "tags": [],
+        "url": "http://localhost:4000/LCS/",
+        "teaser":null},{
+        "title": "Greedy Algorithm(탐욕 알고리즘)",
+        "excerpt":"답을 찾을 때 여러 개의 조각으로 쪼개고, 각 단계마다 답의 한 부분을 만들어 간다는 점에서 완전탐색이나 동적계획법과 동일하다. 차이   완전탐색, 동적계획법 모든 선택지를 고려해 보고 그 중 전체 답이 가장 좋은 것을 찾는다. 탐욕 알고리즘 미래를 생각하지 않고 지금 단계에서 가장 좋은 방법만을 선택한다. 사용 경우 탐욕법을 사용해도 항상...","categories": ["Algorithm"],
+        "tags": ["greedy"],
+        "url": "http://localhost:4000/algorithm/greedy-algorithm/",
         "teaser":null}]
