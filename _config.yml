@@ -110,12 +110,12 @@ author:
   name             : "육상은"
   avatar           : "/assets/images/bio-photo.jpg" # path of avatar image, e.g. "/assets/images/bio-photo.jpg"
   bio              : "인하대학교 **컴퓨터공학과**"
-  location         : "Korea"
-  email            : #"tkddms150@naver.com"
+  location         : "Seoul, Korea"
+  email            : "tkddms150@naver.com"
   links:
     - label: "Email"
       icon: "fas fa-fw fa-envelope-square"
-      # url: mailto:your.name@email.com
+      #url: tkddms150@naver.com
     - label: "Website"
       icon: "fas fa-fw fa-link"
       # url: "https://your-website.com"
