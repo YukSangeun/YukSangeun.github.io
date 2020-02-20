@@ -30,7 +30,7 @@ last_modified_at: 2020-02-20T18:19:00
 	- global maximum으로 향하는 길에 시작점에 따라 현재 시점이 최고라 여겨지는 곳이 존재하여 local maximum에 빠지는 경우가 있다.  
 
 
-	![local maximum](https://YukSangeun.github.io/assets/images/greedy_localmaximum.PNG){: .align-center}
+	![local maximum](https://yuksangeun.github.io/assets/images/greedy_localmaximum.png){: .align-center}  
 
 
 2. 구할 수 있다면 성질이 동일하게 보존되므로 같은 전략을 반복해서 사용하여 정답을 얻을 수 있다.  
