@@ -44,10 +44,10 @@ var store = [{
         "tags": ["Graph"],
         "url": "http://localhost:4000/algorithm/floyd/",
         "teaser":null},{
-        "title": "Lcs",
-        "excerpt":" ","categories": [],
-        "tags": [],
-        "url": "http://localhost:4000/LCS/",
+        "title": "LCS(최장 공통 부분 수열)",
+        "excerpt":"이전 포스트에서 DP에 대해 설명한 글이 있다. LCS는 DP를 기반으로 하여 최장 공통 부분 수열을 찾는 알고리즘이다. LCS(Longest Common Subsequence, 최장 공통 부분 수열) LCS란 가장 긴 공통 Subsequence를 찾는 알고리즘으로 이때 substring 과 구분해야한다. Substring이란 연속된 부분 문자열을 의미하며, Subsequence란 연속적이지 않은 부분 문자열을 의미한다. 아래 표를 통해 문자열...","categories": ["Algorithm"],
+        "tags": ["DP"],
+        "url": "http://localhost:4000/algorithm/LCS/",
         "teaser":null},{
         "title": "Greedy Algorithm(탐욕 알고리즘)",
         "excerpt":"답을 찾을 때 여러 개의 조각으로 쪼개고, 각 단계마다 답의 한 부분을 만들어 간다는 점에서 완전탐색이나 동적계획법과 동일하다. 차이   완전탐색, 동적계획법 모든 선택지를 고려해 보고 그 중 전체 답이 가장 좋은 것을 찾는다. 탐욕 알고리즘 미래를 생각하지 않고 지금 단계에서 가장 좋은 방법만을 선택한다. 사용 경우 탐욕법을 사용해도 항상...","categories": ["Algorithm"],
