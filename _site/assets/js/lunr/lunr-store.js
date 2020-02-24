@@ -53,4 +53,14 @@ var store = [{
         "excerpt":"답을 찾을 때 여러 개의 조각으로 쪼개고, 각 단계마다 답의 한 부분을 만들어 간다는 점에서 완전탐색이나 동적계획법과 동일하다. 차이   완전탐색, 동적계획법 모든 선택지를 고려해 보고 그 중 전체 답이 가장 좋은 것을 찾는다. 탐욕 알고리즘 미래를 생각하지 않고 지금 단계에서 가장 좋은 방법만을 선택한다. 사용 경우 탐욕법을 사용해도 항상...","categories": ["Algorithm"],
         "tags": ["greedy"],
         "url": "http://localhost:4000/algorithm/greedy-algorithm/",
+        "teaser":null},{
+        "title": "Knapsack Algorithm(배낭 알고리즘)",
+        "excerpt":"(공부한 내용을 정리한 글로 부족하거나 틀린 부분이 존재할 수 있습니다.) 배낭 문제란 배낭에 물건을 담을 수 있는 무게의 최댓값이 존재하고 물건당 무게와 가치가 정해져 있을 때, 가치의 합이 최대가 되도록 물건들을 선택하여 배낭에 담는 문제이다. 배낭문제는 크게 두가지 유형이 존재한다. 물건을 나눠서 넣을 수 있는 경우 (fraction knapsack) 물건을 나눠서...","categories": ["Algorithm"],
+        "tags": ["DP"],
+        "url": "http://localhost:4000/algorithm/knapsack-algorithm/",
+        "teaser":null},{
+        "title": "백준 12865번 평범한 배낭",
+        "excerpt":"문제 이 문제는 아주 평범한 배낭에 관한 문제이다. 한 달 후면 국가의 부름을 받게 되는 준서는 여행을 가려고 한다. 세상과의 단절을 슬퍼하며 최대한 즐기기 위한 여행이기 때문에, 가지고 다닐 배낭 또한 최대한 가치 있게 싸려고 한다. 준서가 여행에 필요하다고 생각하는 N개의 물건이 있다. 각 물건은 무게 W와 가치 V를 가지는데,...","categories": ["Problem"],
+        "tags": ["DP"],
+        "url": "http://localhost:4000/problem/knapsack-problem1/",
         "teaser":null}]
