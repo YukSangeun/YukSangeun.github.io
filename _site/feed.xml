@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.8.6">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2020-02-25T01:59:35+09:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">Portfolio</title><subtitle>공부, 프로젝트 등을 기록하기 위한 저장 공간.</subtitle><author><name>육상은</name><email>tkddms150@naver.com</email></author><entry><title type="html">Knapsack Algorithm(배낭 알고리즘)</title><link href="http://localhost:4000/algorithm/knapsack-algorithm/" rel="alternate" type="text/html" title="Knapsack Algorithm(배낭 알고리즘)" /><published>2020-02-24T00:00:00+09:00</published><updated>2020-02-25T08:36:00+09:00</updated><id>http://localhost:4000/algorithm/knapsack-algorithm</id><content type="html" xml:base="http://localhost:4000/algorithm/knapsack-algorithm/">&lt;p&gt;(공부한 내용을 정리한 글로 부족하거나 틀린 부분이 존재할 수 있습니다.)&lt;br /&gt;
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.8.6">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2020-02-25T02:31:22+09:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">Portfolio</title><subtitle>공부, 프로젝트 등을 기록하기 위한 저장 공간.</subtitle><author><name>육상은</name><email>tkddms150@naver.com</email></author><entry><title type="html">Knapsack Algorithm(배낭 알고리즘)</title><link href="http://localhost:4000/algorithm/knapsack-algorithm/" rel="alternate" type="text/html" title="Knapsack Algorithm(배낭 알고리즘)" /><published>2020-02-24T00:00:00+09:00</published><updated>2020-02-25T08:36:00+09:00</updated><id>http://localhost:4000/algorithm/knapsack-algorithm</id><content type="html" xml:base="http://localhost:4000/algorithm/knapsack-algorithm/">&lt;p&gt;(공부한 내용을 정리한 글로 부족하거나 틀린 부분이 존재할 수 있습니다.)&lt;br /&gt;
 &lt;strong&gt;배낭 문제&lt;/strong&gt;란 배낭에 물건을 담을 수 있는 무게의 최댓값이 존재하고 물건당 무게와 가치가 정해져 있을 때,&lt;br /&gt;
 &lt;strong&gt;가치의 합이 최대&lt;/strong&gt;가 되도록 물건들을 선택하여 배낭에 담는 문제이다.&lt;/p&gt;
 
@@ -361,7 +361,7 @@ V[4] : 13, 8, 6, 12&lt;/p&gt;
 &lt;h2 id=&quot;풀이&quot;&gt;풀이&lt;/h2&gt;
 &lt;p&gt;이 문제에 대한 풀이는 knapsack algorithm 설명하는 글에 적어 놓았다.&lt;/p&gt;
 
-&lt;p&gt;&lt;strong&gt;Link&lt;/strong&gt;: &lt;a href=&quot;https://yuksangeun.github.io/algorithm/knapsack-algorithm/,&quot; title=&quot;solution&quot;&gt;풀이&lt;/a&gt;&lt;/p&gt;</content><author><name>육상은</name><email>tkddms150@naver.com</email></author><category term="DP" /><summary type="html">Knapsack 문제</summary></entry><entry><title type="html">LCS(최장 공통 부분 수열)</title><link href="http://localhost:4000/algorithm/LCS/" rel="alternate" type="text/html" title="LCS(최장 공통 부분 수열)" /><published>2020-02-21T00:00:00+09:00</published><updated>2020-02-22T03:19:00+09:00</updated><id>http://localhost:4000/algorithm/LCS</id><content type="html" xml:base="http://localhost:4000/algorithm/LCS/">&lt;p&gt;이전 포스트에서 DP에 대해 설명한 글이 있다. LCS는 &lt;strong&gt;DP를 기반&lt;/strong&gt;으로 하여 &lt;strong&gt;최장 공통 부분 수열을 찾는&lt;/strong&gt; 알고리즘이다.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Solution Link&lt;/strong&gt; → &lt;a href=&quot;https://yuksangeun.github.io/algorithm/knapsack-algorithm&quot;&gt;풀이&lt;/a&gt;&lt;/p&gt;</content><author><name>육상은</name><email>tkddms150@naver.com</email></author><category term="DP" /><summary type="html">Knapsack 문제</summary></entry><entry><title type="html">LCS(최장 공통 부분 수열)</title><link href="http://localhost:4000/algorithm/LCS/" rel="alternate" type="text/html" title="LCS(최장 공통 부분 수열)" /><published>2020-02-21T00:00:00+09:00</published><updated>2020-02-22T03:19:00+09:00</updated><id>http://localhost:4000/algorithm/LCS</id><content type="html" xml:base="http://localhost:4000/algorithm/LCS/">&lt;p&gt;이전 포스트에서 DP에 대해 설명한 글이 있다. LCS는 &lt;strong&gt;DP를 기반&lt;/strong&gt;으로 하여 &lt;strong&gt;최장 공통 부분 수열을 찾는&lt;/strong&gt; 알고리즘이다.&lt;/p&gt;
 
 &lt;h2 id=&quot;lcslongest-common-subsequence-최장-공통-부분-수열&quot;&gt;LCS(Longest Common Subsequence, 최장 공통 부분 수열)&lt;/h2&gt;
 &lt;p&gt;LCS란 가장 긴 공통 Subsequence를 찾는 알고리즘으로 이때 substring 과 구분해야한다.&lt;br /&gt;
@@ -1095,7 +1095,7 @@ lower_bound(arr.begin(), arr.end(), key);  반환형은 iterator&lt;br /&gt;
 해당 위치에 있는 값을 출력하고 싶을 때는 printf(“%d”, *iterator); 와 같이 작성한다.&lt;/p&gt;
 
 &lt;p&gt;&lt;strong&gt;주의&lt;/strong&gt;&lt;br /&gt;
-항상 위 세가지 함수 모두 정렬을 한다음에 수행해야한다.&lt;/p&gt;</content><author><name>육상은</name><email>tkddms150@naver.com</email></author><category term="Binary Search" /><summary type="html">탐색 범위를 절반씩 줄여가며 탐색하는 알고리즘</summary></entry><entry><title type="html">백준 1039번 교환</title><link href="http://localhost:4000/problem/bfs-problem1/" rel="alternate" type="text/html" title="백준 1039번 교환" /><published>2020-02-16T00:00:00+09:00</published><updated>2020-02-16T00:00:00+09:00</updated><id>http://localhost:4000/problem/bfs-problem1</id><content type="html" xml:base="http://localhost:4000/problem/bfs-problem1/">&lt;h2 id=&quot;문제&quot;&gt;&lt;strong&gt;문제&lt;/strong&gt;&lt;/h2&gt;
+항상 위 세가지 함수 모두 정렬을 한다음에 수행해야한다.&lt;/p&gt;</content><author><name>육상은</name><email>tkddms150@naver.com</email></author><category term="Binary Search" /><summary type="html">탐색 범위를 절반씩 줄여가며 탐색하는 알고리즘</summary></entry><entry><title type="html">백준 1039번 교환</title><link href="http://localhost:4000/problem/bfs-problem1/" rel="alternate" type="text/html" title="백준 1039번 교환" /><published>2020-02-16T00:00:00+09:00</published><updated>2020-02-16T00:00:00+09:00</updated><id>http://localhost:4000/problem/bfs-problem1</id><content type="html" xml:base="http://localhost:4000/problem/bfs-problem1/">&lt;h2 id=&quot;문제&quot;&gt;문제&lt;/h2&gt;
 &lt;p&gt;0으로 시작하지 않는 정수 N이 주어진다. 이때, M을 정수 N의 자릿수라고 했을 때, 다음과 같은 연산을 K번 수행한다.&lt;/p&gt;
 &lt;blockquote&gt;
   &lt;p&gt;1&amp;lt;= i &amp;lt; j &amp;lt;= M인 i와 j를 고른다. 그 다음, i번 위치의 숫자와 j번 위치의 숫자를 바꾼다. 
@@ -1103,13 +1103,14 @@ lower_bound(arr.begin(), arr.end(), key);  반환형은 iterator&lt;br /&gt;
 위의 연산을 K번 했을 때, 나올 수 있는 수의 최댓값을 구하는 프로그램을 작성하시오.&lt;/p&gt;
 &lt;/blockquote&gt;
 
-&lt;h2 id=&quot;입력&quot;&gt;&lt;strong&gt;입력&lt;/strong&gt;&lt;/h2&gt;
+&lt;h2 id=&quot;입력&quot;&gt;입력&lt;/h2&gt;
 &lt;p&gt;첫째 줄에 정수 N과 K가 주어진다. N은 1,000,000보다 작거나 같은 자연수이고, K는 10보다 작거나 같은 자연수이다.&lt;/p&gt;
 &lt;blockquote&gt;
-  &lt;p&gt;참조: https://www.acmicpc.net/problem/1039&lt;/p&gt;
+  &lt;p&gt;참조&lt;br /&gt;
+&lt;a href=&quot;https://www.acmicpc.net/problem/1039&quot;&gt;https://www.acmicpc.net/problem/1039&lt;/a&gt;&lt;/p&gt;
 &lt;/blockquote&gt;
 
-&lt;h2 id=&quot;풀이&quot;&gt;&lt;strong&gt;풀이&lt;/strong&gt;&lt;/h2&gt;
+&lt;h2 id=&quot;풀이&quot;&gt;풀이&lt;/h2&gt;
 &lt;p&gt;탐색 시 깊이가 K번째인 경우까지만 탐색하므로 BFS 알고리즘을 사용한다.&lt;br /&gt;
 초기 i번 째 깊이에서 교환하여 얻을 수 있는 값들을 모두 queue에 넣는 방식으로 탐색을 수행했지만(visited[]사용 없이) &lt;strong&gt;메모리 초과&lt;/strong&gt;가 발생했다.&lt;br /&gt;
 즉, &lt;strong&gt;방문 여부를 확인하여&lt;/strong&gt; 방문된 곳은 queue에 넣지 않는 방식을 사용하여 문제를 풀어야 한다.&lt;br /&gt;
@@ -1131,68 +1132,67 @@ k가 짝수, 홀수인 경우 두 경우를 모두 볼 때 최종적으로 k=1�
 따라서 우리는 k의 값이 홀수인 깊이들에 대해서만 값들을 비교하여 최댓값을 찾으면 된다.&lt;/p&gt;
 
 &lt;ul&gt;
-  &lt;li&gt;
-    &lt;p&gt;소스코드&lt;/p&gt;
+  &lt;li&gt;소스코드
+``` c&lt;/li&gt;
+&lt;/ul&gt;
 
-    &lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;    #include&amp;lt;stdio.h&amp;gt;
-    #include&amp;lt;queue&amp;gt;
-    using namespace std;
-	  
-    bool visited[1000001];	//방문 여부
-    int m = -1, k;	//입력받은 값의 자리수, 교환 횟수
-    char arr[7];	//값 num에 대한 교환을 쉽게 하기 위해 각 자리 수마다 배열에 넣기
-    int num;
-	  
-    queue&amp;lt;int&amp;gt; qu;
-    int bfs() {
-         int maxxO = -1;	//k가 홀수 일 때 최댓값
-         while (!qu.empty()) {	//이때 qu에는 깊이가 같은 값들만 들어있다.
-              int size = qu.size();
-              while (size--) {	//깊이가 같은 값들에 대해서 탐색 수행
-                   num = qu.front();
-                   qu.pop();
-                   for (int i = 0; i &amp;lt;= m; i++) {
-                        arr[i] = '0' + num % 10;
-                        num = num / 10;
-                   }
-                   //swap
-                   for (int i = m; i &amp;gt;= 0; i--) {
-                        for (int j = i - 1; j &amp;gt;= 0; j--) {
-                             if (arr[j] == '0' &amp;amp;&amp;amp; i == m) continue;
-                             char tem = arr[j];	// i, j번째 자리 교환
-                             arr[j] = arr[i];
-                             arr[i] = tem;
-                             num = 0;
-                             for (int l = m; l &amp;gt;= 0; l--)
-                                  num = num * 10 + (arr[l] - '0');
-                             arr[i] = arr[j];	//교환된 값은 num에 저장했으므로 원래 자리로 원위치하여 다음 교환을 가능하게 한다.
-                             arr[j] = tem;
-                             if (k % 2 == 1 &amp;amp;&amp;amp; maxxO &amp;lt; num)	//k가 홀수일 때 값을 비교한다.
-                                  maxxO = num;
-                             if (visited[num]) continue;
-                             visited[num] = true;
-                             qu.push(num);
-                                   }
-                   }
-              }
-              k--;	//같은 깊이 수행 후 k감소
-              if (k == 0) break;	//k번 수행 완료한 경우 탐색 중단
-         }
-         return maxxO;	//가장 큰 값을 반환한다.
-    }
-	  
-    int main() {
-         scanf(&quot;%d %d&quot;, &amp;amp;num, &amp;amp;k);
-         qu.push(num);	//bfs()시작시 사용할 값을 미리 qu에 넣는다.
-         while (num &amp;gt; 0) {	//자리수 세기 ex)1234일 경우, m=3 (0번부터 센다)
-              m++;
-              num = num / 10;
-         }
-         printf(&quot;%d&quot;, bfs());
-    }
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;    &lt;/div&gt;
-  &lt;/li&gt;
-&lt;/ul&gt;</content><author><name>육상은</name><email>tkddms150@naver.com</email></author><category term="BFS" /><category term="graph" /><summary type="html">BFS 알고리즘을 사용한 문제</summary></entry><entry><title type="html">DP(Dynamic Programming)</title><link href="http://localhost:4000/algorithm/dp/" rel="alternate" type="text/html" title=" DP(Dynamic Programming)" /><published>2020-02-16T00:00:00+09:00</published><updated>2020-02-17T00:15:00+09:00</updated><id>http://localhost:4000/algorithm/dp</id><content type="html" xml:base="http://localhost:4000/algorithm/dp/">&lt;h2 id=&quot;dpdynamic-programming---동적-계획법&quot;&gt;&lt;strong&gt;DP(Dynamic Programming) - 동적 계획법&lt;/strong&gt;&lt;/h2&gt;
+&lt;p&gt;#include&lt;stdio.h&gt;
+#include&lt;queue&gt;
+using namespace std;&lt;/queue&gt;&lt;/stdio.h&gt;&lt;/p&gt;
+
+&lt;p&gt;bool visited[1000001];	//방문 여부
+int m = -1, k;	//입력받은 값의 자리수, 교환 횟수
+char arr[7];	//값 num에 대한 교환을 쉽게 하기 위해 각 자리 수마다 배열에 넣기
+int num;&lt;/p&gt;
+
+&lt;p&gt;queue&lt;int&gt; qu;
+int bfs() {
+	int maxxO = -1;	//k가 홀수 일 때 최댓값
+	while (!qu.empty()) {	//이때 qu에는 깊이가 같은 값들만 들어있다.
+		int size = qu.size();
+		while (size--) {	//깊이가 같은 값들에 대해서 탐색 수행
+			num = qu.front();
+			qu.pop();
+			for (int i = 0; i &amp;lt;= m; i++) {
+				arr[i] = '0' + num % 10;
+				num = num / 10;
+			}
+			//swap
+			for (int i = m; i &amp;gt;= 0; i--) {
+				for (int j = i - 1; j &amp;gt;= 0; j--) {
+					if (arr[j] == '0' &amp;amp;&amp;amp; i == m) continue;
+					char tem = arr[j];	// i, j번째 자리 교환
+					arr[j] = arr[i];
+					arr[i] = tem;
+					num = 0;
+					for (int l = m; l &amp;gt;= 0; l--)
+						num = num * 10 + (arr[l] - '0');
+					arr[i] = arr[j];	//교환된 값은 num에 저장했으므로 원래 자리로 원위치하여 다음 교환을 가능하게 한다.
+					arr[j] = tem;
+					if (k % 2 == 1 &amp;amp;&amp;amp; maxxO &amp;lt; num)	//k가 홀수일 때 값을 비교한다.
+						maxxO = num;
+					if (visited[num]) continue;
+					visited[num] = true;
+					qu.push(num);
+				}
+			}
+		}
+		k--;	//같은 깊이 수행 후 k감소
+		if (k == 0) break;	//k번 수행 완료한 경우 탐색 중단
+	}	
+	return maxxO;	//가장 큰 값을 반환한다.
+}&lt;/int&gt;&lt;/p&gt;
+
+&lt;p&gt;int main() {
+	scanf(“%d %d”, &amp;amp;num, &amp;amp;k);
+	qu.push(num);	//bfs()시작시 사용할 값을 미리 qu에 넣는다.
+	while (num &amp;gt; 0) {	//자리수 세기 ex)1234일 경우, m=3 (0번부터 센다)
+		m++;
+		num = num / 10;
+	}
+	printf(“%d”, bfs());
+}
+```&lt;/p&gt;</content><author><name>육상은</name><email>tkddms150@naver.com</email></author><category term="BFS" /><category term="graph" /><summary type="html">BFS 알고리즘을 사용한 문제</summary></entry><entry><title type="html">DP(Dynamic Programming)</title><link href="http://localhost:4000/algorithm/dp/" rel="alternate" type="text/html" title=" DP(Dynamic Programming)" /><published>2020-02-16T00:00:00+09:00</published><updated>2020-02-17T00:15:00+09:00</updated><id>http://localhost:4000/algorithm/dp</id><content type="html" xml:base="http://localhost:4000/algorithm/dp/">&lt;h2 id=&quot;dpdynamic-programming---동적-계획법&quot;&gt;&lt;strong&gt;DP(Dynamic Programming) - 동적 계획법&lt;/strong&gt;&lt;/h2&gt;
 &lt;p&gt;&lt;strong&gt;큰 문제를 작은 문제로 나눠서 푸는&lt;/strong&gt; 기법을 의미하며, 참고로 알고리즘 이름과 의미는 별개이다.&lt;/p&gt;
 &lt;ol&gt;
   &lt;li&gt;특징

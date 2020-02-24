@@ -26,4 +26,4 @@ last_modified_at: 2020-02-24T23:36:00
 -----------
 이 문제에 대한 풀이는 knapsack algorithm 설명하는 글에 적어 놓았다.  
 
-**Link**: [풀이](https://yuksangeun.github.io/algorithm/knapsack-algorithm/, "solution")
+**Solution Link** → [풀이](https://yuksangeun.github.io/algorithm/knapsack-algorithm)
