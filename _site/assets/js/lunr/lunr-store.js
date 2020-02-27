@@ -63,4 +63,9 @@ var store = [{
         "excerpt":"문제 이 문제는 아주 평범한 배낭에 관한 문제이다. 한 달 후면 국가의 부름을 받게 되는 준서는 여행을 가려고 한다. 세상과의 단절을 슬퍼하며 최대한 즐기기 위한 여행이기 때문에, 가지고 다닐 배낭 또한 최대한 가치 있게 싸려고 한다. 준서가 여행에 필요하다고 생각하는 N개의 물건이 있다. 각 물건은 무게 W와 가치 V를 가지는데,...","categories": ["Problem"],
         "tags": ["DP"],
         "url": "http://localhost:4000/problem/knapsack-problem1/",
+        "teaser":null},{
+        "title": "백준 1162번: 도로포장",
+        "excerpt":"문제 준영이는 매일 서울에서 포천까지 출퇴근을 한다. 하지만 잠이 많은 준영이는 늦잠을 자 포천에 늦게 도착하기 일쑤다. 돈이 많은 준영이는 고민 끝에 K개의 도로를 포장하여 서울에서 포천까지 가는 시간을 단축하려 한다. 문제는 N개의 도시가 주어지고 그 사이 도로들과 이 도로를 통과할 때 걸리는 시간이 주어졌을 때 최소 시간이 걸리도록 하는...","categories": ["Problem"],
+        "tags": ["Dijkstra","graph"],
+        "url": "http://localhost:4000/problem/dijkstra-problem1/",
         "teaser":null}]
