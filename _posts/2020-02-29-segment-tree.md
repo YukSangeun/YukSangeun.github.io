@@ -91,7 +91,7 @@ int query(int L, int R, int node, int nodeL, int nodeR){
 ```  
 예를 들어 설명해 보자.  
 배열 A[10]={1, 3, 2, 5, 4, 0, 7, 2, 1, 1} 가 주어질 때, 구간 [2, 4]의 합을 구하자. 이 경우 query함수를 호출한다.  
-![부분합 질의](https://yuksangeun.github.io/assets/images/segment_tree_query1.png){: .align-center}  
+![부분합 질의](https://yuksangeun.github.io/assets/images/segment_tree_query1.PNG){: .align-center}  
 1. query(2, 4, 0, 0, 9) 함수를 호출 : 찾고자 하는 구간[2,4], 탐색 시작할 노드(루트노드), 구간[0,9] 을 파라미터로 보내며, **항상 탐색은 루트 노드부터 시작한다**.  
 2. 구간 [0, 9]는 구간[2,4]를 포함하고 있으므로(구간[2,4]에 포함된 상태가 아님) 자식노드(left, right)를 호출한다.  
 3. 이때, 오른쪽 자식은 구간이 [5, 9]로 구간[2,4]를 벗어난 구간이다. 따라서 해당사항이 없으므로 0을 반환한다.  

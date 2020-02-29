@@ -73,4 +73,9 @@ var store = [{
         "excerpt":"(공부한 내용을 기반으로 정리 용도로 작성한 글이므로 잘못된 부분이 있을 수 있습니다.) 한 배열(ex. A)의 부분 정보를 트리구조에 저장함으로서 O(logN)의 속도로 A 배열의 부분 정보를 빠르게 구할 수 있다. 이때, 부분 정보는 합 or 최댓값 or 최솟값 등 문제에 따라 다르다. 트리에 저장하는 방식을 예를 들어 살펴보자. 배열 A의 크기가...","categories": ["Algorithm"],
         "tags": ["Tree"],
         "url": "http://localhost:4000/algorithm/segment-tree/",
+        "teaser":null},{
+        "title": "Segment Tree(세그먼트 트리)",
+        "excerpt":" ","categories": ["Algorithm"],
+        "tags": ["Tree"],
+        "url": "http://localhost:4000/algorithm/lazy-propagation/",
         "teaser":null}]
