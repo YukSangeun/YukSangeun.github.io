@@ -36,12 +36,12 @@ var store = [{
         "teaser":null},{
         "title": "Dijkstra(다익스트라)",
         "excerpt":"다익스트라 알고리즘은 최단 경로 알고리즘(다익스트라, 벨만-포드, 플로이드) 중 하나이다. 이후 플로이드 알고리즘에 대한 글을 작성할 예정이며, 벨만-포드는 잘 사용되지 않으므로 넘어간다. 최단 경로 문제 주어진 두 정점을 연결하는 가장 짧은 경로의 길이를 찾는 문제 가중치가 없는 그래프의 경우 BFS로 찾기가 가능하다. 가중치가 있는 그래프 경우 dijkstra를 이용한다. 방향 그래프를 기준으로...","categories": ["Algorithm"],
-        "tags": ["Graph"],
+        "tags": ["graph"],
         "url": "http://localhost:4000/algorithm/dijkstra/",
         "teaser":null},{
         "title": "Floyd(플로이드)",
         "excerpt":"최단 경로를 구하는 알고리즘 중 하나로 모든 쌍 최단 거리 알고리즘에 속한다. 모든 쌍 최단 거리 알고리즘은 말 그대로 모든 정점 쌍에 대한 최단 거리를 계산하는 것이다. 가장 간단한 방법으로는 다익스트라를 이용하는 방법이 있다. 즉 각 정점을 시작점으로 하여 다익스트라 알고리즘을 수행하는데 이때 다익스트라를 모든 정점에 대해서 수행한다. 시간 복잡도는...","categories": ["Algorithm"],
-        "tags": ["Graph"],
+        "tags": ["graph"],
         "url": "http://localhost:4000/algorithm/floyd/",
         "teaser":null},{
         "title": "LCS(최장 공통 부분 수열)",
@@ -68,4 +68,9 @@ var store = [{
         "excerpt":"문제 준영이는 매일 서울에서 포천까지 출퇴근을 한다. 하지만 잠이 많은 준영이는 늦잠을 자 포천에 늦게 도착하기 일쑤다. 돈이 많은 준영이는 고민 끝에 K개의 도로를 포장하여 서울에서 포천까지 가는 시간을 단축하려 한다. 문제는 N개의 도시가 주어지고 그 사이 도로들과 이 도로를 통과할 때 걸리는 시간이 주어졌을 때 최소 시간이 걸리도록 하는...","categories": ["Problem"],
         "tags": ["Dijkstra","graph"],
         "url": "http://localhost:4000/problem/dijkstra-problem1/",
+        "teaser":null},{
+        "title": "Segment Tree(세그먼트 트리)",
+        "excerpt":"(공부한 내용을 기반으로 정리 용도로 작성한 글이므로 잘못된 부분이 있을 수 있습니다.) 한 배열(ex. A)의 부분 정보를 트리구조에 저장함으로서 O(logN)의 속도로 A 배열의 부분 정보를 빠르게 구할 수 있다. 이때, 부분 정보는 합 or 최댓값 or 최솟값 등 문제에 따라 다르다. 트리에 저장하는 방식을 예를 들어 살펴보자. 배열 A의 크기가...","categories": ["Algorithm"],
+        "tags": ["Tree"],
+        "url": "http://localhost:4000/algorithm/segment-tree/",
         "teaser":null}]
