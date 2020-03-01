@@ -1,5 +1,5 @@
 ---
-title: "Lazy Propagation"
+title: "Segment Tree with Lazy Propagation"
 excerpt: "세그먼트 트리를 이용한 방법"
 
 categories:
