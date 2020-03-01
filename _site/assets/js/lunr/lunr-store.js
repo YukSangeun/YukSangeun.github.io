@@ -74,8 +74,8 @@ var store = [{
         "tags": ["Tree"],
         "url": "http://localhost:4000/algorithm/segment-tree/",
         "teaser":null},{
-        "title": "Segment Tree(세그먼트 트리)",
-        "excerpt":" ","categories": ["Algorithm"],
+        "title": "Lazy Propagation",
+        "excerpt":"이전에 segment tree에 대해 공부했다. segment tree는 구간들의 정보를 저장하는 것으로 2개의 연산이 있다. update - 특정 인덱스의 값을 바꾸는 것 query - 특정 구간의 정보(합 or 곱 or 최댓값)을 구하는 것 추가로 Lazy propagation을 이용하면 특정 구간 [a, b]에 값 c를 동시에 더하는 연산도 가능하다. 특정 구간 [a, b]에...","categories": ["Algorithm"],
         "tags": ["Tree"],
         "url": "http://localhost:4000/algorithm/lazy-propagation/",
         "teaser":null}]
