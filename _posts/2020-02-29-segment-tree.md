@@ -42,7 +42,14 @@ A배열 크기가 N일 때, 리프 노드의 개수: N, 트리의 높이 H: logN
 
 Segment Tree - init  
 ----------------  
-초기 상태의 트리 생성 - update에서 같이해줘도 된다.  
+초기 상태의 트리 생성 (배열 값을 입력받을 때마다 update()를 호출해도 된다. 하지만 시간이 좀더 걸림)  
+``` c
+int init(int node, int L, int R) {
+	if (L == R) return seg[node] = arr[L];	//리프노드일 경우 배열 값을 넣는다.
+	int mid = (L + R) / 2;
+	return seg[node] = init(node * 2, L, mid) + init(node * 2 + 1, mid + 1, R);	//자식의 합을 부모에 저장
+}
+```  
 
 
 Segment Tree - update
