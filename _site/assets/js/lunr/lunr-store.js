@@ -74,8 +74,18 @@ var store = [{
         "tags": ["Tree"],
         "url": "http://localhost:4000/algorithm/segment-tree/",
         "teaser":null},{
-        "title": "Lazy Propagation",
+        "title": "Segment Tree with Lazy Propagation",
         "excerpt":"이전에 segment tree에 대해 공부했다. segment tree는 구간들의 정보를 저장하는 것으로 2개의 연산이 있다. update - 특정 인덱스의 값을 바꾸는 것 query - 특정 구간의 정보(합 or 곱 or 최댓값)을 구하는 것 추가로 Lazy propagation을 이용하면 특정 구간 [a, b]에 값 c를 동시에 더하는 연산도 가능하다. 특정 구간 [a, b]에...","categories": ["Algorithm"],
         "tags": ["Tree"],
         "url": "http://localhost:4000/algorithm/lazy-propagation/",
+        "teaser":null},{
+        "title": "백준 3653번: 영화 수집",
+        "excerpt":"문제 상근이는 영화 DVD 수집가이다. 상근이는 그의 DVD 콜렉션을 쌓아 보관한다. 보고 싶은 영화가 있을 때는, DVD의 위치를 찾은 다음 쌓아놓은 콜렉션이 무너지지 않게 조심스럽게 DVD를 뺀다. 영화를 다 본 이후에는 가장 위에 놓는다. 상근이는 DVD가 매우 많기 때문에, 영화의 위치를 찾는데 시간이 너무 오래 걸린다. 각 DVD의 위치는, 찾으려는...","categories": ["Problem"],
+        "tags": ["Tree"],
+        "url": "http://localhost:4000/problem/segmentTree-problem1/",
+        "teaser":null},{
+        "title": "백준 6549번: 히스토그램에서 가장 큰 직사각형",
+        "excerpt":"문제 히스토그램은 직사각형 여러 개가 아래쪽으로 정렬되어 있는 도형이다. 각 직사각형은 같은 너비를 가지고 있지만, 높이는 서로 다를 수도 있다. 예를 들어, 왼쪽 그림은 높이가 2, 1, 4, 5, 1, 3, 3이고 너비가 1인 직사각형으로 이루어진 히스토그램이다. (그림은 해당 페이지에 들어가서 볼 것) 히스토그램에서 가장 넓이가 큰 직사각형을 구하는 프로그램을...","categories": ["Problem"],
+        "tags": ["Tree"],
+        "url": "http://localhost:4000/problem/segmentTree-problem2/",
         "teaser":null}]
