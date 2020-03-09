@@ -1,4 +1,113 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.8.6">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2020-03-07T03:13:59+09:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">Portfolio</title><subtitle>공부, 프로젝트 등을 기록하기 위한 저장 공간.</subtitle><author><name>육상은</name><email>tkddms150@naver.com</email></author><entry><title type="html">백준 5419번: 북서풍</title><link href="http://localhost:4000/problem/segmentTree-problem3/" rel="alternate" type="text/html" title="백준 5419번: 북서풍" /><published>2020-03-06T00:00:00+09:00</published><updated>2020-03-06T11:18:00+09:00</updated><id>http://localhost:4000/problem/segmentTree-problem3</id><content type="html" xml:base="http://localhost:4000/problem/segmentTree-problem3/">&lt;h2 id=&quot;문제&quot;&gt;문제&lt;/h2&gt;
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.8.6">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2020-03-09T19:15:41+09:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">Portfolio</title><subtitle>공부, 프로젝트 등을 기록하기 위한 저장 공간.</subtitle><author><name>육상은</name><email>tkddms150@naver.com</email></author><entry><title type="html">Capston: 딥러닝 기반 수화 교육 어플리케이션</title><link href="http://localhost:4000/project/Capstone/" rel="alternate" type="text/html" title="Capston: 딥러닝 기반 수화 교육 어플리케이션" /><published>2020-03-09T00:00:00+09:00</published><updated>2020-03-10T00:47:00+09:00</updated><id>http://localhost:4000/project/Capstone</id><content type="html" xml:base="http://localhost:4000/project/Capstone/">&lt;p&gt;주제: 딥러닝을 이용한 수화 교육 어플리케이션&lt;br /&gt;
+제작 기간: 2019.09. - 2019.12.&lt;br /&gt;
+분류: 팀프로젝트&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;동기&lt;/strong&gt;  &lt;br /&gt;
+기존에 존재하는 수화 학습용 어플리케이션들은 단순하게 사전적인 정보만을 전달하여 학습시 보조적인 역할만이 가능하다는 점에서 아쉬움을 느꼈다.&lt;br /&gt;
+따라서 바쁜 사회에 어플리케이션만을 이용하여 능동적으로 학습할 수 있는 어플리케이션을 만들고자 했다.&lt;br /&gt;
+카메라 인식을 기반으로 사용자의 손동작이 올바른 동작인지에 대한 여부를 판단하고자 했고 효과적인 판단을 위해 딥러닝 기술을 사용했다.&lt;/p&gt;
+
+&lt;hr /&gt;
+&lt;p&gt;&lt;strong&gt;진행 과정&lt;/strong&gt;&lt;/p&gt;
+&lt;ol&gt;
+  &lt;li&gt;디자인&lt;br /&gt;
+&lt;strong&gt;안드로이드 스튜디오&lt;/strong&gt;에서 개발했으며, UI 경우 &lt;strong&gt;어플리케이션 구성&lt;/strong&gt;에서 자세히 설명되어 있다.&lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;초기 구현&lt;br /&gt;
+수화를 인식하기 위해서는 먼저 손을 검출하는 것이 중요하다고 생각했다.&lt;br /&gt;
+초기 구현시, 손을 인식하기 위한 방법으로 손의 끝점과 손가락 개수, 손바닥 중심점을 검출하는 방법을 사용했다.&lt;br /&gt;
+순서는 다음과 같다.&lt;br /&gt;
+1) 피부색을 이용하여 손 후보 영역을 검출&lt;br /&gt;
+2) 손바닥 중심점 검출&lt;br /&gt;
+3) 손가락 개수 및 손의 끝점 검출&lt;br /&gt;
+4) 여러 개의 손 검출&lt;br /&gt;
+OpenCV를 사용하여 진행했으며 결과적으로 카메라를 통해 실시간으로 손 영역을 인식할 수 있었다.&lt;br /&gt;
+&lt;img src=&quot;https://yuksangeun.github.io/assets/images/capstone/capstone-finger.png&quot; alt=&quot;손 끝점을 이용한 손 영역 검출 이미지&quot; class=&quot;align-center&quot; /&gt;&lt;br /&gt;
+하지만 손 끝을 검출하는 방식만으로는 간단한 동작만 가능하고(ex. 숫자) 수화의 다양한 손동작을 구현하기가 어렵다는 판단이 들어 다른 방법을 모색했다.&lt;br /&gt;
+이후 찾은 방법이 &lt;strong&gt;딥러닝&lt;/strong&gt;이다.&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;딥러닝
+    &lt;ol&gt;
+      &lt;li&gt;DataSet&lt;br /&gt;
+ 수화 데이터셋을 찾기가 어려워 데이터셋을 직접 만들었고 총 100개의 단어를 만들었다.&lt;br /&gt;
+ 각 수어당 300장의 training 사진, 90장의 test사진을 생성했다.&lt;br /&gt;
+ 촬영시 hsv 색상 모델로 마스킹하여 손 영역만이 흰색부분으로 보이도록 만들어 dataset을 형성했다.&lt;br /&gt;
+&lt;img src=&quot;https://yuksangeun.github.io/assets/images/capstone/capstone-picture.png&quot; alt=&quot;DataSet&quot; class=&quot;align-center&quot; /&gt;&lt;/li&gt;
+      &lt;li&gt;CNN&lt;br /&gt;
+ 이미지 처리에 적합한 &lt;strong&gt;CNN모델&lt;/strong&gt;을 사용하였다.&lt;br /&gt;
+ 구축&lt;br /&gt;
+     - 이미지에 대한 특징을 추출하기 위한 convolutional Layer를 3계층으로 구축 후 convolutional Layer 사이사이에 pooling layer를 넣어 주었다.&lt;br /&gt;
+     - 추출된 이미지 특징을 가지고 이후 기존 뉴럴 네트워크에 넣어 분류하였다.&lt;br /&gt;
+&lt;img src=&quot;https://yuksangeun.github.io/assets/images/capstone/capstone-cnn.png&quot; alt=&quot;cnn 네트워크 구축&quot; class=&quot;align-center&quot; /&gt;&lt;br /&gt;
+ 학습 결과&lt;br /&gt;
+     - Accuracy , Precision , Recall , F1 score&lt;br /&gt;
+&lt;img src=&quot;https://yuksangeun.github.io/assets/images/capstone/capstone-result1.png&quot; alt=&quot;cnn 학습 결과1&quot; class=&quot;align-center&quot; /&gt;&lt;br /&gt;
+&lt;img src=&quot;https://yuksangeun.github.io/assets/images/capstone/capstone-result2.png&quot; alt=&quot;cnn 학습 결과2&quot; class=&quot;align-center&quot; /&gt;&lt;/li&gt;
+      &lt;li&gt;어플리케이션 구조
+        &lt;ul&gt;
+          &lt;li&gt;Keras: Tensorflow 위에서 작동할 수 있는 파이썬 기반의 신경망 라이브러리 오픈소스&lt;/li&gt;
+          &lt;li&gt;파이썬에서 Keras를 이용하여 수화 학습모델을 구현 후 tensorflow lite 모델로 변환하여 안드로이드에 적용&lt;br /&gt;
+&lt;img src=&quot;https://yuksangeun.github.io/assets/images/capstone/capstone-app-construction.png&quot; alt=&quot;app construction&quot; class=&quot;align-center&quot; /&gt;&lt;/li&gt;
+        &lt;/ul&gt;
+      &lt;/li&gt;
+    &lt;/ol&gt;
+  &lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;CNN모델 이미지 출처&lt;br /&gt;
+&lt;a href=&quot;https://bcho.tistory.com/1149&quot;&gt;https://bcho.tistory.com/1149&lt;/a&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;hr /&gt;
+&lt;p&gt;&lt;strong&gt;어플리케이션 구성&lt;/strong&gt;&lt;/p&gt;
+&lt;ol&gt;
+  &lt;li&gt;
+    &lt;p&gt;UI flow&lt;br /&gt;
+기능은 크게 1)학습, 2)번역 으로 나뉜다.&lt;br /&gt;
+ 1) 학습 기능은 종류가 4가지 존재한다.&lt;br /&gt;
+     - 수화 검색&lt;br /&gt;
+     - 오늘의 학습: 하루 학습량이 정해져 있으며 설정된 커리큘럼에 맞춰서 학습이 진행된다.&lt;br /&gt;
+     - 카테고리 학습: 카테고리별 단어들이 나뉘어 있고 원하는 단어를 선택하여 학습 가능하다.&lt;br /&gt;
+     - 퀴즈: 학습 종류별 퀴즈가 가능하고 랜덤으로 퀴즈를 실행한다.&lt;br /&gt;
+ 2) 번역 기능에서는 단어 수준으로 번역이 가능하며 카메라에 동작을 취하면 알맞는 단어를 보여준다.&lt;br /&gt;
+&lt;img src=&quot;https://yuksangeun.github.io/assets/images/capstone/capstone-ui-flow.png&quot; alt=&quot;ui flow&quot; class=&quot;align-center&quot; /&gt;&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;메뉴별 시연&lt;br /&gt;
+시연 순서는&lt;br /&gt;
+1) 앱 초기 실행 -&amp;gt; 이름 설정 -&amp;gt; 오늘의 학습&lt;br /&gt;
+2) 카테고리 학습&lt;br /&gt;
+3) 퀴즈&lt;br /&gt;
+4) 번역&lt;br /&gt;
+순으로 시행된다.&lt;/p&gt;
+  &lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;hr /&gt;
+&lt;p&gt;&lt;strong&gt;프로젝트 특징&lt;/strong&gt;&lt;/p&gt;
+&lt;ol&gt;
+  &lt;li&gt;기대효과
+    &lt;ul&gt;
+      &lt;li&gt;수화의 언어적 가치 인식 향상 : 수화도 하나의 언어임에도 불구하고 사람들 사이에서 인식이 낮다.&lt;/li&gt;
+      &lt;li&gt;금전적/시간적 여유가 없는 사람들이 시간/장소를 불문하고 학습 가능하다는 편리성을 제공한다.&lt;/li&gt;
+      &lt;li&gt;카메라를 통해 동작을 직접 수행해 볼 수 있으므로 수화를 쉽게 익힐 수 있다.&lt;/li&gt;
+      &lt;li&gt;동작을 직접 수행해 보고 확인할 수 있다는 점에서 능동적인 학습이 가능하다.&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;한계(보완점)
+    &lt;ul&gt;
+      &lt;li&gt;나라별 수어가 다르고 다양하여 여러 나라의 수어를 다루기 보다 한국 수어만을 가지고 진행하였다.&lt;/li&gt;
+      &lt;li&gt;수화 데이터셋을 찾기가 어려웠으며 발견하더라도 영어 알파벳 정도에 그쳤다. 따라서 학습을 진행하는 과정에서 팀원들의 손동작을 촬영하여 진행했고 더 다양한 데이터셋을 모으지 못한게 아쉽다.&lt;/li&gt;
+      &lt;li&gt;한 학기라는 짧은 시간에 진행을 하였고 팀원 모두 딥러닝을 공부하는 단계였기 때문에 동적인 수화를 처리하는 것에 한계가 있었다.&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;참조  - 수화 자료(한국 수어 사전 홈페이지)&lt;br /&gt;
+&lt;a href=&quot;http://sldict.korean.go.kr/front/main/main.do&quot;&gt;http://sldict.korean.go.kr/front/main/main.do&lt;/a&gt;&lt;/p&gt;
+&lt;/blockquote&gt;</content><author><name>육상은</name><email>tkddms150@naver.com</email></author><category term="Deep Learning" /><summary type="html">딥러닝을 기반으로한 수화 학습용 어플리케이션</summary></entry><entry><title type="html">백준 5419번: 북서풍</title><link href="http://localhost:4000/problem/segmentTree-problem3/" rel="alternate" type="text/html" title="백준 5419번: 북서풍" /><published>2020-03-06T00:00:00+09:00</published><updated>2020-03-06T11:18:00+09:00</updated><id>http://localhost:4000/problem/segmentTree-problem3</id><content type="html" xml:base="http://localhost:4000/problem/segmentTree-problem3/">&lt;h2 id=&quot;문제&quot;&gt;문제&lt;/h2&gt;
 &lt;p&gt;강한 북서풍이 불고 있다. 이 뜻은 동쪽과 남쪽 사이의 모든 방향으로 항해할 수 있다는 뜻이다. 북쪽이나 서쪽으로 항해하는 것은 불가능하다.&lt;br /&gt;
 작은 섬이 여러 개 있는 바다가 있다. 섬은 좌표 평면의 한 점으로 나타낼 수 있다. y 좌표가 증가하는 방향은 북쪽, x좌표가 증가하는 방향은 동쪽이다. 북서풍을 타고 항해할 수 있는 섬의 쌍의 수를 구하는 프로그램을 작성하시오.&lt;/p&gt;
 
@@ -311,16 +420,16 @@ lazy 배열 - 이 노드의 영역 전체에 얼마만큼의 값을 더할 계�
     &lt;/ul&gt;
   &lt;/li&gt;
   &lt;li&gt;n=5이므로 현재 노드의 구간 [0, 4]는 변경할 구간[2, 3]을 포함하고 있으므로 자식 노드로 들어간다.&lt;br /&gt;
-&lt;img src=&quot;https://yuksangeun.github.io/assets/images/lazy_1_1.png&quot; alt=&quot;구간 2_3&quot; class=&quot;align-center&quot; /&gt;&lt;/li&gt;
+&lt;img src=&quot;https://yuksangeun.github.io/assets/images/segment/lazy_1_1.png&quot; alt=&quot;구간 2_3&quot; class=&quot;align-center&quot; /&gt;&lt;/li&gt;
   &lt;li&gt;2번의 왼쪽자식은 구간[0, 2]로 변경할 구간[2, 3]의 일부분을 포함하고 있다. 따라서 자식 노드로 들어간다.&lt;/li&gt;
   &lt;li&gt;2번의 오른쪽 노드 또한 자식으로 들어간다.&lt;/li&gt;
   &lt;li&gt;3번의 왼쪽자식은 구간[0, 1]로 변경할 구간을 벗어나므로 return해 준다. 4번의 오른쪽 자식 또한 범위를 벗어나므로 return한다.&lt;br /&gt;
-&lt;img src=&quot;https://yuksangeun.github.io/assets/images/lazy_1_2.png&quot; alt=&quot;구간 2_3&quot; class=&quot;align-center&quot; /&gt;&lt;/li&gt;
+&lt;img src=&quot;https://yuksangeun.github.io/assets/images/segment/lazy_1_2.png&quot; alt=&quot;구간 2_3&quot; class=&quot;align-center&quot; /&gt;&lt;/li&gt;
   &lt;li&gt;3번의 오른쪽 자식과 4번의 왼쪽 자식은 변경 구간에 포함되므로 lazy배열 값에 6을 더해준다.&lt;br /&gt;
-&lt;img src=&quot;https://yuksangeun.github.io/assets/images/lazy_1_3.png&quot; alt=&quot;구간 2_3&quot; class=&quot;align-center&quot; /&gt;&lt;/li&gt;
+&lt;img src=&quot;https://yuksangeun.github.io/assets/images/segment/lazy_1_3.png&quot; alt=&quot;구간 2_3&quot; class=&quot;align-center&quot; /&gt;&lt;/li&gt;
   &lt;li&gt;lazy배열 값을 변경한 뒤, propagate함수를 호출하여 현재 노드에 lazy배열 값을 범위에 해당하는 원소 개수만큼 더해준뒤, 리프노드이므로 lazy값을 0으로 바꾼 후 반환해준다. (리프노드가 아닐 경우 자식노드들에게 lazy값을 넘겨준다.)&lt;/li&gt;
   &lt;li&gt;재귀함수를 거슬러 올라가면서 부모노드 = 자식노드의 합으로 바꿔주며 올라간다.&lt;br /&gt;
-&lt;img src=&quot;https://yuksangeun.github.io/assets/images/lazy_1_4.png&quot; alt=&quot;구간 2_3&quot; class=&quot;align-center&quot; /&gt;&lt;/li&gt;
+&lt;img src=&quot;https://yuksangeun.github.io/assets/images/segment/lazy_1_4.png&quot; alt=&quot;구간 2_3&quot; class=&quot;align-center&quot; /&gt;&lt;/li&gt;
 &lt;/ol&gt;
 
 &lt;hr /&gt;
@@ -333,9 +442,9 @@ lazy 배열 - 이 노드의 영역 전체에 얼마만큼의 값을 더할 계�
   &lt;li&gt;현재 노드의 구간 [0,4]는 변경할 구간[0, 2]를 포함하므로 자식노드를 호출한다.&lt;/li&gt;
   &lt;li&gt;2번의 오른쪽 자식은 구간[3, 4]로 범위를벗어나므로 return 한다.&lt;/li&gt;
   &lt;li&gt;2번의 왼쪽 자식은 구간[0, 2]로 변경 구간에 포함된다. 따라서 lazy배열 값을 -2로 변경하고 propagation을 호출한다.&lt;br /&gt;
-&lt;img src=&quot;https://yuksangeun.github.io/assets/images/lazy_2_1.png&quot; alt=&quot;구간 0_2&quot; class=&quot;align-center&quot; /&gt;&lt;/li&gt;
+&lt;img src=&quot;https://yuksangeun.github.io/assets/images/segment/lazy_2_1.png&quot; alt=&quot;구간 0_2&quot; class=&quot;align-center&quot; /&gt;&lt;/li&gt;
   &lt;li&gt;구간[0,2]에는 0,1,2 총 3개의 원소가 있으므로 노드의 현재 값에 -2*3을 더해준 뒤, 리프노드가 아니므로 자식노드로 lazy값을 넘겨준 후 lazy값을 0으로 바꿔서 반환한다.&lt;br /&gt;
-&lt;img src=&quot;https://yuksangeun.github.io/assets/images/lazy_2_2.png&quot; alt=&quot;구간 0_2&quot; class=&quot;align-center&quot; /&gt;&lt;/li&gt;
+&lt;img src=&quot;https://yuksangeun.github.io/assets/images/segment/lazy_2_2.png&quot; alt=&quot;구간 0_2&quot; class=&quot;align-center&quot; /&gt;&lt;/li&gt;
 &lt;/ol&gt;
 
 &lt;hr /&gt;
@@ -348,16 +457,16 @@ lazy 배열 - 이 노드의 영역 전체에 얼마만큼의 값을 더할 계�
   &lt;li&gt;구간[0, 4]는 구하고자 하는 구간을 포함하므로 자식노드를 호출한다.&lt;/li&gt;
   &lt;li&gt;2번의 오른쪽 자식은 구간이 [3, 4]로 구간 [1, 4]에 포함되므로 자신의 값 15를 반환한다.&lt;/li&gt;
   &lt;li&gt;2번의 왼쪽 자식은 구간[0, 2]로 구간의 일부분을 포함하므로 자식노드를 호출한다.&lt;br /&gt;
-&lt;img src=&quot;https://yuksangeun.github.io/assets/images/lazy_3_1.png&quot; alt=&quot;구간 1_4&quot; class=&quot;align-center&quot; /&gt;&lt;/li&gt;
+&lt;img src=&quot;https://yuksangeun.github.io/assets/images/segment/lazy_3_1.png&quot; alt=&quot;구간 1_4&quot; class=&quot;align-center&quot; /&gt;&lt;/li&gt;
   &lt;li&gt;4번의 왼쪽자식과 오른쪽 자식은 lazy값 -2를 가지고 있으므로 propagate함수를 호출하여 노드의 값을 바꿔준 후 자식노드가 존재한다며 lazy값을 자식에게 넘겨준다.&lt;/li&gt;
   &lt;li&gt;4번의 오른쪽 자식은 구간[2, 2]로 구간[1,4]에 포함되므로 노드의 값을 반환한다.&lt;br /&gt;
-&lt;img src=&quot;https://yuksangeun.github.io/assets/images/lazy_3_2.png&quot; alt=&quot;구간 1_4&quot; class=&quot;align-center&quot; /&gt;&lt;/li&gt;
+&lt;img src=&quot;https://yuksangeun.github.io/assets/images/segment/lazy_3_2.png&quot; alt=&quot;구간 1_4&quot; class=&quot;align-center&quot; /&gt;&lt;/li&gt;
   &lt;li&gt;4번의 왼쪽자식은 구간[0,1]로 일부분이 포함되므로 자신의 자식을 또 호출한다.&lt;/li&gt;
   &lt;li&gt;7번의 두 자식은 모두 lazy값을 가지고 있으므로 propagate함수를 호출하여 노드 값을 변경해준다.&lt;/li&gt;
   &lt;li&gt;7번의 왼쪽자식은 구간[0,0]으로 구간을 벗어나므로 0을 반환하고, 오른쪽 자식은 구간에 포함되므로 자신의 값을 반환한다.&lt;br /&gt;
-&lt;img src=&quot;https://yuksangeun.github.io/assets/images/lazy_3_3.png&quot; alt=&quot;구간 1_4&quot; class=&quot;align-center&quot; /&gt;&lt;/li&gt;
+&lt;img src=&quot;https://yuksangeun.github.io/assets/images/segment/lazy_3_3.png&quot; alt=&quot;구간 1_4&quot; class=&quot;align-center&quot; /&gt;&lt;/li&gt;
   &lt;li&gt;거슬러 올라가며 반환된 값들을 더하며 반환한다.&lt;br /&gt;
-&lt;img src=&quot;https://yuksangeun.github.io/assets/images/lazy_3_4.png&quot; alt=&quot;구간 1_4&quot; class=&quot;align-center&quot; /&gt;&lt;/li&gt;
+&lt;img src=&quot;https://yuksangeun.github.io/assets/images/segment/lazy_3_4.png&quot; alt=&quot;구간 1_4&quot; class=&quot;align-center&quot; /&gt;&lt;/li&gt;
 &lt;/ol&gt;
 
 &lt;h2 id=&quot;코드&quot;&gt;코드&lt;/h2&gt;
@@ -426,7 +535,7 @@ lazy 배열 - 이 노드의 영역 전체에 얼마만큼의 값을 더할 계�
 배열 A의 크기가 10이고 값이 아래와 같이 존재할 때, 트리의 리프 노드들에는 배열의 해당 위치 값이 저장되고 부모 노드에는 자식 노드들의 합이 저장된다.&lt;br /&gt;
 이때 [a, b]는 범위를 나타낸다. (배열 A의 a번째 값부터 b번째 값의 합)&lt;/p&gt;
 
-&lt;p&gt;&lt;img src=&quot;https://yuksangeun.github.io/assets/images/segmentTree_ex.png&quot; alt=&quot;A배열의 구간합을 segment tree 로 보인 그림&quot; class=&quot;align-center&quot; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;https://yuksangeun.github.io/assets/images/segment/segmentTree_ex.png&quot; alt=&quot;A배열의 구간합을 segment tree 로 보인 그림&quot; class=&quot;align-center&quot; /&gt;&lt;/p&gt;
 
 &lt;p&gt;&lt;strong&gt;부분정보를 트리구조에 저장하는 이유:&lt;/strong&gt;&lt;br /&gt;
 예를 들어, A[2]+A[3]+A[4]를 구하고자 할 때 간단하게 그냥 더하면 된다. 하지만 A[2]의 값을 변경할 때마다 구간[2,4]의 합을 구하라 한다고하자. A[2]를 변경하는 횟수를 m, 구간의 합을 구하는데 걸리는 시간이 n이라 하면, 총 &lt;strong&gt;O(mn)&lt;/strong&gt;이라는 시간복잡도가 나온다.&lt;br /&gt;
@@ -470,22 +579,22 @@ A배열 크기가 N일 때, 리프 노드의 개수: N, 트리의 높이 H: logN
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
 &lt;p&gt;예를 들어 설명해 보자.&lt;br /&gt;
 배열 A[10]={1, 3, 2, 5, 4, 0, 7, 2, 1, 1} 가 주어질 때, A[2]의 값을 -1로 변경하고자 한다. 이 경우 update함수를 호출한다.&lt;br /&gt;
-&lt;img src=&quot;https://yuksangeun.github.io/assets/images/segment_tree_update1.png&quot; alt=&quot;A배열이 변경된 경우&quot; class=&quot;align-center&quot; /&gt;&lt;/p&gt;
+&lt;img src=&quot;https://yuksangeun.github.io/assets/images/segment/segment_tree_update1.png&quot; alt=&quot;A배열이 변경된 경우&quot; class=&quot;align-center&quot; /&gt;&lt;/p&gt;
 &lt;ol&gt;
   &lt;li&gt;update(2, -1, 0, 0, 9) 함수를 호출 : 변경할 인덱스와 값, 탐색 시작할 노드(루트노드), 구간[0,9] 을 파라미터로 보내며, &lt;strong&gt;항상 탐색은 루트 노드부터 시작한다&lt;/strong&gt;.&lt;/li&gt;
   &lt;li&gt;구간 [0, 9]는 인덱스 인덱스 2를 포함하고 있고 현재 노드는 리프노드가 아니므로 자식노드(left, right)를 호출한다.&lt;/li&gt;
   &lt;li&gt;이때, 오른쪽 자식은 구간이 [5, 9]로 인덱스 2를 포함하고 있지 않는다. 따라서 해당사항이 없으므로 기존 값을 반환한다.&lt;br /&gt;
-&lt;img src=&quot;https://yuksangeun.github.io/assets/images/segment_tree_update2.png&quot; alt=&quot;A배열이 변경된 경우&quot; class=&quot;align-center&quot; /&gt;&lt;/li&gt;
+&lt;img src=&quot;https://yuksangeun.github.io/assets/images/segment/segment_tree_update2.png&quot; alt=&quot;A배열이 변경된 경우&quot; class=&quot;align-center&quot; /&gt;&lt;/li&gt;
   &lt;li&gt;왼쪽 자식은 구간이 [0, 4]로 인덱스 2를 포함하며, 리프노드가 아니므로 자신의 자식노드를 호출한다.&lt;/li&gt;
   &lt;li&gt;4번 노드의 오른쪽 자식은 구간이 [3, 4]로 인덱스 2를 포함하지 않는다. 따라서 기존 값을 반환한다.&lt;br /&gt;
-&lt;img src=&quot;https://yuksangeun.github.io/assets/images/segment_tree_update3.png&quot; alt=&quot;A배열이 변경된 경우&quot; class=&quot;align-center&quot; /&gt;&lt;/li&gt;
+&lt;img src=&quot;https://yuksangeun.github.io/assets/images/segment/segment_tree_update3.png&quot; alt=&quot;A배열이 변경된 경우&quot; class=&quot;align-center&quot; /&gt;&lt;/li&gt;
   &lt;li&gt;4번 노드의 왼쪽 자식은 구간이 [0,2]로 인덱스 2를 포함하고 리프노드가 아니므로 자식노드를 호출한다.&lt;/li&gt;
   &lt;li&gt;6번 노드의 왼쪽 자식은 구간이 [0,1]로 인덱스 2를 포함하지 않으므로 기존값을 반환한다. 반면 오른쪽 자식은 [2,2]로 인덱스 2를 포함하고 구간의 시작과 끝이 같으므로 리프노드 임을 알 수 있다.&lt;/li&gt;
   &lt;li&gt;리프노드일 경우 값을 해당 노드의 값을 변경하고 하는 값 -1로 변경하고 변경된 값을 반환한다.&lt;br /&gt;
-&lt;img src=&quot;https://yuksangeun.github.io/assets/images/segment_tree_update4.png&quot; alt=&quot;A배열이 변경된 경우&quot; class=&quot;align-center&quot; /&gt;&lt;/li&gt;
+&lt;img src=&quot;https://yuksangeun.github.io/assets/images/segment/segment_tree_update4.png&quot; alt=&quot;A배열이 변경된 경우&quot; class=&quot;align-center&quot; /&gt;&lt;/li&gt;
   &lt;li&gt;부모노드들은 자식노드들로 부터 반환된 값을 더하여 더한 값으로 값을 변경한다.&lt;/li&gt;
   &lt;li&gt;인덱스 2를 포함한 모든 tree노드들의 값들이 변경된 것을 알 수 있다.&lt;br /&gt;
-&lt;img src=&quot;https://yuksangeun.github.io/assets/images/segment_tree_update5.png&quot; alt=&quot;A배열이 변경된 경우&quot; class=&quot;align-center&quot; /&gt;&lt;/li&gt;
+&lt;img src=&quot;https://yuksangeun.github.io/assets/images/segment/segment_tree_update5.png&quot; alt=&quot;A배열이 변경된 경우&quot; class=&quot;align-center&quot; /&gt;&lt;/li&gt;
 &lt;/ol&gt;
 
 &lt;h2 id=&quot;segment-tree---query&quot;&gt;Segment Tree - query&lt;/h2&gt;
@@ -502,21 +611,21 @@ A배열 크기가 N일 때, 리프 노드의 개수: N, 트리의 높이 H: logN
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
 &lt;p&gt;예를 들어 설명해 보자.&lt;br /&gt;
 배열 A[10]={1, 3, 2, 5, 4, 0, 7, 2, 1, 1} 가 주어질 때, 구간 [2, 4]의 합을 구하자. 이 경우 query함수를 호출한다.&lt;br /&gt;
-&lt;img src=&quot;https://yuksangeun.github.io/assets/images/segment_tree_query1.png&quot; alt=&quot;부분합 질의&quot; class=&quot;align-center&quot; /&gt;&lt;/p&gt;
+&lt;img src=&quot;https://yuksangeun.github.io/assets/images/segment/segment_tree_query1.png&quot; alt=&quot;부분합 질의&quot; class=&quot;align-center&quot; /&gt;&lt;/p&gt;
 &lt;ol&gt;
   &lt;li&gt;query(2, 4, 0, 0, 9) 함수를 호출 : 찾고자 하는 구간[2,4], 탐색 시작할 노드(루트노드), 구간[0,9] 을 파라미터로 보내며, &lt;strong&gt;항상 탐색은 루트 노드부터 시작한다&lt;/strong&gt;.&lt;/li&gt;
   &lt;li&gt;구간 [0, 9]는 구간[2,4]를 포함하고 있으므로(구간[2,4]에 포함된 상태가 아님) 자식노드(left, right)를 호출한다.&lt;/li&gt;
   &lt;li&gt;이때, 오른쪽 자식은 구간이 [5, 9]로 구간[2,4]를 벗어난 구간이다. 따라서 해당사항이 없으므로 0을 반환한다.&lt;br /&gt;
-&lt;img src=&quot;https://yuksangeun.github.io/assets/images/segment_tree_query2.png&quot; alt=&quot;부분합 질의&quot; class=&quot;align-center&quot; /&gt;&lt;/li&gt;
+&lt;img src=&quot;https://yuksangeun.github.io/assets/images/segment/segment_tree_query2.png&quot; alt=&quot;부분합 질의&quot; class=&quot;align-center&quot; /&gt;&lt;/li&gt;
   &lt;li&gt;왼쪽 자식은 구간이 [0, 4]로 구간[2,4]를 포함하며, 리프노드가 아니므로 자신의 자식노드를 호출한다.&lt;/li&gt;
   &lt;li&gt;4번 노드의 오른쪽 자식은 구간이 [3, 4]로 구간[2,4]에 속해있다. 따라서 자신의 노드 값을 반환한다.  &lt;br /&gt;
-&lt;img src=&quot;https://yuksangeun.github.io/assets/images/segment_tree_query3.png&quot; alt=&quot;부분합 질의&quot; class=&quot;align-center&quot; /&gt;&lt;/li&gt;
+&lt;img src=&quot;https://yuksangeun.github.io/assets/images/segment/segment_tree_query3.png&quot; alt=&quot;부분합 질의&quot; class=&quot;align-center&quot; /&gt;&lt;/li&gt;
   &lt;li&gt;4번 노드의 왼쪽 자식은 구간이 [0,2]로 구간[2,4]에서 &lt;strong&gt;일부분을 포함하고 있으므로&lt;/strong&gt; 자식노드를 호출한다.&lt;/li&gt;
   &lt;li&gt;6번 노드의 왼쪽 자식은 구간이 [0,1]로 구간[2,4]를 벗어나므로 0을 반환한다. 반면 오른쪽 자식은 [2,2]로 구간[2,4]에 속해 있으므로 자신의 노드 값을 반환한다.&lt;br /&gt;
-&lt;img src=&quot;https://yuksangeun.github.io/assets/images/segment_tree_query4.png&quot; alt=&quot;부분합 질의&quot; class=&quot;align-center&quot; /&gt;&lt;/li&gt;
+&lt;img src=&quot;https://yuksangeun.github.io/assets/images/segment/segment_tree_query4.png&quot; alt=&quot;부분합 질의&quot; class=&quot;align-center&quot; /&gt;&lt;/li&gt;
   &lt;li&gt;부모노드들은 자식노드들로 부터 반환된 값을 더하여 그 값을 반환한다.&lt;/li&gt;
   &lt;li&gt;구간[2,4]의 합이 11임을 알 수 있다.&lt;br /&gt;
-&lt;img src=&quot;https://yuksangeun.github.io/assets/images/segment_tree_query5.png&quot; alt=&quot;부분합 질의&quot; class=&quot;align-center&quot; /&gt;&lt;/li&gt;
+&lt;img src=&quot;https://yuksangeun.github.io/assets/images/segment/segment_tree_query5.png&quot; alt=&quot;부분합 질의&quot; class=&quot;align-center&quot; /&gt;&lt;/li&gt;
 &lt;/ol&gt;
 
 &lt;p&gt;&lt;a href=&quot;https://www.acmicpc.net/problem/2042&quot;&gt;https://www.acmicpc.net/problem/2042&lt;/a&gt;&lt;/p&gt;</content><author><name>육상은</name><email>tkddms150@naver.com</email></author><category term="Tree" /><summary type="html">각 노드가 구간, 혹은 구간의 정보를 저장하고 있는 자료구조</summary></entry><entry><title type="html">백준 1162번: 도로포장</title><link href="http://localhost:4000/problem/dijkstra-problem1/" rel="alternate" type="text/html" title="백준 1162번: 도로포장" /><published>2020-02-27T00:00:00+09:00</published><updated>2020-02-25T08:12:00+09:00</updated><id>http://localhost:4000/problem/dijkstra-problem1</id><content type="html" xml:base="http://localhost:4000/problem/dijkstra-problem1/">&lt;h2 id=&quot;문제&quot;&gt;문제&lt;/h2&gt;
@@ -1274,87 +1383,4 @@ Substring이란 &lt;strong&gt;연속된&lt;/strong&gt; 부분 문자열을 의�
 	&lt;span class=&quot;c1&quot;&gt;//역추적&lt;/span&gt;
 	&lt;span class=&quot;n&quot;&gt;backTracking&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;nB&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;-&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;1&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;nA&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;-&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;1&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;);&lt;/span&gt;
 &lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;</content><author><name>육상은</name><email>tkddms150@naver.com</email></author><category term="DP" /><summary type="html">DP를 기반으로 하는 Longest Common Subsequence알고리즘</summary></entry><entry><title type="html">Greedy Algorithm(탐욕 알고리즘)</title><link href="http://localhost:4000/algorithm/greedy-algorithm/" rel="alternate" type="text/html" title="Greedy Algorithm(탐욕 알고리즘)" /><published>2020-02-21T00:00:00+09:00</published><updated>2020-02-21T03:19:00+09:00</updated><id>http://localhost:4000/algorithm/greedy-algorithm</id><content type="html" xml:base="http://localhost:4000/algorithm/greedy-algorithm/">&lt;p&gt;답을 찾을 때 여러 개의 조각으로 쪼개고, 각 단계마다 답의 한 부분을 만들어 간다는 점에서 완전탐색이나 동적계획법과 동일하다.&lt;/p&gt;
-
-&lt;table&gt;
-  &lt;thead&gt;
-    &lt;tr&gt;
-      &lt;th&gt;차이&lt;/th&gt;
-      &lt;th&gt; &lt;/th&gt;
-    &lt;/tr&gt;
-  &lt;/thead&gt;
-  &lt;tbody&gt;
-    &lt;tr&gt;
-      &lt;td&gt;완전탐색, 동적계획법&lt;/td&gt;
-      &lt;td&gt;모든 선택지를 고려해 보고 그 중 전체 답이 가장 좋은 것을 찾는다.&lt;/td&gt;
-    &lt;/tr&gt;
-    &lt;tr&gt;
-      &lt;td&gt;탐욕 알고리즘&lt;/td&gt;
-      &lt;td&gt;미래를 생각하지 않고 지금 단계에서 가장 좋은 방법만을 선택한다.&lt;/td&gt;
-    &lt;/tr&gt;
-  &lt;/tbody&gt;
-&lt;/table&gt;
-
-&lt;h2 id=&quot;사용-경우&quot;&gt;사용 경우&lt;/h2&gt;
-&lt;p&gt;탐욕법을 사용해도 항상 최적해를 구할 수 있는 문제를 만난 경우, DP보다 수행시간이 훨씬 빠르므로 유용한다.&lt;/p&gt;
-
-&lt;p&gt;&lt;strong&gt;주의&lt;/strong&gt;&lt;br /&gt;
-최적해를 얻을 수 있는 접근이 직관적이지 않은 경우도 많기 때문에 실수에 유의해야 하며 알고리즘의 정당성을 증명하는 과정을 빼먹지 않고 연습하는 것이 좋다.&lt;/p&gt;
-
-&lt;p&gt;&lt;strong&gt;참고&lt;/strong&gt;&lt;/p&gt;
-&lt;ol&gt;
-  &lt;li&gt;그리디 알고리즘으로 최적의 해를 구할 수 있는 문제가 많지 않다.
-    &lt;ul&gt;
-      &lt;li&gt;global maximum으로 향하는 길에 시작점에 따라 현재 시점이 최고라 여겨지는 곳이 존재하여 local maximum에 빠지는 경우가 있다.&lt;/li&gt;
-    &lt;/ul&gt;
-
-    &lt;p&gt;&lt;img src=&quot;https://yuksangeun.github.io/assets/images/greedy_localmaximum.png&quot; alt=&quot;local maximum&quot; class=&quot;align-center&quot; /&gt;&lt;/p&gt;
-  &lt;/li&gt;
-  &lt;li&gt;구할 수 있다면 성질이 동일하게 보존되므로 같은 전략을 반복해서 사용하여 정답을 얻을 수 있다.&lt;/li&gt;
-&lt;/ol&gt;
-
-&lt;h2 id=&quot;예제1---동전-개수&quot;&gt;예제1 - 동전 개수&lt;/h2&gt;
-&lt;p&gt;&lt;strong&gt;문제&lt;/strong&gt;- 10원, 50원, 100원, 500원짜리 동전들을 이용하여 어떤 금액을 표현하자. 이때 각 동전은 무수히 많은 대신 동전 개수를 최소로 사용해야 한다.&lt;/p&gt;
-
-&lt;p&gt;&lt;strong&gt;풀이&lt;/strong&gt;- 무조건 사용할 수 있는 한 가장 큰 금액의 동전을 많이 사용하면 됨&lt;br /&gt;
-ex)620원 : 500 + 100 + 10 + 10 //최소 동전 개수 4개&lt;/p&gt;
-
-&lt;p&gt;&lt;strong&gt;이 방식이 성립하는 이유&lt;/strong&gt;-  사용 가능한 동전 500,100,50,10을 보면 큰 쪽이 작은 쪽 액수의 배수가 되기 때문!&lt;br /&gt;
-즉 큰 금액의 동전을 자신의 약수인 더 작은 여러 개의 동전들로 교체하면 동전 개수가 반드시 늘어나지만, 작은 동전들을 모아 큰 동전 액수를 만들 수 있다면 동전 개수 줄일 수 있다.&lt;br /&gt;
-배수관계가 아닐 경우 – 60, 50, 10&lt;br /&gt;
-220원 = 60&lt;em&gt;3 + 10&lt;/em&gt;4 //총 7개 (위 풀이 방식대로 할 경우)&lt;br /&gt;
-220원 = 60&lt;em&gt;2 + 50&lt;/em&gt;2 // 총 2개&lt;/p&gt;
-
-&lt;h2 id=&quot;예제2---도시락-문제&quot;&gt;예제2 - 도시락 문제&lt;/h2&gt;
-&lt;p&gt;&lt;strong&gt;문제&lt;/strong&gt;- N개의 도시락이 있고, 전자레인지는 단 한 대만 존재하며 한 번에 하나의 도시락만 데울 수 있고, 각 도시락은 조리시간과 먹는 시간이 다르게 정해져 있다. 이때 도시락을 적절한 순서로 조리하여 첫 번째 도시락을 데우기 시작한 순간부터 모든 도시락을 먹는 데 걸리는 시간이 최소가 되게 해야 한다. (다 데운 도시락은 바로 누군가가 먹는다.)&lt;/p&gt;
-
-&lt;p&gt;&lt;strong&gt;풀이&lt;/strong&gt;- 먹는 데 시간이 오래 걸리는 도시락부터 순서대로 데우면 된다!&lt;/p&gt;
-
-&lt;p&gt;&lt;strong&gt;이유&lt;/strong&gt;- 도시락을 데우고 나서 바로 다른 도시락을 데우는 걸 반복하고, 각 도시락을 데우는 시간은 정해져 있으므로 우리는 도시락을 데우는 시간을 줄일 수 없다.&lt;br /&gt;
-그러나 만약 마지막으로 데운 도시락을 먹는 데 오랜 시간이 걸린다면 전체 시간이 길어질 것이므로 오래 걸리는 것을 먼저 데우고 먼저 먹기 시작하는 것이 좋다.&lt;br /&gt;
-도시락1, 데우는 시간 C1, 먹는 시간 E1 / 도시락2, 데우는 시간 C2, 먹는 시간 E2 / E1 &amp;gt;= E2&lt;/p&gt;
-&lt;ul&gt;
-  &lt;li&gt;c2-&amp;gt;c1 시간: c2 + c1 + max(e1, e2-c1) = c2+c1+e1&lt;/li&gt;
-  &lt;li&gt;c1-&amp;gt;c2 시간: c1+ c2 + max(e2, e1-c2)&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;즉 먹는 시간이 더 긴 도시락을 나중에 데우는 것이 먼저 데우는 것보다 항상 총시간이 길다&lt;/p&gt;
-
-&lt;h2 id=&quot;코드동전개수&quot;&gt;코드(동전개수)&lt;/h2&gt;
-
-&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;	  #include&amp;lt;stdio.h&amp;gt;  
-	  using namespace std;
-	  int main() {
-	       int n, k, coin[10];	//동전 종류, K원
-	       int cnt = 0;	//필요한 동전 개수
-	       scanf(&quot;%d %d&quot;, &amp;amp;n, &amp;amp;k);
-	       for (int i = 0; i &amp;lt; n; i++)
-	            scanf(&quot;%d&quot;, &amp;amp;coin[i]);
-	       //금액이 큰 동전부터 차례로 보기
-	       for (int i = n - 1; i &amp;gt;= 0; i--) {
-	            cnt += k / coin[i];	//필요 개수
-	            k = k % coin[i];	//이후 남은 금액
-	       }
-	       printf(&quot;%d&quot;, cnt);
-	  }
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;</content><author><name>육상은</name><email>tkddms150@naver.com</email></author><category term="greedy" /><summary type="html">미래를 생각하지 않고 각 단계에서 최선의 선택을 하는 알고리즘</summary></entry></feed>
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;</content><author><name>육상은</name><email>tkddms150@naver.com</email></author><category term="DP" /><summary type="html">DP를 기반으로 하는 Longest Common Subsequence알고리즘</summary></entry></feed>
