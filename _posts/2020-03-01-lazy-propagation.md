@@ -2,6 +2,10 @@
 title: "Segment Tree with Lazy Propagation"
 excerpt: "세그먼트 트리를 이용한 방법"
 
+toc: true
+toc_sticky: true
+toc_label: "LIST"
+
 categories:
   - Algorithm
 tags:
@@ -21,7 +25,8 @@ last_modified_at: 2020-03-01T16:09:00
 
 하지만 lazy propagation을 이용할 경우 시간 복잡도 **O(logN)**만에 수행 가능하다.  
 
-**방법**  
+방법  
+-----------    
 기존의 각 노드에 대응하는 구간 합 배열(tree)에 추가로 노드마다 값이 존재하는 lazy배열을 만든다.  
 lazy 배열 - 이 노드의 영역 전체에 얼마만큼의 값을 더할 계획이 있다. 하지만 아직은 계획만 있을 뿐 실행은 안한다.(lazy의 이유)  
 
@@ -33,7 +38,8 @@ lazy 배열 - 이 노드의 영역 전체에 얼마만큼의 값을 더할 계�
 [3,4]구간에 도달한 경우 자신은 자식들에게 lazy를 미루고, 자신은 6을 그만큼 더한 셈 쳐서 값에 12를 더한다. 이는 자신이 포함하는 인덱스 개수인 2 * lazy값 6이다.  
 
 
-**구현**  
+구현  
+----------    
 기존 segment tree의 두 연산 update, query 의 일부분을 수정하고 propagation해주는 함수를 추가해 준다.  
 
 

@@ -2,6 +2,9 @@
 title: "Greedy Algorithm(탐욕 알고리즘)"
 excerpt: "미래를 생각하지 않고 각 단계에서 최선의 선택을 하는 알고리즘"
 
+toc: true
+toc_sticky: true
+toc_label: "LIST"
 
 categories:
   - Algorithm
@@ -68,19 +71,20 @@ ex)620원 : 500 + 100 + 10 + 10 //최소 동전 개수 4개
 
 코드(동전개수)  
 -------------------- 
- 
-		  #include<stdio.h>  
-		  using namespace std;
-		  int main() {
-		       int n, k, coin[10];	//동전 종류, K원
-		       int cnt = 0;	//필요한 동전 개수
-		       scanf("%d %d", &n, &k);
-		       for (int i = 0; i < n; i++)
-		            scanf("%d", &coin[i]);
-		       //금액이 큰 동전부터 차례로 보기
-		       for (int i = n - 1; i >= 0; i--) {
-		            cnt += k / coin[i];	//필요 개수
-		            k = k % coin[i];	//이후 남은 금액
-		       }
-		       printf("%d", cnt);
-		  }
+ ``` c  
+#include<stdio.h>  
+using namespace std;
+int main() {
+     int n, k, coin[10];	//동전 종류, K원
+     int cnt = 0;	//필요한 동전 개수
+     scanf("%d %d", &n, &k);
+     for (int i = 0; i < n; i++)
+          scanf("%d", &coin[i]);
+     //금액이 큰 동전부터 차례로 보기
+     for (int i = n - 1; i >= 0; i--) {
+          cnt += k / coin[i];	//필요 개수
+          k = k % coin[i];	//이후 남은 금액
+     }
+     printf("%d", cnt);
+}
+```  

@@ -2,6 +2,9 @@
 title: "Binary Search(이진탐색/ 이분탐색)"
 excerpt: "탐색 범위를 절반씩 줄여가며 탐색하는 알고리즘"
 
+toc: true
+toc_sticky: true
+toc_label: "LIST"
 
 categories:
   - Algorithm
@@ -11,6 +14,8 @@ last_modified_at: 2020-02-17T23:43:00
 ---
 탐색에는 기본적으로 순차 탐색이 있으며, 이 방법은 순차적으로 모든 데이터를 체크하여 값을 찾아가며 시간복잡도가 O(N)이다.  
 반면, 이진 탐색은 탐색 범위를 절반씩 줄여가며 찾아가는 탐색 방법으로 시간복잡도가 O(logN)이다.  
+
+
 **point**  
 - 이진탐색의 경우 탐색하고자 하는 배열이 정렬되어 있어야 한다.  
 - **algorithm** 헤더에 존재하는 **sort함수**를 사용하여 정렬을 수행하고 시간복잡도는 O(NlogN)이다.    
@@ -24,36 +29,39 @@ arr[9] = {1, 2, 3, 7, 9, 12, 21, 23, 37} 에서 4를 찾는 경우
   
 ![이분 탐색 진행 순서](https://yuksangeun.github.io/assets/images/binarySearch.PNG){: .align-center}  
 
-코드
+코드(일반 반복문/ 재귀함수)  
 ----------------
 이분 탐색은 일반 반복문 또는 재귀함수를 사용하여 나타낼 수 있다.  
-1. 일반 반복문  
 
-		  int BinarySerach(int arr[], int target) {
-		       int start = 0;
-		       int end = arr.length - 1;
-		       int mid = (end + start) / 2;
-		       while(end >= start) {	//start가 end보다 값이 작거나 같은 경우 반복
-		            if( arr[mid] == target ) return mid;	//경우1: 배열에서 target 찾은 경우 위치 반환
-		            else if( arr[mid] < target ) start = mid + 1;	//경우2: target이 배열 중간보다 오른쪽인 경우
-		            else end = mid - 1;	//경우3: target이 배열 중간보다 왼쪽인 경우
-		            mid = (end + start) / 2;	//탐색 범위 재조정했으므로 mid값 다시 찾기
-		       }
-		       return -1;	//경우4: 배열속에서 target 못 찾은 경우
-		  }
 
-2. 재귀함수 
-
-		  int arr[];	//전역변수로 지정
-		  int BinarySerach(int start, int end, int target) {
-		       int mid = (end + start) / 2;
-		       if(start > end) return -1;	//경우4: 배열속에서 target 못 찾은 경우
-		       if( arr[mid] == target ) return mid;	//경우1: 배열에서 target 찾은 경우 위치 반환
-		       else if( arr[mid] < target ) start = mid + 1;	//경우2: target이 배열 중간보다 오른쪽인 경우
-		       else end = mid - 1;	//경우3: target이 배열 중간보다 왼쪽인 경우
-		       
-		       BinarySearch(arr, start, end, target);	//범위 재조정 후 재귀 호출
-		  }
+**일반 반복문**    
+``` c  
+int BinarySerach(int arr[], int target) {
+     int start = 0;
+     int end = arr.length - 1;
+     int mid = (end + start) / 2;
+     while(end >= start) {	//start가 end보다 값이 작거나 같은 경우 반복
+          if( arr[mid] == target ) return mid;	//경우1: 배열에서 target 찾은 경우 위치 반환
+          else if( arr[mid] < target ) start = mid + 1;	//경우2: target이 배열 중간보다 오른쪽인 경우
+          else end = mid - 1;	//경우3: target이 배열 중간보다 왼쪽인 경우
+          mid = (end + start) / 2;	//탐색 범위 재조정했으므로 mid값 다시 찾기
+     }
+     return -1;	//경우4: 배열속에서 target 못 찾은 경우
+}
+```  
+**재귀함수**   
+``` c  
+int arr[];	//전역변수로 지정
+int BinarySerach(int start, int end, int target) {
+     int mid = (end + start) / 2;
+     if(start > end) return -1;	//경우4: 배열속에서 target 못 찾은 경우
+     if( arr[mid] == target ) return mid;	//경우1: 배열에서 target 찾은 경우 위치 반환
+     else if( arr[mid] < target ) start = mid + 1;	//경우2: target이 배열 중간보다 오른쪽인 경우
+     else end = mid - 1;	//경우3: target이 배열 중간보다 왼쪽인 경우
+     
+     BinarySearch(arr, start, end, target);	//범위 재조정 후 재귀 호출
+}
+```  
 
 참고  
 ------------  
@@ -65,31 +73,34 @@ binarySearch 알고리즘의 일부를 살짝 수정하면 **하한선/상한선
 ex) 10 20 20 30 40 순으로 값이 배열되어 있을 때, target = 20이라 하자.  
 하한선의 경우: 20이상을 처음 찾는 위치를 반환하며 이 경우 위치 1에 해당한다.  
 상한선의 경우: 20을 초과하는 처음 위치를 반환하며 이 경우 위치 3에 해당한다.  
-1. 하한선 코드 (lower_bound)  
 
-		  int lower_bound(int arr[], int target) {
-		       int start = 0;
-		       int end = arr.length - 1;
-		       while(start <= end) {
-		            int mid = (start + end) / 2;
-		            if(arr[mid] < target) start = mid + 1;
-		            else end = mid - 1;
-		       }
-		       return end+1;
-		  }
 
-2. 상한선 코드 (upper_bound)  
-
-		  int upper_bound(int arr[], int target) {
-		       int start = 0;
-		       int end = arr.length - 1;
-		       while(start <= end) {
-		            int mid = (start + end) / 2;
-		            if(arr[mid] <= target) start = mid + 1;
-		            else end = mid - 1;
-		       }
-		       return end+1;
-		  }
+**하한선 코드 (lower_bound)**    
+``` c  
+int lower_bound(int arr[], int target) {
+     int start = 0;
+     int end = arr.length - 1;
+     while(start <= end) {
+          int mid = (start + end) / 2;
+          if(arr[mid] < target) start = mid + 1;
+          else end = mid - 1;
+     }
+     return end+1;
+}
+```  
+**상한선 코드 (upper_bound)**  
+```  c  
+int upper_bound(int arr[], int target) {
+     int start = 0;
+     int end = arr.length - 1;
+     while(start <= end) {
+          int mid = (start + end) / 2;
+          if(arr[mid] <= target) start = mid + 1;
+          else end = mid - 1;
+     }
+     return end+1;
+}
+```  
 
 upper_bound/ lower_bound 역시 **algorithm**헤더에 존재한다.  
 

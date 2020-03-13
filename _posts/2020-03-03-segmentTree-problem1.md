@@ -2,6 +2,10 @@
 title: "백준 3653번: 영화 수집"
 excerpt: "segment tree를 이용하는 문제"
 
+toc: true
+toc_sticky: true
+toc_label: "LIST"
+
 categories:
   - Problem
 tags:

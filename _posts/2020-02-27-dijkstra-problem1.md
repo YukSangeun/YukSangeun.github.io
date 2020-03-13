@@ -2,6 +2,10 @@
 title: "백준 1162번: 도로포장"
 excerpt: "다익스트라 알고리즘을 이용한 문제"
 
+toc: true
+toc_sticky: true
+toc_label: "LIST"
+
 categories:
   - Problem
 tags:

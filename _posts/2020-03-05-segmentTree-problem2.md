@@ -2,6 +2,10 @@
 title: "백준 6549번: 히스토그램에서 가장 큰 직사각형"
 excerpt: "segment tree를 이용하는 문제"
 
+toc: true
+toc_sticky: true
+toc_label: "LIST"
+
 categories:
   - Problem
 tags:

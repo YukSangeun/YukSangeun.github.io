@@ -2,6 +2,9 @@
 title: "백준 1039번 교환"
 excerpt: "BFS 알고리즘을 사용한 문제"
 
+toc: true
+toc_sticky: true
+toc_label: "LIST"
 
 categories:
   - Problem

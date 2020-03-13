@@ -2,6 +2,10 @@
 title: "백준 5419번: 북서풍"
 excerpt: "segment tree를 이용하는 문제 + 좌표압축"
 
+toc: true
+toc_sticky: true
+toc_label: "LIST"
+
 categories:
   - Problem
 tags:

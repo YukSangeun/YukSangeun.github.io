@@ -2,6 +2,10 @@
 title: "백준 12865번 평범한 배낭"
 excerpt: "Knapsack 문제"
 
+toc: true
+toc_sticky: true
+toc_label: "LIST"
+
 categories:
   - Problem
 tags:

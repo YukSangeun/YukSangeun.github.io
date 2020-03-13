@@ -2,6 +2,10 @@
 title: "Knapsack Algorithm(배낭 알고리즘)"
 excerpt: "가능한 무게의 최댓값과 물품당 무게와 가치가 정해져있을 때, 가치의 합이 최대가 되도록 물품을 선택하는 문제"
 
+toc: true
+toc_sticky: true
+toc_label: "LIST"
+
 categories:
   - Algorithm
 tags:

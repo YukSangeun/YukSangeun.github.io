@@ -2,6 +2,10 @@
 title: "Segment Tree(세그먼트 트리)"
 excerpt: "각 노드가 구간, 혹은 구간의 정보를 저장하고 있는 자료구조"
 
+toc: true
+toc_sticky: true
+toc_label: "LIST"
+
 categories:
   - Algorithm
 tags:
@@ -40,7 +44,7 @@ A배열 크기가 N일 때, 리프 노드의 개수: N, 트리의 높이 H: logN
 위 경우는 포화이진트리일 때를 말한것 (n=2^k) , 포화이진트리가 아닐 경우 H=ceil(logN)  
 간단하게 배열 크기를 4*n으로 넉넉하게 잡아도 된다.  
 
-Segment Tree - init  
+초기화 방법(init 함수)    
 ----------------  
 초기 상태의 트리 생성 (배열 값을 입력받을 때마다 update()를 호출해도 된다. 하지만 시간이 좀더 걸림)  
 ``` c
@@ -52,7 +56,7 @@ int init(int node, int L, int R) {
 ```  
 
 
-Segment Tree - update
+update 함수  
 ----------------  
 배열A의 특정 인덱스의 값이 변경될때마다, 트리배열에서 바껴야하는 노드들 값들을 변경해준다.  O(logN)  
 ``` c  
@@ -84,7 +88,7 @@ int update(int pos, int val, int node, int nodeL, int nodeR){
 10. 인덱스 2를 포함한 모든 tree노드들의 값들이 변경된 것을 알 수 있다.  
 ![A배열이 변경된 경우](https://yuksangeun.github.io/assets/images/segment/segment_tree_update5.png){: .align-center}  
 
-Segment Tree - query  
+query 함수  
 ----------------  
 원하는 구간에 대한 정보를 요청하여 가져온다. O(logN)  
 ``` c  
