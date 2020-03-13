@@ -1,17 +1,18 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.8.6">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2020-03-09T19:19:57+09:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">Portfolio</title><subtitle>공부, 프로젝트 등을 기록하기 위한 저장 공간.</subtitle><author><name>육상은</name><email>tkddms150@naver.com</email></author><entry><title type="html">Capston: 딥러닝 기반 수화 교육 어플리케이션</title><link href="http://localhost:4000/project/Capstone/" rel="alternate" type="text/html" title="Capston: 딥러닝 기반 수화 교육 어플리케이션" /><published>2020-03-09T00:00:00+09:00</published><updated>2020-03-10T00:47:00+09:00</updated><id>http://localhost:4000/project/Capstone</id><content type="html" xml:base="http://localhost:4000/project/Capstone/">&lt;p&gt;주제: 딥러닝을 이용한 수화 교육 어플리케이션&lt;br /&gt;
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.8.6">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2020-03-13T19:00:38+09:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">Portfolio</title><subtitle>공부, 프로젝트 등을 기록하기 위한 저장 공간.</subtitle><author><name>육상은</name><email>tkddms150@naver.com</email></author><entry><title type="html">Capston: 딥러닝 기반 수화 교육 어플리케이션</title><link href="http://localhost:4000/project/Capstone/" rel="alternate" type="text/html" title="Capston: 딥러닝 기반 수화 교육 어플리케이션" /><published>2020-03-09T00:00:00+09:00</published><updated>2020-03-10T00:47:00+09:00</updated><id>http://localhost:4000/project/Capstone</id><content type="html" xml:base="http://localhost:4000/project/Capstone/">&lt;p&gt;주제: 딥러닝을 이용한 수화 교육 어플리케이션&lt;br /&gt;
 제작 기간: 2019.09. - 2019.12.&lt;br /&gt;
 분류: 팀프로젝트&lt;/p&gt;
 
-&lt;p&gt;&lt;strong&gt;동기&lt;/strong&gt;  &lt;br /&gt;
-기존에 존재하는 수화 학습용 어플리케이션들은 단순하게 사전적인 정보만을 전달하여 학습시 보조적인 역할만이 가능하다는 점에서 아쉬움을 느꼈다.&lt;br /&gt;
+&lt;h2 id=&quot;동기&quot;&gt;동기&lt;/h2&gt;
+&lt;p&gt;기존에 존재하는 수화 학습용 어플리케이션들은 단순하게 사전적인 정보만을 전달하여 학습시 보조적인 역할만이 가능하다는 점에서 아쉬움을 느꼈다.&lt;br /&gt;
 따라서 바쁜 사회에 어플리케이션만을 이용하여 능동적으로 학습할 수 있는 어플리케이션을 만들고자 했다.&lt;br /&gt;
 카메라 인식을 기반으로 사용자의 손동작이 올바른 동작인지에 대한 여부를 판단하고자 했고 효과적인 판단을 위해 딥러닝 기술을 사용했다.&lt;/p&gt;
 
-&lt;hr /&gt;
-&lt;p&gt;&lt;strong&gt;진행 과정&lt;/strong&gt;&lt;/p&gt;
+&lt;h2 id=&quot;진행과정&quot;&gt;진행과정&lt;/h2&gt;
 &lt;ol&gt;
   &lt;li&gt;디자인&lt;br /&gt;
-&lt;strong&gt;안드로이드 스튜디오&lt;/strong&gt;에서 개발했으며, UI 경우 &lt;strong&gt;어플리케이션 구성&lt;/strong&gt;에서 자세히 설명되어 있다.&lt;/li&gt;
+&lt;strong&gt;안드로이드 스튜디오&lt;/strong&gt;에서 개발했다.&lt;br /&gt;
+핵심기술인 딥러닝이 돋보이도록 어플리케이션을 구성했으며 학습이 목적이기 때문에 학습 위주로 내용을 채웠다.&lt;br /&gt;
+UI 경우 &lt;a href=&quot;#어플리케이션-구성&quot;&gt;&lt;strong&gt;어플리케이션 구성&lt;/strong&gt;&lt;/a&gt;에서 자세히 설명되어 있다.&lt;/li&gt;
   &lt;li&gt;
     &lt;p&gt;초기 구현&lt;br /&gt;
 수화를 인식하기 위해서는 먼저 손을 검출하는 것이 중요하다고 생각했다.&lt;br /&gt;
@@ -35,11 +36,11 @@ OpenCV를 사용하여 진행했으며 결과적으로 카메라를 통해 실�
 &lt;img src=&quot;https://yuksangeun.github.io/assets/images/capstone/capstone-picture.png&quot; alt=&quot;DataSet&quot; class=&quot;align-center&quot; /&gt;&lt;/li&gt;
       &lt;li&gt;CNN&lt;br /&gt;
  이미지 처리에 적합한 &lt;strong&gt;CNN모델&lt;/strong&gt;을 사용하였다.&lt;br /&gt;
- 구축&lt;br /&gt;
+ &lt;strong&gt;구축&lt;/strong&gt;&lt;br /&gt;
      - 이미지에 대한 특징을 추출하기 위한 convolutional Layer를 3계층으로 구축 후 convolutional Layer 사이사이에 pooling layer를 넣어 주었다.&lt;br /&gt;
      - 추출된 이미지 특징을 가지고 이후 기존 뉴럴 네트워크에 넣어 분류하였다.&lt;br /&gt;
 &lt;img src=&quot;https://yuksangeun.github.io/assets/images/capstone/capstone-cnn.png&quot; alt=&quot;cnn 네트워크 구축&quot; class=&quot;align-center&quot; /&gt;&lt;br /&gt;
- 학습 결과&lt;br /&gt;
+ &lt;strong&gt;학습 결과&lt;/strong&gt;&lt;br /&gt;
      - Accuracy , Precision , Recall , F1 score&lt;br /&gt;
 &lt;img src=&quot;https://yuksangeun.github.io/assets/images/capstone/capstone-result1.png&quot; alt=&quot;cnn 학습 결과1&quot; class=&quot;align-center&quot; /&gt;&lt;br /&gt;
 &lt;img src=&quot;https://yuksangeun.github.io/assets/images/capstone/capstone-result2.png&quot; alt=&quot;cnn 학습 결과2&quot; class=&quot;align-center&quot; /&gt;&lt;/li&gt;
@@ -59,8 +60,7 @@ OpenCV를 사용하여 진행했으며 결과적으로 카메라를 통해 실�
 &lt;a href=&quot;https://bcho.tistory.com/1149&quot;&gt;https://bcho.tistory.com/1149&lt;/a&gt;&lt;/p&gt;
 &lt;/blockquote&gt;
 
-&lt;hr /&gt;
-&lt;p&gt;&lt;strong&gt;어플리케이션 구성&lt;/strong&gt;&lt;/p&gt;
+&lt;h2 id=&quot;어플리케이션-구성&quot;&gt;어플리케이션 구성&lt;/h2&gt;
 &lt;ol&gt;
   &lt;li&gt;
     &lt;p&gt;UI flow&lt;br /&gt;
@@ -84,8 +84,7 @@ OpenCV를 사용하여 진행했으며 결과적으로 카메라를 통해 실�
   &lt;/li&gt;
 &lt;/ol&gt;
 
-&lt;hr /&gt;
-&lt;p&gt;&lt;strong&gt;프로젝트 특징&lt;/strong&gt;&lt;/p&gt;
+&lt;h2 id=&quot;프로젝트-특징&quot;&gt;프로젝트 특징&lt;/h2&gt;
 &lt;ol&gt;
   &lt;li&gt;기대효과
     &lt;ul&gt;
