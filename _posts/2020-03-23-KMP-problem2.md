@@ -1,5 +1,5 @@
 ---
-title: "백준 1701번: 찾기"
+title: "백준 1701번: Cubeditor"
 excerpt: "KMP 알고리즘을 관련 문제 - failure function"
 
 toc: true
