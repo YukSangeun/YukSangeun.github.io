@@ -103,4 +103,24 @@ var store = [{
         "excerpt":"문자열 검색: 찾고자 하는 패턴의 문자를 본문 내용에서 어디에 있는지 확인하는 것 종류: 고지식한 검색 알고리즘, 라빈-카프(해시를 활용), KMP알고리즘, 보이어-무어 알고리즘 등 이중에서 KMP알고리즘에 대해 공부할 것이다. KMP 알고리즘은 문자열 A와 문자열 B가 있을 때, 문자열 A에서 문자열 B를 찾아주는 알고리즘으로 만든 사람 3명의 이름에서 앞 글자를 따서 KMP 알고리즘이라고...","categories": ["Algorithm"],
         "tags": ["String"],
         "url": "http://localhost:4000/algorithm/KMP/",
+        "teaser":null},{
+        "title": "백준 1786번: 찾기",
+        "excerpt":"문제 백준 https://www.acmicpc.net/problem/1786 입력 첫째 줄에 문자열 T가, 둘째 줄에 문자열 P가 주어진다. 문자열 내에 공백이 포함되어 있을 수도 있음에 유의한다. 물론 공백도 하나의 문자로 인정된다. T와 P의 길이 n, m은 1이상 100만 이하이다. 참조 https://www.acmicpc.net/problem/1162 풀이 기본적인 KMP알고리즘을 이용한 문제이다. 코드 #include&lt;stdio.h&gt; #include&lt;vector&gt; using namespace std; char T[1000001], P[1000001];...","categories": ["Problem"],
+        "tags": ["String","KMP"],
+        "url": "http://localhost:4000/problem/KMP-problem1/",
+        "teaser":null},{
+        "title": "백준 1701번: Cubeditor",
+        "excerpt":"문제 Cubelover는 프로그래밍 언어 Whitespace의 코딩을 도와주는 언어인 Cubelang을 만들었다. Cubelang을 이용해 코딩을 하다보니, 점점 이 언어에 맞는 새로운 에디터가 필요하게 되었다. 오랜 시간 고생한 끝에 새로운 에디터를 만들게 되었고, 그 에디터의 이름은 Cubeditor이다. 텍스트 에디터는 찾기 기능을 지원한다. 대부분의 에디터는 찾으려고 하는 문자열이 단 한 번만 나와도 찾는다. Cubelover는...","categories": ["Problem"],
+        "tags": ["String","KMP"],
+        "url": "http://localhost:4000/problem/KMP-problem2/",
+        "teaser":null},{
+        "title": "백준 4354번: 문자열 제곱",
+        "excerpt":"문제 알파벳 소문자로 이루어진 두 문자열 a와 b가 주어졌을 때, ab는 두 문자열을 이어붙이는 것을 뜻한다. 예를 들어, a=”abc”, b=”def”일 때, ab=”abcdef”이다. 이러한 이어 붙이는 것을 곱셈으로 생각한다면, 음이 아닌 정수의 제곱도 정의할 수 있다. a^0 = “” (빈 문자열) a^(n+1) = a*(a^n) 문자열 s가 주어졌을 때, 어떤 문자열 a에...","categories": ["Problem"],
+        "tags": ["String","KMP"],
+        "url": "http://localhost:4000/problem/KMP-problem3/",
+        "teaser":null},{
+        "title": "백준 12851번 숨바꼭질 2",
+        "excerpt":"문제 수빈이는 동생과 숨바꼭질을 하고 있다. 수빈이는 현재 점 N(0 ≤ N ≤ 100,000)에 있고, 동생은 점 K(0 ≤ K ≤ 100,000)에 있다. 수빈이는 걷거나 순간이동을 할 수 있다. 만약, 수빈이의 위치가 X일 때 걷는다면 1초 후에 X-1 또는 X+1로 이동하게 된다. 순간이동을 하는 경우에는 1초 후에 2*X의 위치로 이동하게...","categories": ["Problem"],
+        "tags": ["BFS","graph"],
+        "url": "http://localhost:4000/problem/bfs-problem2/",
         "teaser":null}]
