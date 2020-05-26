@@ -123,4 +123,9 @@ var store = [{
         "excerpt":"문제 수빈이는 동생과 숨바꼭질을 하고 있다. 수빈이는 현재 점 N(0 ≤ N ≤ 100,000)에 있고, 동생은 점 K(0 ≤ K ≤ 100,000)에 있다. 수빈이는 걷거나 순간이동을 할 수 있다. 만약, 수빈이의 위치가 X일 때 걷는다면 1초 후에 X-1 또는 X+1로 이동하게 된다. 순간이동을 하는 경우에는 1초 후에 2*X의 위치로 이동하게...","categories": ["Problem"],
         "tags": ["BFS","graph"],
         "url": "http://localhost:4000/problem/bfs-problem2/",
+        "teaser":null},{
+        "title": "백준 13460번 구슬 탈출 2",
+        "excerpt":"문제 스타트링크에서 판매하는 어린이용 장난감 중에서 가장 인기가 많은 제품은 구슬 탈출이다. 구슬 탈출은 직사각형 보드에 빨간 구슬과 파란 구슬을 하나씩 넣은 다음, 빨간 구슬을 구멍을 통해 빼내는 게임이다. 보드의 세로 크기는 N, 가로 크기는 M이고, 편의상 1×1크기의 칸으로 나누어져 있다. 가장 바깥 행과 열은 모두 막혀져 있고, 보드에는 구멍이...","categories": ["Problem"],
+        "tags": ["BFS","Brute-force"],
+        "url": "http://localhost:4000/problem/bruteforce-problem1/",
         "teaser":null}]
