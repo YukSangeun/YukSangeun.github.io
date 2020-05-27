@@ -128,4 +128,9 @@ var store = [{
         "excerpt":"문제 스타트링크에서 판매하는 어린이용 장난감 중에서 가장 인기가 많은 제품은 구슬 탈출이다. 구슬 탈출은 직사각형 보드에 빨간 구슬과 파란 구슬을 하나씩 넣은 다음, 빨간 구슬을 구멍을 통해 빼내는 게임이다. 보드의 세로 크기는 N, 가로 크기는 M이고, 편의상 1×1크기의 칸으로 나누어져 있다. 가장 바깥 행과 열은 모두 막혀져 있고, 보드에는 구멍이...","categories": ["Problem"],
         "tags": ["BFS","Brute-force"],
         "url": "http://localhost:4000/problem/bruteforce-problem1/",
+        "teaser":null},{
+        "title": "백준 3190번 뱀",
+        "excerpt":"문제 ‘Dummy’ 라는 도스게임이 있다. 이 게임에는 뱀이 나와서 기어다니는데, 사과를 먹으면 뱀 길이가 늘어난다. 뱀이 이리저리 기어다니다가 벽 또는 자기자신의 몸과 부딪히면 게임이 끝난다. 게임은 NxN 정사각 보드위에서 진행되고, 몇몇 칸에는 사과가 놓여져 있다. 보드의 상하좌우 끝에 벽이 있다. 게임이 시작할때 뱀은 맨위 맨좌측에 위치하고 뱀의 길이는 1 이다....","categories": ["Problem"],
+        "tags": ["Simulation"],
+        "url": "http://localhost:4000/problem/simulation-problem1/",
         "teaser":null}]
