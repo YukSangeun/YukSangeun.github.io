@@ -38,7 +38,7 @@ N개의 세로선과 M개의 가로선으로 이루어진 초기 사다리에 �
 
 사다리 게임 진행 시 이동과 출발점, 마지막점 같은지 유무를 판단하기 위해 아래와 같이 배열을 만들었다.  
 만약 세로선의 개수 N, 가로선 놓을 수 있는 위치가 H라면 배열의 크기는 [H][2*N]이 된다.  
-![board배열에 저장될 위치 정보](https://yuksangeun.github.io/assets/images/bruteforce_problem2.png){: .align-center}  
+![board배열에 저장될 위치 정보](https://yuksangeun.github.io/assets/images/bruteforce_problem2.PNG){: .align-center}  
 
 다른 방법을 찾아보니 가로선에 대해서만 배열을 만들어 사용하는 사람들이 많았다.  
 이렇게 할 경우 사다리 게임 진행해 출발점, 마지막점을 어떻게 확인하는지는 생각해보지 않았으나 가로선 정보만 저장한다면 배열 크기를 줄일 수 있을 것 같다.  
