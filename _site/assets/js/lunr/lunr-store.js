@@ -133,4 +133,14 @@ var store = [{
         "excerpt":"문제 ‘Dummy’ 라는 도스게임이 있다. 이 게임에는 뱀이 나와서 기어다니는데, 사과를 먹으면 뱀 길이가 늘어난다. 뱀이 이리저리 기어다니다가 벽 또는 자기자신의 몸과 부딪히면 게임이 끝난다. 게임은 NxN 정사각 보드위에서 진행되고, 몇몇 칸에는 사과가 놓여져 있다. 보드의 상하좌우 끝에 벽이 있다. 게임이 시작할때 뱀은 맨위 맨좌측에 위치하고 뱀의 길이는 1 이다....","categories": ["Problem"],
         "tags": ["Simulation"],
         "url": "http://localhost:4000/problem/simulation-problem1/",
+        "teaser":null},{
+        "title": "백준 14502번 연구소",
+        "excerpt":"문제 연구소에 3개의 벽을 세워 연구소내에 퍼지는 바이러스로부터 안전한 영역의 최대 크기를 구하는 문제이다. 문제의 자세한 내용은 아래의 링크를 통해 볼 수 있다. 출처 https://www.acmicpc.net/problem/14502 풀이 연구소내에 초기 바이러스 위치, 벽의 위치를 표시하기 위해 map배열을 사용한다. 문제와 마찬가지로 0은 빈칸, 1은 벽, 2는 바이러스가 있는 위치를 나타낸다. 수행 방법은 빈칸...","categories": ["Problem"],
+        "tags": ["BFS","brute-force"],
+        "url": "http://localhost:4000/problem/bfs-problem3/",
+        "teaser":null},{
+        "title": "백준 15684번 사다리 조작",
+        "excerpt":"문제 N개의 세로선과 M개의 가로선으로 이루어진 초기 사다리에 가로선을 0개이상 추가하여 사다리 게임 수행 시 시작점과 도착점이 같은 세로선상에 위치하도록 만든는 게임이다. 이때, 시작점과 도착점이 같은 세로선상에 위치하도록 만들기 위해 추가하는 최소 가로선의 개수를 구해야 한다. 문제의 자세한 내용은 아래의 링크를 통해 볼 수 있다. 출처 https://www.acmicpc.net/problem/15684 풀이 이 문제의...","categories": ["Problem"],
+        "tags": ["brute-force"],
+        "url": "http://localhost:4000/problem/bruteforce-problem2/",
         "teaser":null}]
