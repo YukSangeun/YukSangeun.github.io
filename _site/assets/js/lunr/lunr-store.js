@@ -143,4 +143,9 @@ var store = [{
         "excerpt":"문제 N개의 세로선과 M개의 가로선으로 이루어진 초기 사다리에 가로선을 0개이상 추가하여 사다리 게임 수행 시 시작점과 도착점이 같은 세로선상에 위치하도록 만든는 게임이다. 이때, 시작점과 도착점이 같은 세로선상에 위치하도록 만들기 위해 추가하는 최소 가로선의 개수를 구해야 한다. 문제의 자세한 내용은 아래의 링크를 통해 볼 수 있다. 출처 https://www.acmicpc.net/problem/15684 풀이 이 문제의...","categories": ["Problem"],
         "tags": ["brute-force"],
         "url": "http://localhost:4000/problem/bruteforce-problem2/",
+        "teaser":null},{
+        "title": "백준 16235번 나무 재테크",
+        "excerpt":"문제 NxN크기의 땅에 m개의 나무를 심어 k년 후 살아남은 나무의 수를 출력하는 문제이다. 각 칸에 여러 그루의 나무가 존재할 수 있으며, 초기 입력으로 주어지는 나무의 위치는 모두 서로 다르다. 이 나무는 사계절을 보내며, 아래와 같은 과정을 반복한다. 봄 나무가 자신의 나이만큼 해당 칸에 있는 양분을 먹고, 나이가 1 증가한다. 각...","categories": ["Problem"],
+        "tags": ["Simulation"],
+        "url": "http://localhost:4000/problem/simulation-problem2/",
         "teaser":null}]
