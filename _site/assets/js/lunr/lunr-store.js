@@ -136,16 +136,21 @@ var store = [{
         "teaser":null},{
         "title": "백준 14502번 연구소",
         "excerpt":"문제 연구소에 3개의 벽을 세워 연구소내에 퍼지는 바이러스로부터 안전한 영역의 최대 크기를 구하는 문제이다. 문제의 자세한 내용은 아래의 링크를 통해 볼 수 있다. 출처 https://www.acmicpc.net/problem/14502 풀이 연구소내에 초기 바이러스 위치, 벽의 위치를 표시하기 위해 map배열을 사용한다. 문제와 마찬가지로 0은 빈칸, 1은 벽, 2는 바이러스가 있는 위치를 나타낸다. 수행 방법은 빈칸...","categories": ["Problem"],
-        "tags": ["BFS","brute-force"],
+        "tags": ["BFS","Brute-force"],
         "url": "http://localhost:4000/problem/bfs-problem3/",
         "teaser":null},{
         "title": "백준 15684번 사다리 조작",
         "excerpt":"문제 N개의 세로선과 M개의 가로선으로 이루어진 초기 사다리에 가로선을 0개이상 추가하여 사다리 게임 수행 시 시작점과 도착점이 같은 세로선상에 위치하도록 만든는 게임이다. 이때, 시작점과 도착점이 같은 세로선상에 위치하도록 만들기 위해 추가하는 최소 가로선의 개수를 구해야 한다. 문제의 자세한 내용은 아래의 링크를 통해 볼 수 있다. 출처 https://www.acmicpc.net/problem/15684 풀이 이 문제의...","categories": ["Problem"],
-        "tags": ["brute-force"],
+        "tags": ["Brute-force"],
         "url": "http://localhost:4000/problem/bruteforce-problem2/",
         "teaser":null},{
         "title": "백준 16235번 나무 재테크",
         "excerpt":"문제 NxN크기의 땅에 m개의 나무를 심어 k년 후 살아남은 나무의 수를 출력하는 문제이다. 각 칸에 여러 그루의 나무가 존재할 수 있으며, 초기 입력으로 주어지는 나무의 위치는 모두 서로 다르다. 이 나무는 사계절을 보내며, 아래와 같은 과정을 반복한다. 봄 나무가 자신의 나이만큼 해당 칸에 있는 양분을 먹고, 나이가 1 증가한다. 각...","categories": ["Problem"],
         "tags": ["Simulation"],
         "url": "http://localhost:4000/problem/simulation-problem2/",
+        "teaser":null},{
+        "title": "백준 17143번 낚시왕",
+        "excerpt":"문제 상어 낚시를 하는 곳을 크기가 RxC인 격자판으로 나타낸다. 격자판의 각 칸은 (r, c)로 나타낼 수 있으며 r은 행, c는 열이다. 각 칸에는 상어가 최대 한 마리 들어있을 수 있으며, 상어는 크기와 속도를 가진다. 이때, 낚시왕이 잡은 상어 크기의 합을 구하는 문제이다. 낚시는 각 초당 다음 순서로 발생하며, 낚시왕이 가장...","categories": ["Problem"],
+        "tags": ["Simulation","struct"],
+        "url": "http://localhost:4000/problem/simulation-problem3/",
         "teaser":null}]

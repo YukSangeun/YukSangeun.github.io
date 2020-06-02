@@ -9,7 +9,7 @@ toc_label: "LIST"
 categories:
   - Problem
 tags:
-  - brute-force
+  - Brute-force
 last_modified_at: 2020-05-30
 ---
 문제  
