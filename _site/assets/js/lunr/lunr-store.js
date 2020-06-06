@@ -153,4 +153,9 @@ var store = [{
         "excerpt":"문제 상어 낚시를 하는 곳을 크기가 RxC인 격자판으로 나타낸다. 격자판의 각 칸은 (r, c)로 나타낼 수 있으며 r은 행, c는 열이다. 각 칸에는 상어가 최대 한 마리 들어있을 수 있으며, 상어는 크기와 속도를 가진다. 이때, 낚시왕이 잡은 상어 크기의 합을 구하는 문제이다. 낚시는 각 초당 다음 순서로 발생하며, 낚시왕이 가장...","categories": ["Problem"],
         "tags": ["Simulation","struct"],
         "url": "http://localhost:4000/problem/simulation-problem3/",
+        "teaser":null},{
+        "title": "[모의 SW 역량 테스트] 원자 소멸 시뮬레이션",
+        "excerpt":"문제 xy좌표 위에 N개의 원자들이 존재한다. 원자들은 고유의 움직이는 방향과 에너지가 존재하며, 1초에 1만큼의 거리를 이동한다. 원자들이 2차원 평면에서 이동하며 두 개 이상의 원자가 충돌할 경우 충돌한 원자들은 각자 보유한 에너지를 모두 방출하고 소멸된다. N개의 원자들의 [x, y] 위치, 이동 방향, 보유 에너지가 주어질 때 원자들이 소멸되면서 방출하는 에너지의 총합을...","categories": ["Problem"],
+        "tags": ["Simulation","struct","sort"],
+        "url": "http://localhost:4000/problem/SWEA-problem1/",
         "teaser":null}]
