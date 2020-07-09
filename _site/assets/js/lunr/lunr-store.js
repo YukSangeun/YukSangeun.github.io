@@ -158,4 +158,9 @@ var store = [{
         "excerpt":"문제 xy좌표 위에 N개의 원자들이 존재한다. 원자들은 고유의 움직이는 방향과 에너지가 존재하며, 1초에 1만큼의 거리를 이동한다. 원자들이 2차원 평면에서 이동하며 두 개 이상의 원자가 충돌할 경우 충돌한 원자들은 각자 보유한 에너지를 모두 방출하고 소멸된다. N개의 원자들의 [x, y] 위치, 이동 방향, 보유 에너지가 주어질 때 원자들이 소멸되면서 방출하는 에너지의 총합을...","categories": ["Problem"],
         "tags": ["Simulation","struct","sort"],
         "url": "http://localhost:4000/problem/SWEA-problem1/",
+        "teaser":null},{
+        "title": "백준 17471번 게리맨더링",
+        "excerpt":"문제 백준시가 N개의 구역으로 나누어져 있고, 구역은 1번부터 N번까지 번호가 매겨져 있다. 구역을 두 개의 선거구로 나눠야 하고, 각 구역은 두 선거구 중 하나에 포함되어야 한다. 선거구는 구역을 적어도 하나 포함해야 하고, 한 선거구에 포함되어 있는 구역은 모두 연결되어야 한다. 구역 A에서 인접한 구역을 통해서 구역 B로 갈 수 있을...","categories": ["Problem"],
+        "tags": ["BFS","Brute-force"],
+        "url": "http://localhost:4000/problem/bruteforce-problem4/",
         "teaser":null}]
