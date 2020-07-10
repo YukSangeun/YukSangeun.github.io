@@ -163,4 +163,9 @@ var store = [{
         "excerpt":"문제 백준시가 N개의 구역으로 나누어져 있고, 구역은 1번부터 N번까지 번호가 매겨져 있다. 구역을 두 개의 선거구로 나눠야 하고, 각 구역은 두 선거구 중 하나에 포함되어야 한다. 선거구는 구역을 적어도 하나 포함해야 하고, 한 선거구에 포함되어 있는 구역은 모두 연결되어야 한다. 구역 A에서 인접한 구역을 통해서 구역 B로 갈 수 있을...","categories": ["Problem"],
         "tags": ["BFS","Brute-force"],
         "url": "http://localhost:4000/problem/bruteforce-problem4/",
+        "teaser":null},{
+        "title": "백준 1938번: 통나무 옮기기",
+        "excerpt":"문제 n*n 평지에서 통나무 BBB를 밀거나 회전시켜 EEE의 위치로 옮기는 작업을 하는 문제이다. 지형에서 0은 아무 것도 없음, 1은 나무 존재를 의미한다. 초기 입력으로 주어지는 BBB가 길이 3인 통나무의 위치를 의미, EEE는 길이 3인 통나무를 옮길 위치를 의미한다. 이때, BBB에서 EEE로 최소 동작 횟수를 구하면 된다. 통나무 움직이는 방법은 총...","categories": ["Problem"],
+        "tags": ["BFS","DFS"],
+        "url": "http://localhost:4000/problem/bfs-problem4/",
         "teaser":null}]
