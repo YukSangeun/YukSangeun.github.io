@@ -168,4 +168,9 @@ var store = [{
         "excerpt":"문제 n*n 평지에서 통나무 BBB를 밀거나 회전시켜 EEE의 위치로 옮기는 작업을 하는 문제이다. 지형에서 0은 아무 것도 없음, 1은 나무 존재를 의미한다. 초기 입력으로 주어지는 BBB가 길이 3인 통나무의 위치를 의미, EEE는 길이 3인 통나무를 옮길 위치를 의미한다. 이때, BBB에서 EEE로 최소 동작 횟수를 구하면 된다. 통나무 움직이는 방법은 총...","categories": ["Problem"],
         "tags": ["BFS","DFS"],
         "url": "http://localhost:4000/problem/bfs-problem4/",
+        "teaser":null},{
+        "title": "백준 9328번: 열쇠",
+        "excerpt":"문제 1층 건물에서 p개의 문서가 존재할 때, 가져올 수 있는 문서의 최대 개수를 구하는 프로그램을 작성해야한다. 건물의 문은 모두 잠겨있기 때문에, 문을 열려면 열쇠가 필요하다. 상근이는 일부 열쇠를 이미 가지고 있고, 일부 열쇠는 빌딩의 바닥에 놓여져 있다. 참조 https://www.acmicpc.net/problem/9328 풀이 간단한 bfs문제로 생각하면 해결하기가 조금 어렵다. 이문제에서 포인트는 문이 모두...","categories": ["Problem"],
+        "tags": ["BFS"],
+        "url": "http://localhost:4000/problem/bfs-problem5/",
         "teaser":null}]
