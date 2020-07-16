@@ -5,7 +5,9 @@ main:
   - title: "Category"
     url: /categories/  #_pages 폴더안에 있는 페이지의 permalink와 연결된다. 
   - title: "Algorithm"
-    url: /categories/algorithm/  
+    url: /categories/algorithm/
+  - title: "Subject"
+    url: /categories/subject/  
   - title: "Project"
     url: /categories/project/
 # - title: "Quick-Start Guide"
