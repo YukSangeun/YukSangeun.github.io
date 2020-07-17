@@ -7,7 +7,7 @@ main:
   - title: "Algorithm"
     url: /categories/algorithm/
   - title: "Subject"
-    url: /categories/subject/  
+    url: /subject/  
   - title: "Project"
     url: /categories/project/
 # - title: "Quick-Start Guide"

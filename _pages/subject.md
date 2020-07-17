@@ -1,7 +1,41 @@
 ---
 title: "과목 내용정리"
-permalink: /categories/subject/
-layout: category
+permalink: /subject/
+layout: single
 author_profile: true
-taxonomy: Subject
+
+toc: true
+toc_sticky: true
+toc_label: "과목 구분"
 ---
+학교 수업 내용을 토대로 전공 과목 내용 정리한 페이지 입니다.  
+링크를 통해 해당 내용으로 이동됩니다.  
+
+
+## 객체지향프로그래밍  
+
+
+## 자바프로그래밍  
+
+
+## 데이터베이스  
+[DB](http://127.0.0.1:4000/subject/db1)  
+
+
+## 네트워크  
+
+
+## 운영체제 
+
+
+## 유닉스  
+
+
+## 자료구조  
+
+
+## 알고리즘  
+
+
+## 인터넷 프로그래밍  
+
