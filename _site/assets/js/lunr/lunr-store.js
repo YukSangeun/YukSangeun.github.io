@@ -173,4 +173,9 @@ var store = [{
         "excerpt":"문제 1층 건물에서 p개의 문서가 존재할 때, 가져올 수 있는 문서의 최대 개수를 구하는 프로그램을 작성해야한다. 건물의 문은 모두 잠겨있기 때문에, 문을 열려면 열쇠가 필요하다. 상근이는 일부 열쇠를 이미 가지고 있고, 일부 열쇠는 빌딩의 바닥에 놓여져 있다. 참조 https://www.acmicpc.net/problem/9328 풀이 간단한 bfs문제로 생각하면 해결하기가 조금 어렵다. 이문제에서 포인트는 문이 모두...","categories": ["Problem"],
         "tags": ["BFS"],
         "url": "http://localhost:4000/problem/bfs-problem5/",
+        "teaser":null},{
+        "title": "백준 17822번: 원판 돌리기",
+        "excerpt":"문제 반지름이 1, 2, …, N인 원판이 크기가 작아지는 순으로 바닥에 놓여있고, 원판의 중심은 모두 같다. 원판의 반지름이 i이면, 그 원판을 i번째 원판이라고 한다. 각각의 원판에는 M개의 정수가 적혀있고, i번째 원판에 적힌 j번째 수의 위치는 (i, j)로 표현한다. 수의 위치는 다음을 만족한다. (i, 1)은 (i, 2), (i, M)과 인접 (i,...","categories": ["Problem"],
+        "tags": ["BFS","Simulation"],
+        "url": "http://localhost:4000/problem/bfs-problem6/",
         "teaser":null}]
