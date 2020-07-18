@@ -13,13 +13,13 @@ toc_label: "과목 구분"
 
 
 ## 객체지향프로그래밍  
-
+[객체지향 프로그래밍: 개념 - 객체지향이란? 클래스란? 객체란?](https://yuksangeun.github.io/subject/OOP1)  
+[객체지향 프로그래밍: 특성 - 캡슐화(은닉화), 추상화, 상속성, 다형성](https://yuksangeun.github.io/subject/OOP2)  
 
 ## 자바프로그래밍  
 
 
 ## 데이터베이스  
-[DB](http://127.0.0.1:4000/subject/db1)  
 
 
 ## 네트워크  
