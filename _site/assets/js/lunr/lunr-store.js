@@ -183,4 +183,9 @@ var store = [{
         "excerpt":"객체지향 프로그래밍(Object - Oriented Programming, OOP) 개념 프로그램을 수많은 객체라는 기본단위로 나누고 이 객체들의 상호작용으로 서술하는 방식 처리하고자 하는 자료에 중점을 두어 프로그램을 객체로 모델화 한다. 객체지향은 특정 언어가 아니라 개념이다. 장점 소프트웨어의 확장성 향상 재사용성 향상 프로그래머의 생산성 향상 유지보수 비용 절감 중요 특성 강한 응집력(Strong Cohesion)과 약한 결합력(Weak...","categories": ["Subject"],
         "tags": ["Programming"],
         "url": "http://localhost:4000/subject/OOP1/",
+        "teaser":null},{
+        "title": "객체지향 프로그래밍: 특성",
+        "excerpt":"OOP의 특성: 캡슐화(은닉화), 추상화, 상속성, 다형성 캡슐화(encapsulation)와 은닉화(hiding) 목적: 코드를 재수정 없이 재활용하는 것 캡슐화를 통해 관련된 기능과 특성을 한 곳에 모으고 분류하기 때문에 재활용이 원활하다. 기능과 특성의 모음을 클래스라는 캡슐에 분류해서 넣는 것 캡슐화 객체의 데이터를 외부에서 직접 접근하지 못하게 막고, 함수를 통해서만 접근이 가능하게 하는 작업 변수와 함수를...","categories": ["Subject"],
+        "tags": ["Programming"],
+        "url": "http://localhost:4000/subject/OOP2/",
         "teaser":null}]
