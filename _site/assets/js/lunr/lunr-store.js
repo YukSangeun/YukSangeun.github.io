@@ -178,4 +178,9 @@ var store = [{
         "excerpt":"문제 반지름이 1, 2, …, N인 원판이 크기가 작아지는 순으로 바닥에 놓여있고, 원판의 중심은 모두 같다. 원판의 반지름이 i이면, 그 원판을 i번째 원판이라고 한다. 각각의 원판에는 M개의 정수가 적혀있고, i번째 원판에 적힌 j번째 수의 위치는 (i, j)로 표현한다. 수의 위치는 다음을 만족한다. (i, 1)은 (i, 2), (i, M)과 인접 (i,...","categories": ["Problem"],
         "tags": ["BFS","Simulation"],
         "url": "http://localhost:4000/problem/bfs-problem6/",
+        "teaser":null},{
+        "title": "객체지향 프로그래밍: 개념",
+        "excerpt":"객체지향 프로그래밍(Object - Oriented Programming, OOP) 개념 프로그램을 수많은 객체라는 기본단위로 나누고 이 객체들의 상호작용으로 서술하는 방식 처리하고자 하는 자료에 중점을 두어 프로그램을 객체로 모델화 한다. 객체지향은 특정 언어가 아니라 개념이다. 장점 소프트웨어의 확장성 향상 재사용성 향상 프로그래머의 생산성 향상 유지보수 비용 절감 중요 특성 강한 응집력(Strong Cohesion)과 약한 결합력(Weak...","categories": ["Subject"],
+        "tags": ["Programming"],
+        "url": "http://localhost:4000/subject/OOP1/",
         "teaser":null}]
