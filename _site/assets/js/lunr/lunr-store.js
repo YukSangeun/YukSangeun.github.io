@@ -193,4 +193,9 @@ var store = [{
         "excerpt":"문제 N*M크기의 직사각형으로 이루어진 사무실에 k개의 CCTV가 존재한다. CCTV의 종류는 총 4가지로 1번: 한 쪽 방향 감시 2번: 두 방향 감시, 방향이 서로 반대방향 3번: 두 방향 감시, 방향이 직각방향 4번: 세 방향 감시 5번: 모든 방향 감시 가 있다. 이때, CCTV의 방향을 90도씩 회전해가며 방향을 적절히 정해, 사가 지대의...","categories": ["Problem"],
         "tags": ["Brute-force"],
         "url": "http://localhost:4000/problem/bruteforce-problem5/",
+        "teaser":null},{
+        "title": "백준 15686번: 치킨 배달",
+        "excerpt":"문제 n*n 지도에 치킨집과 집들이 존재할때, 치킨집 중 최대 m개의 치킨집만을 남기려고한다. 각각의 집과 가장 가까운 치킨집 사이의 거리를 치킨 거리라고 할 때, 모든 집의 치킨 거리의 합인 도시의 치킨 거리의 값의 최소를 구하면 된다. 즉, 최대 m개의 치킨집을 남겼을 때 도시의 치킨 거리값의 최소를 구하자. 출처 https://www.acmicpc.net/problem/15686 풀이 크게...","categories": ["Problem"],
+        "tags": ["Brute-force"],
+        "url": "http://localhost:4000/problem/bruteforce-problem6/",
         "teaser":null}]
