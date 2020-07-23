@@ -198,4 +198,9 @@ var store = [{
         "excerpt":"문제 n*n 지도에 치킨집과 집들이 존재할때, 치킨집 중 최대 m개의 치킨집만을 남기려고한다. 각각의 집과 가장 가까운 치킨집 사이의 거리를 치킨 거리라고 할 때, 모든 집의 치킨 거리의 합인 도시의 치킨 거리의 값의 최소를 구하면 된다. 즉, 최대 m개의 치킨집을 남겼을 때 도시의 치킨 거리값의 최소를 구하자. 출처 https://www.acmicpc.net/problem/15686 풀이 크게...","categories": ["Problem"],
         "tags": ["Brute-force"],
         "url": "http://localhost:4000/problem/bruteforce-problem6/",
+        "teaser":null},{
+        "title": "백준 17140번: 이차원 배열과 연산",
+        "excerpt":"문제 초기 크기가 3 * 3인 배열 A가 주어질 때, 1초가 지날때마다 배열에 연산이 적용된다. R 연산: 배열 A의 모든 행에 대해서 정렬을 수행. 행의 개수 ≥ 열의 개수인 경우에 적용 C 연산: 배열 A의 모든 열에 대해서 정렬을 수행. 행의 개수 &lt; 열의 개수인 경우에 적용 한 행 또는...","categories": ["Problem"],
+        "tags": ["Simulation","sort"],
+        "url": "http://localhost:4000/problem/simulation-problem4/",
         "teaser":null}]
