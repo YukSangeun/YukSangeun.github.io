@@ -50,6 +50,8 @@ c++ STL인 sort()함수를 사용하여 정렬부분을 구현하면 되는데, 
 이부분에 대해서는 아래 링크를 통해 오류 부분을 볼 수 있다.  
 sort함수 사용할 때 주의할 점에 대해 알게 된 문제이다.  
 
+<https://yuksangeun.github.io/algorithm/sort/>  
+
 
 코드  
 ----------  

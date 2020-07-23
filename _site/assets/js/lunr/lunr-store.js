@@ -203,4 +203,9 @@ var store = [{
         "excerpt":"문제 초기 크기가 3 * 3인 배열 A가 주어질 때, 1초가 지날때마다 배열에 연산이 적용된다. R 연산: 배열 A의 모든 행에 대해서 정렬을 수행. 행의 개수 ≥ 열의 개수인 경우에 적용 C 연산: 배열 A의 모든 열에 대해서 정렬을 수행. 행의 개수 &lt; 열의 개수인 경우에 적용 한 행 또는...","categories": ["Problem"],
         "tags": ["Simulation","sort"],
         "url": "http://localhost:4000/problem/simulation-problem4/",
+        "teaser":null},{
+        "title": "Sort함수 : C++ STL",
+        "excerpt":"이번에 소개할 sort함수는 c++ STL에서 제공하는 알고리즘 중 하나이다. Sort algorithm 헤더파일에 속한다. sort(start, end)를 이용하여 [start, end)의 범위에 있는 인자(element)를 오름차순(default)으로 정렬해주는 함수이다. quick sort(퀵 정렬)을 기반으로 함수가 구현되어있어, 평균 시간복잡도는 O(n log n) 원형 및 사용법 template &lt;typename T&gt; void sort(T start, T end); templace &lt;typename T&gt; void...","categories": ["Algorithm"],
+        "tags": ["sort"],
+        "url": "http://localhost:4000/algorithm/sort/",
         "teaser":null}]
