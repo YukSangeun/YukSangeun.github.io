@@ -208,4 +208,9 @@ var store = [{
         "excerpt":"이번에 소개할 sort함수는 c++ STL에서 제공하는 알고리즘 중 하나이다. Sort algorithm 헤더파일에 속한다. sort(start, end)를 이용하여 [start, end)의 범위에 있는 인자(element)를 오름차순(default)으로 정렬해주는 함수이다. quick sort(퀵 정렬)을 기반으로 함수가 구현되어있어, 평균 시간복잡도는 O(n log n) 원형 및 사용법 template &lt;typename T&gt; void sort(T start, T end); templace &lt;typename T&gt; void...","categories": ["Algorithm"],
         "tags": ["sort"],
         "url": "http://localhost:4000/algorithm/sort/",
+        "teaser":null},{
+        "title": "백준 14891번: 톱니바퀴",
+        "excerpt":"문제 총 8개의 톱니를 가지고 있는 톱니바퀴 4개가 일렬로 놓여져 있다. 각 톱니는 N극 또는 S극을 나타내고 톱니바퀴는 왼쪽부터 1, 2, 3, 4번으로 번호가 매겨져 있다. 톱니바퀴를 총 K번 회전시키려고 할 때, 최종 톱니바퀴의 상태를 구하자. 톱니바퀴의 회전은 한 칸을 기준으로 하며, 시계 방향과 반시계 방향이 있다. 또한, 톱니바퀴가 회전할...","categories": ["Problem"],
+        "tags": ["Simulation"],
+        "url": "http://localhost:4000/problem/simulation-problem5/",
         "teaser":null}]
