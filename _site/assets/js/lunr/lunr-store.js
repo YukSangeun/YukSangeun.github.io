@@ -213,4 +213,9 @@ var store = [{
         "excerpt":"문제 총 8개의 톱니를 가지고 있는 톱니바퀴 4개가 일렬로 놓여져 있다. 각 톱니는 N극 또는 S극을 나타내고 톱니바퀴는 왼쪽부터 1, 2, 3, 4번으로 번호가 매겨져 있다. 톱니바퀴를 총 K번 회전시키려고 할 때, 최종 톱니바퀴의 상태를 구하자. 톱니바퀴의 회전은 한 칸을 기준으로 하며, 시계 방향과 반시계 방향이 있다. 또한, 톱니바퀴가 회전할...","categories": ["Problem"],
         "tags": ["Simulation"],
         "url": "http://localhost:4000/problem/simulation-problem5/",
+        "teaser":null},{
+        "title": "백준 15685번: 드래곤 커브",
+        "excerpt":"문제 드래곤 커브는 다음과 같은 세 가지 속성으로 이루어져 있으며, 이차원 좌표 평면 위에서 정의된다. 좌표 평면의 x축은 → 방향, y축은 ↓ 방향이다. 시작 점 시작 방향 세대 각 세대별 모양이 다르며, K(K &gt; 1)세대 드래곤 커브는 K-1세대 드래곤 커브를 끝 점을 기준으로 90도 시계 방향 회전 시킨 다음, 그것을...","categories": ["Problem"],
+        "tags": ["Simulation"],
+        "url": "http://localhost:4000/problem/simulation-problem6/",
         "teaser":null}]
