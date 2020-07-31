@@ -218,4 +218,9 @@ var store = [{
         "excerpt":"문제 드래곤 커브는 다음과 같은 세 가지 속성으로 이루어져 있으며, 이차원 좌표 평면 위에서 정의된다. 좌표 평면의 x축은 → 방향, y축은 ↓ 방향이다. 시작 점 시작 방향 세대 각 세대별 모양이 다르며, K(K &gt; 1)세대 드래곤 커브는 K-1세대 드래곤 커브를 끝 점을 기준으로 90도 시계 방향 회전 시킨 다음, 그것을...","categories": ["Problem"],
         "tags": ["Simulation"],
         "url": "http://localhost:4000/problem/simulation-problem6/",
+        "teaser":null},{
+        "title": "백준 19238번: 스타트 택시",
+        "excerpt":"문제 n * n크기의 격자가 존재할 때, 택시 기사 최백준이 M명의 승객을 태우는 문제이다. 초기 연료양이 주어지며 승객을 태우기 위해 이동 중 또는 목적지에 이동 직전에 연료가 떨어진다면 그 날의 업무가 끝난다. 즉, 주어진 m명의 승객을 모두 이동시키거나 연료의 양이 다 떨어질 경우 영업이 종료된다. 최백준은 현 택시 위치에서 최단...","categories": ["Problem"],
+        "tags": ["BFS"],
+        "url": "http://localhost:4000/problem/bfs-problem7/",
         "teaser":null}]
