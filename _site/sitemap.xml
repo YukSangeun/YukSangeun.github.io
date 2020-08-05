@@ -181,6 +181,10 @@
 <lastmod>2020-07-31T00:00:00+09:00</lastmod>
 </url>
 <url>
+<loc>http://localhost:4000/problem/dp-problem1/</loc>
+<lastmod>2020-08-05T00:00:00+09:00</lastmod>
+</url>
+<url>
 <loc>http://localhost:4000/about/</loc>
 </url>
 <url>
@@ -224,5 +228,8 @@
 </url>
 <url>
 <loc>http://localhost:4000/page9/</loc>
+</url>
+<url>
+<loc>http://localhost:4000/page10/</loc>
 </url>
 </urlset>

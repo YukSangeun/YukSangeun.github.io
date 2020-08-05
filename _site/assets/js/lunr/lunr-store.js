@@ -223,4 +223,9 @@ var store = [{
         "excerpt":"문제 n * n크기의 격자가 존재할 때, 택시 기사 최백준이 M명의 승객을 태우는 문제이다. 초기 연료양이 주어지며 승객을 태우기 위해 이동 중 또는 목적지에 이동 직전에 연료가 떨어진다면 그 날의 업무가 끝난다. 즉, 주어진 m명의 승객을 모두 이동시키거나 연료의 양이 다 떨어질 경우 영업이 종료된다. 최백준은 현 택시 위치에서 최단...","categories": ["Problem"],
         "tags": ["BFS"],
         "url": "http://localhost:4000/problem/bfs-problem7/",
+        "teaser":null},{
+        "title": "백준 15486번: 퇴사 2",
+        "excerpt":"문제 퇴사까지 남은 N일 동안 최대한 많은 상담을 하려고 한다. 각각의 상담은 상담을 완료하는데 걸리는 시간 Ti와 상담을 했을 때 받을 수 있는 금액 Pi로 이루어져 있다. 상담을 하는데 필요한 기간이 1일보다 클 경우 현재 날짜 + Ti - 1일 때까지 다른 상담을 할 수 없다. N일 동안의 상담 일정이...","categories": ["Problem"],
+        "tags": ["DP"],
+        "url": "http://localhost:4000/problem/dp-problem1/",
         "teaser":null}]
