@@ -233,4 +233,14 @@ var store = [{
         "excerpt":"문제 직사각형 모양의 미로를 탈출하는데 걸리는 이동 횟수의 최소값을 구하는 문제이다. 미로는 다음과 같이 구성되어져있다. 빈 곳 : 언제나 이동할 수 있다. (‘.‘로 표시됨) 벽 : 절대 이동할 수 없다. (‘#’) 열쇠 : 언제나 이동할 수 있다. 이 곳에 처음 들어가면 열쇠를 집는다. (a - f) 문 : 대응하는 열쇠가...","categories": ["Problem"],
         "tags": ["BFS"],
         "url": "http://localhost:4000/problem/bfs-problem8/",
+        "teaser":null},{
+        "title": "Java1",
+        "excerpt":" ","categories": [],
+        "tags": [],
+        "url": "http://localhost:4000/JAVA1/",
+        "teaser":null},{
+        "title": "백준 2146번: 다리 만들기",
+        "excerpt":"문제 여러 섬으로 이루어진 나라가 있을 때, 한 섬과 다른 섬을 잇는 다리를 하나 만들려고 한다. 이때, 만들 수 있는 가장 짧은 다리를 구하는 문제이다. n * n 지도가 존재할 때, 육지는 1, 바다는 0으로 표시한다. 출처 https://www.acmicpc.net/problem/2146 풀이 bfs를 두번 이용하여 풀 수 있는 문제이다. 각 섬의 테두리를 찾을...","categories": ["Problem"],
+        "tags": ["BFS"],
+        "url": "http://localhost:4000/problem/bfs-problem9/",
         "teaser":null}]
