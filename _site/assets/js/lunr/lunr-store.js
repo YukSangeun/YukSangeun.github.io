@@ -243,4 +243,9 @@ var store = [{
         "excerpt":"문제 여러 섬으로 이루어진 나라가 있을 때, 한 섬과 다른 섬을 잇는 다리를 하나 만들려고 한다. 이때, 만들 수 있는 가장 짧은 다리를 구하는 문제이다. n * n 지도가 존재할 때, 육지는 1, 바다는 0으로 표시한다. 출처 https://www.acmicpc.net/problem/2146 풀이 bfs를 두번 이용하여 풀 수 있는 문제이다. 각 섬의 테두리를 찾을...","categories": ["Problem"],
         "tags": ["BFS"],
         "url": "http://localhost:4000/problem/bfs-problem9/",
+        "teaser":null},{
+        "title": "백준 2842번: 집배원 한상덕",
+        "excerpt":"문제 N * N 행렬로 이루어진 마을이 있다. 각 cell은 지역을 나타내며 모든 지역에 고도가 존재한다. 마을은 우체국 (‘P’), 집 (‘K’) 그리고 목초지 (‘.’)로 이루어져있으며, 우체국은 1개, 집은 1개이상이다. (이외에 지역은 모두 목초지) 우체부가 우체국에서 시작해서 모든 집에 우편을 배달하고자 할 때, 방문한 칸 중 가장 높은 곳과 낮은 곳의...","categories": ["Problem"],
+        "tags": ["BFS","DFS","Binary Search","Two pointer"],
+        "url": "http://localhost:4000/problem/bfs-problem10/",
         "teaser":null}]
