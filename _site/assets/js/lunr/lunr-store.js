@@ -248,4 +248,9 @@ var store = [{
         "excerpt":"문제 N * N 행렬로 이루어진 마을이 있다. 각 cell은 지역을 나타내며 모든 지역에 고도가 존재한다. 마을은 우체국 (‘P’), 집 (‘K’) 그리고 목초지 (‘.’)로 이루어져있으며, 우체국은 1개, 집은 1개이상이다. (이외에 지역은 모두 목초지) 우체부가 우체국에서 시작해서 모든 집에 우편을 배달하고자 할 때, 방문한 칸 중 가장 높은 곳과 낮은 곳의...","categories": ["Problem"],
         "tags": ["BFS","DFS","Binary Search","Two pointer"],
         "url": "http://localhost:4000/problem/bfs-problem10/",
+        "teaser":null},{
+        "title": "백준 1103번: 게임",
+        "excerpt":"문제 형택이는 1부터 9까지의 숫자와, 구멍이 있는 직사각형 보드에서 재밌는 게임을 한다. 일단 보드의 가장 왼쪽 위에 동전을 하나 올려놓는다. 그 다음에 다음과 같이 동전을 움직인다. 동전이 있는 곳에 쓰여 있는 숫자 X를 본다. 위, 아래, 왼쪽, 오른쪽 방향 중에 한가지를 고른다. 동전을 위에서 고른 방향으로 X만큼 움직인다. 이때, 중간에...","categories": ["Problem"],
+        "tags": ["DFS","DP"],
+        "url": "http://localhost:4000/problem/dfs-problem1/",
         "teaser":null}]
