@@ -258,4 +258,9 @@ var store = [{
         "excerpt":"문제 각 칸이 직육면체인 크기가 N * M인 곳이 있다. 각 칸은 높이가 존재하며 칸마다 높이가 다를 수 있다. 예를 들어, 각 칸의 직육면체의 높이가 쓰여 있는 다음과 같은 땅을 생각할 수 있다. 16661 61116 16661 위 수영장은 15만큼의 물이 들어있는 수영장을 만들 수 있다. 가운데 3개의 칸에 5만큼 물을...","categories": ["Problem"],
         "tags": ["BFS","Simulation"],
         "url": "http://localhost:4000/problem/bfs-problem11/",
+        "teaser":null},{
+        "title": "동적할당",
+        "excerpt":"동적할당 프로그램 실행중에 동적으로 메모리를 할당하는 것을 뜻한다. 동적으로 메모리를 할당 시, heap영역에 할당 함수의 원형 #include&lt;stdlib.h&gt; //매개변수에 해당하는 size_t 만큼의 크기만큼 메모리를 할당 //성공: 할당한 메모리의 첫번째 주소 리턴 //실패: NULL 리턴 void* malloc(size_t size) 할당한 메모리는 반드시! 해제해야 한다. 그렇지 않을 경우 메모리 릭, 메모리 누수가 발생 동적할당...","categories": ["C"],
+        "tags": ["linked list","queue"],
+        "url": "http://localhost:4000/c/malloc/",
         "teaser":null}]
