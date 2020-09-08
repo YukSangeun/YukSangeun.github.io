@@ -263,4 +263,9 @@ var store = [{
         "excerpt":"동적할당 프로그램 실행중에 동적으로 메모리를 할당하는 것을 뜻한다. 동적으로 메모리를 할당 시, heap영역에 할당 함수의 원형 #include&lt;stdlib.h&gt; //매개변수에 해당하는 size_t 만큼의 크기만큼 메모리를 할당 //성공: 할당한 메모리의 첫번째 주소 리턴 //실패: NULL 리턴 void* malloc(size_t size) 할당한 메모리는 반드시! 해제해야 한다. 그렇지 않을 경우 메모리 릭, 메모리 누수가 발생 동적할당...","categories": ["C"],
         "tags": ["linked list","queue"],
         "url": "http://localhost:4000/c/malloc/",
+        "teaser":null},{
+        "title": "연결리스트(Linked List)",
+        "excerpt":"연결리스트(Linked list)란? 기차처럼 데이터들을 한 줄로 연결해서 저장하는 방식의 자료구조이다. 즉, 데이터를 담고 있는 노드들이 연결되어 있다. 구현 방법으로는 2가지가 존재한다. 배열 포인터 배열 배열을 이용하는 방법은 구현이 단순하지만, 배열의 단점인 크기가 초기 설정시 정해지기 때문에 특정 크기를 넘어서 데이터를 저장하지 못한다. 만약 배열의 크기를 넘어 저장하고자 한다면, 크기가 더...","categories": ["C","Data Structure"],
+        "tags": ["linked list","queue"],
+        "url": "http://localhost:4000/c/data%20structure/LinkedList/",
         "teaser":null}]
