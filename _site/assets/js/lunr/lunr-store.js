@@ -268,4 +268,9 @@ var store = [{
         "excerpt":"연결리스트(Linked list)란? 기차처럼 데이터들을 한 줄로 연결해서 저장하는 방식의 자료구조이다. 즉, 데이터를 담고 있는 노드들이 연결되어 있다. 구현 방법으로는 2가지가 존재한다. 배열 포인터 배열 배열을 이용하는 방법은 구현이 단순하지만, 배열의 단점인 크기가 초기 설정시 정해지기 때문에 특정 크기를 넘어서 데이터를 저장하지 못한다. 만약 배열의 크기를 넘어 저장하고자 한다면, 크기가 더...","categories": ["C","Data Structure"],
         "tags": ["linked list","queue"],
         "url": "http://localhost:4000/c/data%20structure/LinkedList/",
+        "teaser":null},{
+        "title": "Vector: C",
+        "excerpt":"동적할당: 재할당(realloc) //배열 vector의 크기를 2배로 늘림 //realloc: 현 위치에 충분한 공간 있을 경우 추가로 메모리 공간 할당 / //공간이 없을 경우 메모리의 다른 공간에 기존 크기의 공간 할당 + 데이터 복사 후 추가로 메모리를 할당해준다. ELEMENT* vector; vector = realloc(vector, sizeof(*vector) * vecSize * 2); vecSize *= 2; vectorFull()함수...","categories": ["C","Data Structure"],
+        "tags": ["vector","malloc","calloc","realloc"],
+        "url": "http://localhost:4000/c/data%20structure/vector/",
         "teaser":null}]
