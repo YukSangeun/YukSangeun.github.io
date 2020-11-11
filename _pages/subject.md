@@ -30,6 +30,12 @@ toc_label: "과목 구분"
 
 
 ## 운영체제 
+[운영체제 : 도입 - 운영체제란?](https://yuksangeun.github.io/subject/OS1)  
+[운영체제 : 프로세스와 스케쥴링 - 프로세스? 스케쥴링?](https://yuksangeun.github.io/subject/OS2)  
+[운영체제 : Synchronization과 Deadlock - Synchronization? Deadlock?](https://yuksangeun.github.io/subject/OS3)  
+[운영체제 : 메모리 관리 체계 - 주소바인딩? 메모리 관리 전략? 가상메모리?](https://yuksangeun.github.io/subject/OS4)  
+[운영체제 : 파일관리 - 파일시스템? 파일 및 디렉터리 생성?](https://yuksangeun.github.io/subject/OS5)  
+[운영체제 : 디스크 - 디스크?](https://yuksangeun.github.io/subject/OS6)  
 
 
 ## 유닉스  
