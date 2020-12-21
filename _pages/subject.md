@@ -16,17 +16,24 @@ toc_label: "과목 구분"
 [객체지향 프로그래밍: 개념 - 객체지향이란? 클래스란? 객체란?](https://yuksangeun.github.io/subject/OOP1)  
 [객체지향 프로그래밍: 특성 - 캡슐화(은닉화), 추상화, 상속성, 다형성](https://yuksangeun.github.io/subject/OOP2)  
 
+
 ## 자바프로그래밍  
 
 
 ## 데이터베이스  
+[데이터베이스 : 면접 질문 정리](https://yuksangeun.github.io/subject/Database)  
 [데이터 베이스 : 개념 - 파일시스템vsDBMS? DB?](https://yuksangeun.github.io/subject/Database1)  
 [데이터 베이스 : 데이터 모델과 SQL - E-R model? Relational model? 관계 데이터연산? SQL?](https://yuksangeun.github.io/subject/Database2)  
 [데이터 베이스 : 트랜잭션과 무결성 제약조건 - 트랜잭션? 무결성 제약조건?](https://yuksangeun.github.io/subject/Database3)  
 [데이터 베이스 : 정규화 - 정규화? 역정규화?](https://yuksangeun.github.io/subject/Database4)  
 [데이터 베이스 : 물리적 저장장치 - RAID?](https://yuksangeun.github.io/subject/Database5)  
 
+
 ## 네트워크  
+[네트워크 : OSI계층과 TCP/IP - OSI 7계층? TCP/IP 프로토콜?](https://yuksangeun.github.io/subject/Network1)  
+[네트워크 : 네트워크와 전달방식 - 네트워크? packet switching? connection-oriendted?](https://yuksangeun.github.io/subject/Network2)  
+[네트워크 : Transport layer(TCP) - TCP? 흐름제어? 오류제어? 혼잡제어?](https://yuksangeun.github.io/subject/Network3)  
+[네트워크 : Network layer (IP, URP, ICMP, ARP)](https://yuksangeun.github.io/subject/Netowrk4)  
 
 
 ## 운영체제 
@@ -45,10 +52,20 @@ toc_label: "과목 구분"
 [유닉스 : 시그널 - 시그널 동작과정? 시그널 종류? process signal mask?](https://yuksangeun.github.io/subject/UNIX4)  
 [유닉스 : IPC - PIPE? FIFO? message queue? shared memory? socket? semaphore?](https://yuksangeun.github.io/subject/UNIX5)  
 
+
 ## 자료구조  
+[자료구조 : 면접 질문 정리](https://yuksangeun.github.io/subject/DataStructure)  
 
 
 ## 알고리즘  
+[알고리즘 : 면접 질문 정리](https://yuksangeun.github.io/subject/Algorithm)  
+
+
+## 임베디드 시스템  
+[임베디드 시스템 : 도입 - 실시간 시스템? 임베디드 시스템? RTOS?](https://yuksangeun.github.io/subject/Embeded1)  
+[임베디드 시스템 : 운영체제와 task - 운영체제? ms/os-II?](https://yuksangeun.github.io/subject/Embeded2)  
+[임베디드 시스템 : RTOS 스케쥴링 - 인터럽트? RMS? EDF? 실시간 스케쥴링의 문제점과 해결책?](https://yuksangeun.github.io/subject/Embeded3)  
+[임베디드 시스템 : 면접 내용 정리](https://yuksangeun.github.io/subject/Embeded4)  
 
 
 ## 인터넷 프로그래밍  
