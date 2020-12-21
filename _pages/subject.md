@@ -33,7 +33,7 @@ toc_label: "과목 구분"
 [네트워크 : OSI계층과 TCP/IP - OSI 7계층? TCP/IP 프로토콜?](https://yuksangeun.github.io/subject/Network1)  
 [네트워크 : 네트워크와 전달방식 - 네트워크? packet switching? connection-oriendted?](https://yuksangeun.github.io/subject/Network2)  
 [네트워크 : Transport layer(TCP) - TCP? 흐름제어? 오류제어? 혼잡제어?](https://yuksangeun.github.io/subject/Network3)  
-[네트워크 : Network layer (IP, URP, ICMP, ARP)](https://yuksangeun.github.io/subject/Netowrk4)  
+[네트워크 : Network layer (IP, URP, ICMP, ARP)](https://yuksangeun.github.io/subject/Network4)  
 
 
 ## 운영체제 
